@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 from utils.formatters import *
+from utils import datos
 
 CONTEXTO = """
 Eres el Agente de Inteligencia de Negocio de Paranice, marca colombiana de alimentos saludables
@@ -38,17 +39,9 @@ SUGERIDAS = [
 ]
 
 
-@st.cache_data
 def load():
-    v = leer_csv("ventas.csv")
-    f = leer_csv("finanzas_mensual.csv")
-    c = leer_csv("clientes_d2c.csv")
-    car = leer_csv("cartera.csv")
-    so = leer_csv("sellout.csv")
-    d = leer_csv("despachos.csv")
-    p = leer_csv("produccion.csv")
-    m = leer_csv("marketing.csv")
-    return v, f, c, car, so, d, p, m
+    return (datos.ventas(), datos.finanzas(), datos.clientes(), datos.cartera(),
+            datos.sellout(), datos.despachos(), datos.produccion(), datos.marketing())
 
 
 def resumen_datos() -> str:

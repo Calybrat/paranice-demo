@@ -3,17 +3,13 @@ import pandas as pd
 import plotly.graph_objects as go
 from pathlib import Path
 from utils.formatters import *
+from utils import datos
 
 HOY = pd.Timestamp("2026-08-31")
 
 
-@st.cache_data
 def load():
-    d = leer_csv("despachos.csv")
-    for c in ("fecha_pedido", "fecha_prometida", "fecha_entrega"):
-        d[c] = pd.to_datetime(d[c], errors="coerce")
-    d["mes"] = d["fecha_pedido"].dt.strftime("%Y-%m")
-    return d
+    return datos.despachos()
 
 
 def render():

@@ -4,15 +4,13 @@ import numpy as np
 import plotly.graph_objects as go
 from pathlib import Path
 from utils.formatters import *
+from utils import datos
 
 PROPIOS = ["Email (Omnisend)", "WhatsApp", "Orgánico/SEO"]
 
 
-@st.cache_data
 def load():
-    m = leer_csv("marketing.csv")
-    c = leer_csv("contenido.csv")
-    return m, c
+    return datos.marketing(), datos.contenido()
 
 
 def render():

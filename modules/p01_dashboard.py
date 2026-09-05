@@ -3,22 +3,15 @@ import pandas as pd
 import plotly.graph_objects as go
 from pathlib import Path
 from utils.formatters import *
+from utils import datos
 
 DATA = Path(__file__).parent.parent / "data"
 HOY = pd.Timestamp("2026-08-31")
 
 
-@st.cache_data
 def load():
-    v = leer_csv("ventas.csv"); v["fecha"] = pd.to_datetime(v["fecha"])
-    f = leer_csv("finanzas_mensual.csv")
-    c = leer_csv("clientes_d2c.csv")
-    d = leer_csv("despachos.csv"); d["fecha_pedido"] = pd.to_datetime(d["fecha_pedido"])
-    car = leer_csv("cartera.csv")
-    inv = leer_csv("inventario.csv")
-    so = leer_csv("sellout.csv")
-    prod = leer_csv("produccion.csv")
-    return v, f, c, d, car, inv, so, prod
+    return (datos.ventas(), datos.finanzas(), datos.clientes(), datos.despachos(),
+            datos.cartera(), datos.inventario(), datos.sellout(), datos.produccion())
 
 
 def render():

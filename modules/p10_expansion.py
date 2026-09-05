@@ -3,16 +3,14 @@ import pandas as pd
 import plotly.graph_objects as go
 from pathlib import Path
 from utils.formatters import *
+from utils import datos
 
 BANDERAS = {"Colombia": "🇨🇴", "Costa Rica": "🇨🇷", "Estados Unidos": "🇺🇸"}
 LANZAMIENTOS = {"Colombia": "mercado base", "Costa Rica": "mayo 2025", "Estados Unidos": "octubre 2025"}
 
 
-@st.cache_data
 def load():
-    v = leer_csv("ventas.csv")
-    d = leer_csv("despachos.csv")
-    return v, d
+    return datos.ventas(), datos.despachos()
 
 
 def render():

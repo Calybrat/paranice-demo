@@ -3,16 +3,11 @@ import pandas as pd
 import plotly.graph_objects as go
 from pathlib import Path
 from utils.formatters import *
+from utils import datos
 
 
-@st.cache_data
 def load():
-    c = leer_csv("clientes_d2c.csv")
-    c["primera_compra"] = pd.to_datetime(c["primera_compra"])
-    c["ultima_compra"] = pd.to_datetime(c["ultima_compra"])
-    v = leer_csv("ventas.csv")
-    m = leer_csv("marketing.csv")
-    return c, v, m
+    return datos.clientes(), datos.ventas(), datos.marketing()
 
 
 def render():
