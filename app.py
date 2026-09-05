@@ -6,7 +6,7 @@ import streamlit as st
 sys.path.insert(0, str(Path(__file__).parent))
 from utils.formatters import (CSS, HEADER_CSS, asset_b64, BORDER, TEXT, MUTED,
                               PURPLE, CREAM, CREAM_LT, PINK, LAVENDER_LT)
-from utils.auth import require_login, render_visit_log
+from utils.visitas import registrar_visita, panel_solicitado, render_panel_visitas
 
 st.set_page_config(
     page_title="Paranice · Panel de Negocio | Calybrat",
@@ -14,8 +14,8 @@ st.set_page_config(
     layout="wide",
 )
 
-# ── Auth gate ─────────────────────────────────────────────────────────────────
-name, username, authenticator = require_login()
+# El demo es de acceso libre: solo se deja constancia de la visita.
+registrar_visita()
 
 st.markdown(CSS + HEADER_CSS, unsafe_allow_html=True)
 
@@ -70,23 +70,12 @@ with st.sidebar:
             if st.button(label, key=f"nav_{label}", use_container_width=True):
                 st.session_state.page = label
 
-    st.markdown("<div style='height:16px'></div>", unsafe_allow_html=True)
-
-    if username == "nicolas":
-        if st.button("📋  Ver accesos", use_container_width=True):
-            st.session_state.page = "__visit_log__"
-
-    st.markdown(f"""
-    <div style="padding:12px 8px 6px;border-top:1px solid {CREAM}33;margin-top:8px">
-      <div style="font-size:11.5px;color:{CREAM}cc;font-weight:700">👤 {name}</div>
-    </div>
-    """, unsafe_allow_html=True)
-    authenticator.logout("Cerrar sesión", location="sidebar")
+    st.markdown("<div style='height:18px'></div>", unsafe_allow_html=True)
 
     pj = asset_b64("personaje_3.png")
     pj_html = f'<img src="{pj}" style="height:54px;width:auto;margin-bottom:6px">' if pj else ""
     st.markdown(f"""
-    <div style="padding:6px 16px 10px;text-align:center">
+    <div style="padding:14px 16px 10px;text-align:center;border-top:1px solid {CREAM}33">
       {pj_html}
       <div style="font-size:10.5px;color:{CREAM}88;margin-bottom:2px">Construido por</div>
       <div style="font-size:14px;font-weight:900;color:{CREAM}">Calybrat</div>
@@ -94,11 +83,12 @@ with st.sidebar:
     </div>
     """, unsafe_allow_html=True)
 
-# ── Módulo activo ─────────────────────────────────────────────────────────────
-if st.session_state.get("page") == "__visit_log__":
-    render_visit_log()
+# ── Panel interno de accesos (solo con ?accesos=… en la URL) ──────────────────
+if panel_solicitado():
+    render_panel_visitas()
     st.stop()
 
+# ── Módulo activo ─────────────────────────────────────────────────────────────
 module_name = PAGES[st.session_state.page]
 try:
     mod = __import__(f"modules.{module_name}", fromlist=[module_name])

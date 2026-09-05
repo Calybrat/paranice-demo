@@ -77,23 +77,22 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
-Usuarios de acceso al demo:
+El demo es de **acceso libre**: se abre y ya, sin usuario ni clave. La idea es que el
+cliente entre sin fricción. El control de acceso se implementa en el producto final.
 
-| Usuario | Clave |
-|---|---|
-| `paranice_demo` | `Paranice2026` |
-| `nicolas` | `Admin2026` |
-
-Para cambiar o agregar usuarios: edita `auth_setup.py` y corre `python3 auth_setup.py`.
+Cada visita queda registrada (fecha, IP y ciudad aproximada) en `visit_log.json`.
+Para ver ese registro, agrega `?accesos=calybrat` al final de la URL. En Streamlit
+Cloud el archivo se reinicia con cada despliegue.
 
 ---
 
 ## Estructura
 
 ```
-app.py                  navegación y login
+app.py                  navegación
 utils/formatters.py     paleta de marca, helpers de formato y de gráficas
-utils/auth.py           login y registro de visitas
+utils/datos.py          carga de datos compartida y cacheada
+utils/visitas.py        registro de visitas al demo
 modules/p01…p12         un archivo por módulo
 data/generate_data.py   generador de los datos del demo
 data/*.csv(.gz)         datos generados
