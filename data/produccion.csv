@@ -1,0 +1,868 @@
+lote_id,fecha_produccion,producto_id,producto,categoria,cantidad_kg,turno,es_sin_gluten,resultado_gluten_ppm,estado_calidad,vida_util_dias
+LOTE-4000,2026-01-01,AVE-003,Hojuelas de Avena,Avena & Harinas,628,Tarde,True,6.0,Aprobado,363
+LOTE-4001,2026-01-01,AVE-003,Hojuelas de Avena,Avena & Harinas,504,Tarde,True,0.6,Aprobado,355
+LOTE-4002,2026-01-01,PAN-002,Mix Pancake Chocolate Chips,Pancakes & Waffles,219,Tarde,True,8.3,Aprobado,355
+LOTE-4003,2026-01-02,GRA-004,Granola Pistacho Cookie,GranOLAs,526,Mañana,True,0.6,Aprobado,326
+LOTE-4004,2026-01-02,AVE-002,Harina de Avena,Avena & Harinas,619,Mañana,True,3.5,Aprobado,262
+LOTE-4005,2026-01-02,AVE-002,Harina de Avena,Avena & Harinas,526,Tarde,True,9.0,Aprobado,274
+LOTE-4006,2026-01-02,ESP-006,Crema Butter Cookie,Esparcibles,334,Mañana,True,2.0,Aprobado,229
+LOTE-4007,2026-01-03,GRA-004,Granola Pistacho Cookie,GranOLAs,511,Tarde,True,7.9,Aprobado,183
+LOTE-4008,2026-01-03,ESP-004,Crema Cacao Avellana Blanca,Esparcibles,340,Mañana,True,12.1,Aprobado,245
+LOTE-4009,2026-01-03,GRA-001,Granola Vainilla Shortbread,GranOLAs,286,Tarde,True,3.3,Aprobado,271
+LOTE-4010,2026-01-03,PAN-005,Mix Pancake Brownie,Pancakes & Waffles,354,Tarde,True,2.7,Aprobado,361
+LOTE-4011,2026-01-03,ESP-001,Crema Pistacho Cookie,Esparcibles,443,Tarde,True,7.5,Aprobado,351
+LOTE-4012,2026-01-04,COM-002,Combo Sin Gluten Starter,Combos,220,Tarde,True,9.6,Aprobado,363
+LOTE-4013,2026-01-04,COM-001,Combo Desayuno Saludable,Combos,156,Mañana,True,13.0,Aprobado,324
+LOTE-4014,2026-01-04,GRA-004,Granola Pistacho Cookie,GranOLAs,237,Tarde,True,1.0,Aprobado,151
+LOTE-4015,2026-01-04,COM-003,Combo Esparcibles Trío,Combos,303,Tarde,True,21.9,Rechazado,322
+LOTE-4016,2026-01-04,ESP-003,Crema Cacao Avellana Clásica,Esparcibles,309,Mañana,True,11.7,Aprobado,289
+LOTE-4017,2026-01-05,PAN-001,Mix Pancake Vainilla,Pancakes & Waffles,230,Tarde,True,7.4,Aprobado,356
+LOTE-4018,2026-01-05,PAN-003,Mix Waffle Churro,Pancakes & Waffles,512,Mañana,True,4.6,Aprobado,364
+LOTE-4019,2026-01-05,AVE-002,Harina de Avena,Avena & Harinas,89,Tarde,True,9.0,Aprobado,351
+LOTE-4020,2026-01-05,MER-001,Termo Paranice,Merch,167,Tarde,False,,Aprobado,163
+LOTE-4021,2026-01-05,ESP-004,Crema Cacao Avellana Blanca,Esparcibles,293,Tarde,True,10.2,Aprobado,207
+LOTE-4022,2026-01-06,COM-002,Combo Sin Gluten Starter,Combos,495,Mañana,True,3.0,Aprobado,278
+LOTE-4023,2026-01-06,ESP-006,Crema Butter Cookie,Esparcibles,599,Mañana,True,8.4,Aprobado,193
+LOTE-4024,2026-01-06,ESP-001,Crema Pistacho Cookie,Esparcibles,582,Tarde,True,4.1,Aprobado,224
+LOTE-4025,2026-01-06,MER-002,Tote Bag Paranice,Merch,349,Mañana,False,,Aprobado,303
+LOTE-4026,2026-01-06,COM-001,Combo Desayuno Saludable,Combos,115,Mañana,True,0.8,Aprobado,209
+LOTE-4027,2026-01-07,AVE-002,Harina de Avena,Avena & Harinas,640,Tarde,True,4.3,Aprobado,252
+LOTE-4028,2026-01-07,AVE-002,Harina de Avena,Avena & Harinas,525,Mañana,True,10.0,Aprobado,326
+LOTE-4029,2026-01-07,PAN-005,Mix Pancake Brownie,Pancakes & Waffles,209,Mañana,True,1.1,Aprobado,238
+LOTE-4030,2026-01-08,AVE-001,Harina de Almendra,Avena & Harinas,303,Tarde,True,3.4,Aprobado,341
+LOTE-4031,2026-01-08,PAN-001,Mix Pancake Vainilla,Pancakes & Waffles,266,Tarde,True,6.9,Aprobado,354
+LOTE-4032,2026-01-09,PAN-004,Mix Pancake Banana,Pancakes & Waffles,645,Tarde,True,4.3,Aprobado,157
+LOTE-4033,2026-01-09,GRA-003,Granola Fudge Cake,GranOLAs,430,Tarde,True,3.5,Aprobado,157
+LOTE-4034,2026-01-10,PAN-002,Mix Pancake Chocolate Chips,Pancakes & Waffles,496,Tarde,True,3.7,Aprobado,229
+LOTE-4035,2026-01-10,ESP-003,Crema Cacao Avellana Clásica,Esparcibles,613,Tarde,True,6.2,Aprobado,228
+LOTE-4036,2026-01-10,COM-001,Combo Desayuno Saludable,Combos,266,Tarde,True,4.1,Aprobado,246
+LOTE-4037,2026-01-10,AVE-002,Harina de Avena,Avena & Harinas,307,Mañana,True,7.5,Aprobado,319
+LOTE-4038,2026-01-11,ESP-002,Crema Maní Banana,Esparcibles,120,Tarde,True,0.9,Aprobado,322
+LOTE-4039,2026-01-11,GRA-002,Granola Chip Cookie,GranOLAs,175,Tarde,True,6.5,Aprobado,222
+LOTE-4040,2026-01-11,ESP-005,Crema Canela Roll,Esparcibles,346,Tarde,True,9.0,Aprobado,353
+LOTE-4041,2026-01-12,ESP-004,Crema Cacao Avellana Blanca,Esparcibles,91,Mañana,True,9.1,Aprobado,164
+LOTE-4042,2026-01-12,ESP-002,Crema Maní Banana,Esparcibles,565,Mañana,True,3.9,Aprobado,327
+LOTE-4043,2026-01-12,PAN-004,Mix Pancake Banana,Pancakes & Waffles,245,Mañana,True,3.4,Aprobado,188
+LOTE-4044,2026-01-13,ESP-006,Crema Butter Cookie,Esparcibles,555,Tarde,True,10.5,Aprobado,345
+LOTE-4045,2026-01-13,GRA-003,Granola Fudge Cake,GranOLAs,317,Mañana,True,4.0,Aprobado,291
+LOTE-4046,2026-01-14,AVE-002,Harina de Avena,Avena & Harinas,636,Tarde,True,4.8,Aprobado,313
+LOTE-4047,2026-01-14,GRA-002,Granola Chip Cookie,GranOLAs,477,Mañana,True,12.3,Aprobado,316
+LOTE-4048,2026-01-14,MER-002,Tote Bag Paranice,Merch,414,Tarde,False,,Aprobado,301
+LOTE-4049,2026-01-14,AVE-001,Harina de Almendra,Avena & Harinas,213,Mañana,True,1.8,Aprobado,263
+LOTE-4050,2026-01-14,AVE-001,Harina de Almendra,Avena & Harinas,290,Tarde,True,3.3,Aprobado,286
+LOTE-4051,2026-01-15,COM-002,Combo Sin Gluten Starter,Combos,378,Mañana,True,11.1,Aprobado,151
+LOTE-4052,2026-01-15,ESP-002,Crema Maní Banana,Esparcibles,168,Tarde,True,12.6,Aprobado,196
+LOTE-4053,2026-01-15,PAN-001,Mix Pancake Vainilla,Pancakes & Waffles,468,Mañana,True,9.5,Aprobado,152
+LOTE-4054,2026-01-16,ESP-001,Crema Pistacho Cookie,Esparcibles,428,Mañana,True,10.4,Aprobado,346
+LOTE-4055,2026-01-16,ESP-002,Crema Maní Banana,Esparcibles,460,Tarde,True,12.6,Aprobado,211
+LOTE-4056,2026-01-16,ESP-005,Crema Canela Roll,Esparcibles,227,Mañana,True,11.9,Aprobado,183
+LOTE-4057,2026-01-16,GRA-001,Granola Vainilla Shortbread,GranOLAs,519,Mañana,True,4.7,Aprobado,351
+LOTE-4058,2026-01-17,PAN-005,Mix Pancake Brownie,Pancakes & Waffles,413,Mañana,True,10.1,Aprobado,265
+LOTE-4059,2026-01-17,GRA-003,Granola Fudge Cake,GranOLAs,174,Mañana,True,5.7,Aprobado,231
+LOTE-4060,2026-01-17,ESP-005,Crema Canela Roll,Esparcibles,618,Tarde,True,8.8,Aprobado,246
+LOTE-4061,2026-01-17,GRA-003,Granola Fudge Cake,GranOLAs,357,Mañana,True,4.6,Aprobado,243
+LOTE-4062,2026-01-17,MER-002,Tote Bag Paranice,Merch,301,Tarde,False,,Aprobado,269
+LOTE-4063,2026-01-18,PAN-004,Mix Pancake Banana,Pancakes & Waffles,583,Mañana,True,9.5,Aprobado,247
+LOTE-4064,2026-01-18,ESP-004,Crema Cacao Avellana Blanca,Esparcibles,547,Mañana,True,2.0,Aprobado,193
+LOTE-4065,2026-01-18,PAN-003,Mix Waffle Churro,Pancakes & Waffles,118,Mañana,True,2.0,Aprobado,169
+LOTE-4066,2026-01-19,ESP-006,Crema Butter Cookie,Esparcibles,100,Mañana,True,12.1,Aprobado,184
+LOTE-4067,2026-01-19,ESP-002,Crema Maní Banana,Esparcibles,80,Mañana,True,12.9,Aprobado,172
+LOTE-4068,2026-01-19,GRA-002,Granola Chip Cookie,GranOLAs,250,Tarde,True,7.2,Aprobado,244
+LOTE-4069,2026-01-20,AVE-003,Hojuelas de Avena,Avena & Harinas,331,Mañana,True,9.6,Aprobado,348
+LOTE-4070,2026-01-20,GRA-003,Granola Fudge Cake,GranOLAs,212,Tarde,True,3.1,Aprobado,312
+LOTE-4071,2026-01-21,GRA-004,Granola Pistacho Cookie,GranOLAs,547,Tarde,True,1.4,Aprobado,180
+LOTE-4072,2026-01-21,GRA-002,Granola Chip Cookie,GranOLAs,608,Mañana,True,2.2,Aprobado,182
+LOTE-4073,2026-01-22,GRA-003,Granola Fudge Cake,GranOLAs,97,Tarde,True,7.3,Aprobado,285
+LOTE-4074,2026-01-22,COM-003,Combo Esparcibles Trío,Combos,247,Tarde,True,12.8,Aprobado,254
+LOTE-4075,2026-01-22,MER-001,Termo Paranice,Merch,189,Tarde,False,,Aprobado,339
+LOTE-4076,2026-01-22,PAN-001,Mix Pancake Vainilla,Pancakes & Waffles,177,Mañana,True,2.8,Aprobado,339
+LOTE-4077,2026-01-22,PAN-001,Mix Pancake Vainilla,Pancakes & Waffles,84,Tarde,True,4.7,Aprobado,272
+LOTE-4078,2026-01-23,ESP-004,Crema Cacao Avellana Blanca,Esparcibles,517,Mañana,True,4.8,Aprobado,163
+LOTE-4079,2026-01-23,MER-001,Termo Paranice,Merch,535,Mañana,False,,Aprobado,246
+LOTE-4080,2026-01-24,ESP-004,Crema Cacao Avellana Blanca,Esparcibles,394,Mañana,True,6.9,Aprobado,294
+LOTE-4081,2026-01-24,GRA-004,Granola Pistacho Cookie,GranOLAs,514,Tarde,True,12.3,Aprobado,217
+LOTE-4082,2026-01-24,MER-001,Termo Paranice,Merch,493,Mañana,False,,Aprobado,235
+LOTE-4083,2026-01-24,COM-001,Combo Desayuno Saludable,Combos,262,Mañana,True,7.3,Aprobado,260
+LOTE-4084,2026-01-25,ESP-006,Crema Butter Cookie,Esparcibles,229,Mañana,True,9.0,Aprobado,334
+LOTE-4085,2026-01-25,ESP-006,Crema Butter Cookie,Esparcibles,347,Mañana,True,0.6,Aprobado,273
+LOTE-4086,2026-01-25,ESP-004,Crema Cacao Avellana Blanca,Esparcibles,519,Mañana,True,5.0,Aprobado,183
+LOTE-4087,2026-01-25,GRA-002,Granola Chip Cookie,GranOLAs,156,Mañana,True,3.7,Aprobado,153
+LOTE-4088,2026-01-26,GRA-003,Granola Fudge Cake,GranOLAs,494,Mañana,True,0.3,Aprobado,298
+LOTE-4089,2026-01-26,GRA-004,Granola Pistacho Cookie,GranOLAs,280,Mañana,True,4.2,Aprobado,324
+LOTE-4090,2026-01-26,ESP-003,Crema Cacao Avellana Clásica,Esparcibles,261,Tarde,True,9.6,Aprobado,338
+LOTE-4091,2026-01-26,PAN-003,Mix Waffle Churro,Pancakes & Waffles,399,Mañana,True,5.3,Aprobado,256
+LOTE-4092,2026-01-27,ESP-006,Crema Butter Cookie,Esparcibles,273,Mañana,True,10.5,Aprobado,274
+LOTE-4093,2026-01-27,ESP-006,Crema Butter Cookie,Esparcibles,504,Mañana,True,12.0,Aprobado,188
+LOTE-4094,2026-01-27,GRA-002,Granola Chip Cookie,GranOLAs,520,Mañana,True,3.7,Aprobado,298
+LOTE-4095,2026-01-27,AVE-001,Harina de Almendra,Avena & Harinas,162,Tarde,True,9.2,Aprobado,232
+LOTE-4096,2026-01-28,AVE-001,Harina de Almendra,Avena & Harinas,355,Mañana,True,7.2,Aprobado,178
+LOTE-4097,2026-01-28,PAN-003,Mix Waffle Churro,Pancakes & Waffles,401,Mañana,True,2.0,Aprobado,251
+LOTE-4098,2026-01-29,GRA-004,Granola Pistacho Cookie,GranOLAs,532,Mañana,True,7.7,Aprobado,311
+LOTE-4099,2026-01-29,ESP-003,Crema Cacao Avellana Clásica,Esparcibles,296,Mañana,True,12.9,Aprobado,173
+LOTE-4100,2026-01-29,COM-002,Combo Sin Gluten Starter,Combos,128,Mañana,True,0.4,Aprobado,283
+LOTE-4101,2026-01-30,MER-002,Tote Bag Paranice,Merch,335,Tarde,False,,Aprobado,246
+LOTE-4102,2026-01-30,PAN-002,Mix Pancake Chocolate Chips,Pancakes & Waffles,237,Tarde,True,6.7,Aprobado,287
+LOTE-4103,2026-01-30,ESP-002,Crema Maní Banana,Esparcibles,258,Mañana,True,1.5,Aprobado,352
+LOTE-4104,2026-01-30,COM-001,Combo Desayuno Saludable,Combos,298,Mañana,True,7.9,Aprobado,252
+LOTE-4105,2026-01-31,MER-001,Termo Paranice,Merch,81,Mañana,False,,Aprobado,337
+LOTE-4106,2026-01-31,GRA-003,Granola Fudge Cake,GranOLAs,119,Mañana,True,7.6,Aprobado,359
+LOTE-4107,2026-01-31,ESP-004,Crema Cacao Avellana Blanca,Esparcibles,260,Mañana,True,2.4,Aprobado,231
+LOTE-4108,2026-01-31,COM-001,Combo Desayuno Saludable,Combos,135,Tarde,True,10.5,Aprobado,240
+LOTE-4109,2026-02-01,AVE-002,Harina de Avena,Avena & Harinas,533,Tarde,True,11.7,Aprobado,197
+LOTE-4110,2026-02-01,AVE-002,Harina de Avena,Avena & Harinas,290,Tarde,True,5.2,Aprobado,265
+LOTE-4111,2026-02-01,PAN-002,Mix Pancake Chocolate Chips,Pancakes & Waffles,590,Tarde,True,1.0,Aprobado,329
+LOTE-4112,2026-02-02,ESP-001,Crema Pistacho Cookie,Esparcibles,589,Mañana,True,0.5,Aprobado,333
+LOTE-4113,2026-02-02,ESP-002,Crema Maní Banana,Esparcibles,166,Mañana,True,10.1,Aprobado,162
+LOTE-4114,2026-02-02,AVE-001,Harina de Almendra,Avena & Harinas,352,Tarde,True,2.3,Aprobado,314
+LOTE-4115,2026-02-02,GRA-004,Granola Pistacho Cookie,GranOLAs,274,Tarde,True,37.6,Rechazado,350
+LOTE-4116,2026-02-02,ESP-006,Crema Butter Cookie,Esparcibles,288,Tarde,True,2.8,Aprobado,224
+LOTE-4117,2026-02-03,PAN-002,Mix Pancake Chocolate Chips,Pancakes & Waffles,648,Mañana,True,2.9,Aprobado,230
+LOTE-4118,2026-02-03,PAN-005,Mix Pancake Brownie,Pancakes & Waffles,483,Tarde,True,12.2,Aprobado,333
+LOTE-4119,2026-02-03,ESP-004,Crema Cacao Avellana Blanca,Esparcibles,197,Mañana,True,11.0,Aprobado,334
+LOTE-4120,2026-02-03,ESP-003,Crema Cacao Avellana Clásica,Esparcibles,428,Tarde,True,6.0,Aprobado,242
+LOTE-4121,2026-02-04,MER-002,Tote Bag Paranice,Merch,313,Mañana,False,,Aprobado,197
+LOTE-4122,2026-02-04,ESP-002,Crema Maní Banana,Esparcibles,517,Tarde,True,4.8,Aprobado,332
+LOTE-4123,2026-02-05,ESP-001,Crema Pistacho Cookie,Esparcibles,156,Tarde,True,7.6,Aprobado,315
+LOTE-4124,2026-02-05,GRA-001,Granola Vainilla Shortbread,GranOLAs,325,Tarde,True,0.1,Aprobado,297
+LOTE-4125,2026-02-05,AVE-001,Harina de Almendra,Avena & Harinas,403,Tarde,True,10.7,Aprobado,192
+LOTE-4126,2026-02-06,ESP-002,Crema Maní Banana,Esparcibles,184,Tarde,True,1.5,Aprobado,330
+LOTE-4127,2026-02-06,GRA-004,Granola Pistacho Cookie,GranOLAs,244,Mañana,True,6.8,Aprobado,195
+LOTE-4128,2026-02-06,PAN-004,Mix Pancake Banana,Pancakes & Waffles,383,Mañana,True,8.6,Aprobado,154
+LOTE-4129,2026-02-06,COM-003,Combo Esparcibles Trío,Combos,482,Mañana,True,11.5,Aprobado,309
+LOTE-4130,2026-02-06,AVE-001,Harina de Almendra,Avena & Harinas,573,Tarde,True,5.9,Aprobado,246
+LOTE-4131,2026-02-07,COM-003,Combo Esparcibles Trío,Combos,242,Tarde,True,7.8,Aprobado,268
+LOTE-4132,2026-02-07,PAN-002,Mix Pancake Chocolate Chips,Pancakes & Waffles,550,Mañana,True,10.2,Aprobado,203
+LOTE-4133,2026-02-07,GRA-001,Granola Vainilla Shortbread,GranOLAs,593,Mañana,True,9.9,Aprobado,259
+LOTE-4134,2026-02-07,ESP-004,Crema Cacao Avellana Blanca,Esparcibles,244,Mañana,True,7.2,Aprobado,258
+LOTE-4135,2026-02-07,GRA-003,Granola Fudge Cake,GranOLAs,152,Tarde,True,6.1,Aprobado,201
+LOTE-4136,2026-02-08,GRA-001,Granola Vainilla Shortbread,GranOLAs,204,Mañana,True,0.3,Aprobado,252
+LOTE-4137,2026-02-08,COM-002,Combo Sin Gluten Starter,Combos,272,Tarde,True,1.2,Aprobado,236
+LOTE-4138,2026-02-08,GRA-001,Granola Vainilla Shortbread,GranOLAs,583,Mañana,True,8.1,Aprobado,337
+LOTE-4139,2026-02-08,PAN-005,Mix Pancake Brownie,Pancakes & Waffles,442,Tarde,True,0.8,Aprobado,237
+LOTE-4140,2026-02-08,PAN-003,Mix Waffle Churro,Pancakes & Waffles,583,Mañana,True,10.9,Aprobado,209
+LOTE-4141,2026-02-09,ESP-005,Crema Canela Roll,Esparcibles,347,Mañana,True,0.4,Aprobado,165
+LOTE-4142,2026-02-09,GRA-001,Granola Vainilla Shortbread,GranOLAs,567,Tarde,True,5.8,Aprobado,259
+LOTE-4143,2026-02-10,PAN-004,Mix Pancake Banana,Pancakes & Waffles,328,Tarde,True,2.8,Aprobado,285
+LOTE-4144,2026-02-10,GRA-003,Granola Fudge Cake,GranOLAs,339,Tarde,True,2.2,Aprobado,356
+LOTE-4145,2026-02-10,ESP-004,Crema Cacao Avellana Blanca,Esparcibles,143,Mañana,True,5.5,Aprobado,324
+LOTE-4146,2026-02-10,AVE-003,Hojuelas de Avena,Avena & Harinas,310,Mañana,True,9.8,Aprobado,230
+LOTE-4147,2026-02-11,COM-001,Combo Desayuno Saludable,Combos,248,Mañana,True,6.3,Aprobado,182
+LOTE-4148,2026-02-11,ESP-001,Crema Pistacho Cookie,Esparcibles,271,Mañana,True,28.3,Rechazado,324
+LOTE-4149,2026-02-11,ESP-004,Crema Cacao Avellana Blanca,Esparcibles,200,Mañana,True,4.0,Aprobado,193
+LOTE-4150,2026-02-12,PAN-003,Mix Waffle Churro,Pancakes & Waffles,317,Tarde,True,8.8,Aprobado,209
+LOTE-4151,2026-02-12,COM-001,Combo Desayuno Saludable,Combos,638,Tarde,True,2.8,Aprobado,201
+LOTE-4152,2026-02-12,AVE-001,Harina de Almendra,Avena & Harinas,395,Mañana,True,6.8,Aprobado,295
+LOTE-4153,2026-02-13,AVE-002,Harina de Avena,Avena & Harinas,268,Tarde,True,7.8,Aprobado,185
+LOTE-4154,2026-02-13,GRA-002,Granola Chip Cookie,GranOLAs,292,Tarde,True,1.1,Aprobado,230
+LOTE-4155,2026-02-13,PAN-001,Mix Pancake Vainilla,Pancakes & Waffles,368,Mañana,True,8.6,Aprobado,268
+LOTE-4156,2026-02-13,COM-002,Combo Sin Gluten Starter,Combos,214,Tarde,True,5.9,Aprobado,226
+LOTE-4157,2026-02-13,GRA-003,Granola Fudge Cake,GranOLAs,357,Tarde,True,10.2,Aprobado,213
+LOTE-4158,2026-02-14,COM-001,Combo Desayuno Saludable,Combos,451,Mañana,True,10.3,Aprobado,198
+LOTE-4159,2026-02-14,PAN-001,Mix Pancake Vainilla,Pancakes & Waffles,340,Tarde,True,0.9,Aprobado,290
+LOTE-4160,2026-02-14,GRA-004,Granola Pistacho Cookie,GranOLAs,578,Tarde,True,12.1,Aprobado,340
+LOTE-4161,2026-02-15,GRA-004,Granola Pistacho Cookie,GranOLAs,425,Mañana,True,11.4,Aprobado,164
+LOTE-4162,2026-02-15,COM-003,Combo Esparcibles Trío,Combos,126,Mañana,True,10.5,Aprobado,207
+LOTE-4163,2026-02-15,PAN-004,Mix Pancake Banana,Pancakes & Waffles,397,Tarde,True,6.3,Aprobado,250
+LOTE-4164,2026-02-15,PAN-002,Mix Pancake Chocolate Chips,Pancakes & Waffles,120,Tarde,True,1.5,Aprobado,284
+LOTE-4165,2026-02-15,COM-002,Combo Sin Gluten Starter,Combos,211,Tarde,True,8.2,Aprobado,181
+LOTE-4166,2026-02-16,PAN-005,Mix Pancake Brownie,Pancakes & Waffles,180,Tarde,True,3.7,Aprobado,254
+LOTE-4167,2026-02-16,ESP-006,Crema Butter Cookie,Esparcibles,618,Mañana,True,4.5,Aprobado,150
+LOTE-4168,2026-02-16,PAN-005,Mix Pancake Brownie,Pancakes & Waffles,308,Tarde,True,2.2,Aprobado,290
+LOTE-4169,2026-02-17,PAN-004,Mix Pancake Banana,Pancakes & Waffles,275,Mañana,True,6.5,Aprobado,165
+LOTE-4170,2026-02-17,GRA-003,Granola Fudge Cake,GranOLAs,189,Tarde,True,11.7,Aprobado,231
+LOTE-4171,2026-02-17,PAN-003,Mix Waffle Churro,Pancakes & Waffles,172,Mañana,True,6.1,Aprobado,179
+LOTE-4172,2026-02-17,MER-002,Tote Bag Paranice,Merch,149,Mañana,False,,Aprobado,335
+LOTE-4173,2026-02-18,PAN-001,Mix Pancake Vainilla,Pancakes & Waffles,483,Tarde,True,7.0,Aprobado,211
+LOTE-4174,2026-02-18,ESP-005,Crema Canela Roll,Esparcibles,93,Mañana,True,12.2,Aprobado,246
+LOTE-4175,2026-02-19,ESP-004,Crema Cacao Avellana Blanca,Esparcibles,301,Tarde,True,12.1,Aprobado,209
+LOTE-4176,2026-02-19,ESP-001,Crema Pistacho Cookie,Esparcibles,461,Mañana,True,5.4,Aprobado,212
+LOTE-4177,2026-02-19,ESP-005,Crema Canela Roll,Esparcibles,623,Tarde,True,6.5,Aprobado,214
+LOTE-4178,2026-02-19,ESP-006,Crema Butter Cookie,Esparcibles,93,Mañana,True,11.7,Aprobado,357
+LOTE-4179,2026-02-19,PAN-002,Mix Pancake Chocolate Chips,Pancakes & Waffles,192,Mañana,True,2.6,Aprobado,177
+LOTE-4180,2026-02-20,ESP-006,Crema Butter Cookie,Esparcibles,199,Tarde,True,3.8,Aprobado,186
+LOTE-4181,2026-02-20,PAN-001,Mix Pancake Vainilla,Pancakes & Waffles,420,Tarde,True,3.3,Aprobado,184
+LOTE-4182,2026-02-21,GRA-003,Granola Fudge Cake,GranOLAs,411,Tarde,True,1.9,Aprobado,312
+LOTE-4183,2026-02-21,AVE-002,Harina de Avena,Avena & Harinas,541,Mañana,True,2.5,Aprobado,347
+LOTE-4184,2026-02-22,MER-001,Termo Paranice,Merch,633,Mañana,False,,Aprobado,339
+LOTE-4185,2026-02-22,COM-003,Combo Esparcibles Trío,Combos,150,Tarde,True,0.0,Aprobado,186
+LOTE-4186,2026-02-23,ESP-001,Crema Pistacho Cookie,Esparcibles,461,Mañana,True,10.7,Aprobado,330
+LOTE-4187,2026-02-23,GRA-002,Granola Chip Cookie,GranOLAs,81,Tarde,True,10.8,Aprobado,161
+LOTE-4188,2026-02-23,PAN-002,Mix Pancake Chocolate Chips,Pancakes & Waffles,209,Mañana,True,2.6,Aprobado,269
+LOTE-4189,2026-02-23,ESP-006,Crema Butter Cookie,Esparcibles,415,Mañana,True,3.2,Aprobado,227
+LOTE-4190,2026-02-23,PAN-002,Mix Pancake Chocolate Chips,Pancakes & Waffles,583,Mañana,True,12.9,Aprobado,305
+LOTE-4191,2026-02-24,PAN-005,Mix Pancake Brownie,Pancakes & Waffles,372,Tarde,True,0.2,Aprobado,218
+LOTE-4192,2026-02-24,MER-001,Termo Paranice,Merch,157,Mañana,False,,Aprobado,274
+LOTE-4193,2026-02-24,COM-003,Combo Esparcibles Trío,Combos,576,Tarde,True,10.8,Aprobado,314
+LOTE-4194,2026-02-24,ESP-003,Crema Cacao Avellana Clásica,Esparcibles,639,Mañana,True,1.4,Aprobado,225
+LOTE-4195,2026-02-25,PAN-003,Mix Waffle Churro,Pancakes & Waffles,322,Mañana,True,2.9,Aprobado,249
+LOTE-4196,2026-02-25,ESP-004,Crema Cacao Avellana Blanca,Esparcibles,182,Tarde,True,3.8,Aprobado,310
+LOTE-4197,2026-02-26,COM-001,Combo Desayuno Saludable,Combos,441,Mañana,True,5.5,Aprobado,273
+LOTE-4198,2026-02-26,COM-002,Combo Sin Gluten Starter,Combos,532,Tarde,True,0.7,Aprobado,323
+LOTE-4199,2026-02-26,MER-002,Tote Bag Paranice,Merch,142,Tarde,False,,Aprobado,261
+LOTE-4200,2026-02-26,COM-002,Combo Sin Gluten Starter,Combos,89,Mañana,True,1.3,Aprobado,248
+LOTE-4201,2026-02-27,COM-003,Combo Esparcibles Trío,Combos,493,Tarde,True,6.4,Aprobado,268
+LOTE-4202,2026-02-27,AVE-001,Harina de Almendra,Avena & Harinas,532,Mañana,True,1.1,Aprobado,319
+LOTE-4203,2026-02-27,ESP-006,Crema Butter Cookie,Esparcibles,458,Tarde,True,5.6,Aprobado,264
+LOTE-4204,2026-02-28,PAN-005,Mix Pancake Brownie,Pancakes & Waffles,521,Tarde,True,8.8,Aprobado,152
+LOTE-4205,2026-02-28,COM-002,Combo Sin Gluten Starter,Combos,212,Mañana,True,6.4,Aprobado,186
+LOTE-4206,2026-03-01,ESP-004,Crema Cacao Avellana Blanca,Esparcibles,350,Mañana,True,2.4,Aprobado,302
+LOTE-4207,2026-03-01,PAN-003,Mix Waffle Churro,Pancakes & Waffles,263,Tarde,True,2.8,Aprobado,246
+LOTE-4208,2026-03-01,PAN-003,Mix Waffle Churro,Pancakes & Waffles,433,Tarde,True,8.7,Aprobado,340
+LOTE-4209,2026-03-01,AVE-001,Harina de Almendra,Avena & Harinas,287,Mañana,True,8.4,Aprobado,340
+LOTE-4210,2026-03-02,ESP-001,Crema Pistacho Cookie,Esparcibles,440,Mañana,True,3.6,Aprobado,303
+LOTE-4211,2026-03-02,AVE-002,Harina de Avena,Avena & Harinas,515,Mañana,True,12.1,Aprobado,346
+LOTE-4212,2026-03-02,GRA-004,Granola Pistacho Cookie,GranOLAs,586,Mañana,True,10.3,Aprobado,205
+LOTE-4213,2026-03-02,MER-001,Termo Paranice,Merch,470,Mañana,False,,Aprobado,343
+LOTE-4214,2026-03-03,GRA-003,Granola Fudge Cake,GranOLAs,267,Tarde,True,8.3,Aprobado,282
+LOTE-4215,2026-03-03,GRA-002,Granola Chip Cookie,GranOLAs,445,Tarde,True,6.0,Aprobado,348
+LOTE-4216,2026-03-03,COM-001,Combo Desayuno Saludable,Combos,252,Tarde,True,9.0,Aprobado,213
+LOTE-4217,2026-03-03,ESP-005,Crema Canela Roll,Esparcibles,280,Mañana,True,4.7,Aprobado,329
+LOTE-4218,2026-03-03,ESP-005,Crema Canela Roll,Esparcibles,151,Mañana,True,0.4,Aprobado,280
+LOTE-4219,2026-03-04,PAN-005,Mix Pancake Brownie,Pancakes & Waffles,187,Tarde,True,9.6,Aprobado,193
+LOTE-4220,2026-03-04,ESP-003,Crema Cacao Avellana Clásica,Esparcibles,360,Mañana,True,10.3,Aprobado,298
+LOTE-4221,2026-03-04,COM-003,Combo Esparcibles Trío,Combos,566,Mañana,True,3.9,Aprobado,312
+LOTE-4222,2026-03-04,AVE-002,Harina de Avena,Avena & Harinas,433,Tarde,True,6.2,Aprobado,340
+LOTE-4223,2026-03-05,MER-002,Tote Bag Paranice,Merch,482,Tarde,False,,Aprobado,170
+LOTE-4224,2026-03-05,COM-002,Combo Sin Gluten Starter,Combos,526,Mañana,True,8.0,Aprobado,260
+LOTE-4225,2026-03-05,COM-001,Combo Desayuno Saludable,Combos,526,Mañana,True,9.8,Aprobado,334
+LOTE-4226,2026-03-05,AVE-002,Harina de Avena,Avena & Harinas,639,Tarde,True,4.0,Aprobado,356
+LOTE-4227,2026-03-06,MER-001,Termo Paranice,Merch,177,Tarde,False,,Aprobado,167
+LOTE-4228,2026-03-06,ESP-001,Crema Pistacho Cookie,Esparcibles,451,Mañana,True,5.6,Aprobado,288
+LOTE-4229,2026-03-07,GRA-003,Granola Fudge Cake,GranOLAs,558,Mañana,True,36.5,Rechazado,323
+LOTE-4230,2026-03-07,PAN-005,Mix Pancake Brownie,Pancakes & Waffles,321,Tarde,True,12.7,Aprobado,306
+LOTE-4231,2026-03-07,PAN-002,Mix Pancake Chocolate Chips,Pancakes & Waffles,136,Tarde,True,1.0,Aprobado,313
+LOTE-4232,2026-03-08,GRA-004,Granola Pistacho Cookie,GranOLAs,273,Mañana,True,5.9,Aprobado,198
+LOTE-4233,2026-03-08,MER-002,Tote Bag Paranice,Merch,411,Mañana,False,,Aprobado,228
+LOTE-4234,2026-03-09,AVE-002,Harina de Avena,Avena & Harinas,379,Tarde,True,21.5,Rechazado,354
+LOTE-4235,2026-03-09,COM-002,Combo Sin Gluten Starter,Combos,609,Mañana,True,11.5,Aprobado,198
+LOTE-4236,2026-03-09,COM-003,Combo Esparcibles Trío,Combos,648,Mañana,True,1.6,Aprobado,150
+LOTE-4237,2026-03-09,GRA-002,Granola Chip Cookie,GranOLAs,214,Mañana,True,3.0,Aprobado,198
+LOTE-4238,2026-03-10,MER-002,Tote Bag Paranice,Merch,197,Mañana,False,,Aprobado,336
+LOTE-4239,2026-03-10,ESP-005,Crema Canela Roll,Esparcibles,136,Mañana,True,3.9,Aprobado,257
+LOTE-4240,2026-03-10,ESP-002,Crema Maní Banana,Esparcibles,514,Mañana,True,1.4,Aprobado,200
+LOTE-4241,2026-03-11,AVE-003,Hojuelas de Avena,Avena & Harinas,569,Tarde,True,41.6,Rechazado,283
+LOTE-4242,2026-03-11,ESP-001,Crema Pistacho Cookie,Esparcibles,240,Tarde,True,1.1,Aprobado,155
+LOTE-4243,2026-03-11,ESP-006,Crema Butter Cookie,Esparcibles,578,Mañana,True,0.8,Aprobado,239
+LOTE-4244,2026-03-12,GRA-004,Granola Pistacho Cookie,GranOLAs,222,Mañana,True,3.9,Aprobado,357
+LOTE-4245,2026-03-12,GRA-001,Granola Vainilla Shortbread,GranOLAs,636,Tarde,True,3.3,Aprobado,313
+LOTE-4246,2026-03-12,AVE-003,Hojuelas de Avena,Avena & Harinas,526,Mañana,True,24.5,Rechazado,162
+LOTE-4247,2026-03-12,ESP-006,Crema Butter Cookie,Esparcibles,388,Mañana,True,11.2,Aprobado,217
+LOTE-4248,2026-03-13,MER-002,Tote Bag Paranice,Merch,586,Tarde,False,,Aprobado,342
+LOTE-4249,2026-03-13,MER-002,Tote Bag Paranice,Merch,603,Mañana,False,,Aprobado,200
+LOTE-4250,2026-03-13,ESP-003,Crema Cacao Avellana Clásica,Esparcibles,142,Mañana,True,4.7,Aprobado,208
+LOTE-4251,2026-03-13,PAN-003,Mix Waffle Churro,Pancakes & Waffles,188,Tarde,True,8.0,Aprobado,243
+LOTE-4252,2026-03-14,COM-002,Combo Sin Gluten Starter,Combos,460,Tarde,True,0.7,Aprobado,345
+LOTE-4253,2026-03-14,PAN-001,Mix Pancake Vainilla,Pancakes & Waffles,468,Tarde,True,4.6,Aprobado,242
+LOTE-4254,2026-03-14,AVE-001,Harina de Almendra,Avena & Harinas,290,Tarde,True,3.2,Aprobado,345
+LOTE-4255,2026-03-14,MER-001,Termo Paranice,Merch,181,Mañana,False,,Aprobado,282
+LOTE-4256,2026-03-15,AVE-003,Hojuelas de Avena,Avena & Harinas,289,Mañana,True,11.2,Aprobado,362
+LOTE-4257,2026-03-15,PAN-001,Mix Pancake Vainilla,Pancakes & Waffles,120,Tarde,True,11.8,Aprobado,274
+LOTE-4258,2026-03-15,PAN-001,Mix Pancake Vainilla,Pancakes & Waffles,84,Tarde,True,7.9,Aprobado,240
+LOTE-4259,2026-03-15,MER-002,Tote Bag Paranice,Merch,241,Tarde,False,,Aprobado,235
+LOTE-4260,2026-03-16,PAN-004,Mix Pancake Banana,Pancakes & Waffles,148,Mañana,True,11.7,Aprobado,177
+LOTE-4261,2026-03-16,AVE-003,Hojuelas de Avena,Avena & Harinas,421,Mañana,True,3.6,Aprobado,238
+LOTE-4262,2026-03-16,MER-001,Termo Paranice,Merch,177,Mañana,False,,Aprobado,207
+LOTE-4263,2026-03-16,AVE-001,Harina de Almendra,Avena & Harinas,87,Mañana,True,8.9,Aprobado,166
+LOTE-4264,2026-03-17,ESP-003,Crema Cacao Avellana Clásica,Esparcibles,453,Mañana,True,8.5,Aprobado,214
+LOTE-4265,2026-03-17,PAN-004,Mix Pancake Banana,Pancakes & Waffles,211,Mañana,True,2.0,Aprobado,194
+LOTE-4266,2026-03-18,AVE-002,Harina de Avena,Avena & Harinas,597,Mañana,True,12.1,Aprobado,261
+LOTE-4267,2026-03-18,AVE-003,Hojuelas de Avena,Avena & Harinas,616,Mañana,True,0.5,Aprobado,315
+LOTE-4268,2026-03-18,GRA-003,Granola Fudge Cake,GranOLAs,113,Tarde,True,4.1,Aprobado,347
+LOTE-4269,2026-03-19,GRA-003,Granola Fudge Cake,GranOLAs,527,Tarde,True,10.6,Aprobado,349
+LOTE-4270,2026-03-19,MER-002,Tote Bag Paranice,Merch,467,Mañana,False,,Aprobado,297
+LOTE-4271,2026-03-19,GRA-003,Granola Fudge Cake,GranOLAs,305,Tarde,True,1.9,Aprobado,245
+LOTE-4272,2026-03-19,GRA-002,Granola Chip Cookie,GranOLAs,532,Mañana,True,11.0,Aprobado,242
+LOTE-4273,2026-03-19,COM-001,Combo Desayuno Saludable,Combos,360,Tarde,True,7.3,Aprobado,233
+LOTE-4274,2026-03-20,ESP-004,Crema Cacao Avellana Blanca,Esparcibles,191,Tarde,True,11.9,Aprobado,331
+LOTE-4275,2026-03-20,ESP-002,Crema Maní Banana,Esparcibles,115,Tarde,True,12.2,Aprobado,319
+LOTE-4276,2026-03-20,ESP-003,Crema Cacao Avellana Clásica,Esparcibles,255,Tarde,True,2.1,Aprobado,211
+LOTE-4277,2026-03-20,PAN-001,Mix Pancake Vainilla,Pancakes & Waffles,176,Mañana,True,11.6,Aprobado,269
+LOTE-4278,2026-03-21,COM-002,Combo Sin Gluten Starter,Combos,610,Mañana,True,2.7,Aprobado,332
+LOTE-4279,2026-03-21,MER-002,Tote Bag Paranice,Merch,148,Tarde,False,,Aprobado,159
+LOTE-4280,2026-03-21,GRA-003,Granola Fudge Cake,GranOLAs,476,Mañana,True,9.2,Aprobado,184
+LOTE-4281,2026-03-21,MER-002,Tote Bag Paranice,Merch,349,Mañana,False,,Aprobado,312
+LOTE-4282,2026-03-22,ESP-006,Crema Butter Cookie,Esparcibles,627,Tarde,True,5.0,Aprobado,363
+LOTE-4283,2026-03-22,AVE-001,Harina de Almendra,Avena & Harinas,589,Tarde,True,11.1,Aprobado,354
+LOTE-4284,2026-03-23,AVE-002,Harina de Avena,Avena & Harinas,524,Tarde,True,25.6,Rechazado,265
+LOTE-4285,2026-03-23,MER-001,Termo Paranice,Merch,133,Mañana,False,,Aprobado,213
+LOTE-4286,2026-03-23,ESP-002,Crema Maní Banana,Esparcibles,176,Mañana,True,3.5,Aprobado,358
+LOTE-4287,2026-03-23,PAN-005,Mix Pancake Brownie,Pancakes & Waffles,418,Mañana,True,18.3,Cuarentena,153
+LOTE-4288,2026-03-23,AVE-003,Hojuelas de Avena,Avena & Harinas,243,Mañana,True,4.9,Aprobado,157
+LOTE-4289,2026-03-24,MER-001,Termo Paranice,Merch,266,Mañana,False,,Aprobado,270
+LOTE-4290,2026-03-24,GRA-001,Granola Vainilla Shortbread,GranOLAs,414,Tarde,True,12.3,Aprobado,330
+LOTE-4291,2026-03-24,COM-001,Combo Desayuno Saludable,Combos,322,Mañana,True,12.2,Aprobado,194
+LOTE-4292,2026-03-24,AVE-002,Harina de Avena,Avena & Harinas,239,Tarde,True,5.6,Aprobado,259
+LOTE-4293,2026-03-24,GRA-004,Granola Pistacho Cookie,GranOLAs,489,Tarde,True,1.5,Aprobado,351
+LOTE-4294,2026-03-25,ESP-004,Crema Cacao Avellana Blanca,Esparcibles,285,Mañana,True,5.1,Aprobado,167
+LOTE-4295,2026-03-25,AVE-003,Hojuelas de Avena,Avena & Harinas,277,Mañana,True,1.3,Aprobado,303
+LOTE-4296,2026-03-25,GRA-001,Granola Vainilla Shortbread,GranOLAs,229,Mañana,True,10.1,Aprobado,277
+LOTE-4297,2026-03-26,GRA-001,Granola Vainilla Shortbread,GranOLAs,131,Tarde,True,7.7,Aprobado,181
+LOTE-4298,2026-03-26,AVE-003,Hojuelas de Avena,Avena & Harinas,298,Mañana,True,3.9,Aprobado,272
+LOTE-4299,2026-03-27,ESP-005,Crema Canela Roll,Esparcibles,596,Mañana,True,4.7,Aprobado,215
+LOTE-4300,2026-03-27,MER-001,Termo Paranice,Merch,558,Mañana,False,,Aprobado,305
+LOTE-4301,2026-03-28,ESP-001,Crema Pistacho Cookie,Esparcibles,219,Mañana,True,10.2,Aprobado,305
+LOTE-4302,2026-03-28,COM-003,Combo Esparcibles Trío,Combos,417,Mañana,True,10.1,Aprobado,274
+LOTE-4303,2026-03-28,ESP-006,Crema Butter Cookie,Esparcibles,477,Tarde,True,11.1,Aprobado,310
+LOTE-4304,2026-03-28,COM-001,Combo Desayuno Saludable,Combos,235,Tarde,True,6.7,Aprobado,182
+LOTE-4305,2026-03-28,ESP-002,Crema Maní Banana,Esparcibles,142,Tarde,True,6.8,Aprobado,188
+LOTE-4306,2026-03-29,COM-002,Combo Sin Gluten Starter,Combos,487,Tarde,True,0.7,Aprobado,190
+LOTE-4307,2026-03-29,MER-001,Termo Paranice,Merch,406,Mañana,False,,Aprobado,156
+LOTE-4308,2026-03-29,GRA-004,Granola Pistacho Cookie,GranOLAs,500,Mañana,True,9.9,Aprobado,201
+LOTE-4309,2026-03-29,ESP-004,Crema Cacao Avellana Blanca,Esparcibles,270,Mañana,True,9.2,Aprobado,188
+LOTE-4310,2026-03-29,MER-002,Tote Bag Paranice,Merch,641,Tarde,False,,Aprobado,247
+LOTE-4311,2026-03-30,COM-002,Combo Sin Gluten Starter,Combos,352,Tarde,True,2.6,Aprobado,309
+LOTE-4312,2026-03-30,GRA-001,Granola Vainilla Shortbread,GranOLAs,513,Mañana,True,6.2,Aprobado,290
+LOTE-4313,2026-03-30,ESP-005,Crema Canela Roll,Esparcibles,241,Tarde,True,1.4,Aprobado,279
+LOTE-4314,2026-03-30,ESP-006,Crema Butter Cookie,Esparcibles,385,Tarde,True,5.2,Aprobado,312
+LOTE-4315,2026-03-30,ESP-001,Crema Pistacho Cookie,Esparcibles,516,Tarde,True,7.2,Aprobado,169
+LOTE-4316,2026-03-31,GRA-004,Granola Pistacho Cookie,GranOLAs,302,Tarde,True,8.9,Aprobado,358
+LOTE-4317,2026-03-31,GRA-004,Granola Pistacho Cookie,GranOLAs,385,Mañana,True,8.4,Aprobado,328
+LOTE-4318,2026-03-31,ESP-006,Crema Butter Cookie,Esparcibles,228,Mañana,True,6.6,Aprobado,224
+LOTE-4319,2026-04-01,PAN-004,Mix Pancake Banana,Pancakes & Waffles,181,Tarde,True,8.1,Aprobado,244
+LOTE-4320,2026-04-01,ESP-003,Crema Cacao Avellana Clásica,Esparcibles,251,Mañana,True,4.8,Aprobado,176
+LOTE-4321,2026-04-01,GRA-002,Granola Chip Cookie,GranOLAs,648,Tarde,True,1.4,Aprobado,310
+LOTE-4322,2026-04-01,ESP-004,Crema Cacao Avellana Blanca,Esparcibles,635,Tarde,True,10.1,Aprobado,176
+LOTE-4323,2026-04-02,ESP-003,Crema Cacao Avellana Clásica,Esparcibles,395,Tarde,True,9.6,Aprobado,362
+LOTE-4324,2026-04-02,PAN-003,Mix Waffle Churro,Pancakes & Waffles,342,Tarde,True,32.4,Rechazado,230
+LOTE-4325,2026-04-03,PAN-003,Mix Waffle Churro,Pancakes & Waffles,179,Tarde,True,10.7,Aprobado,253
+LOTE-4326,2026-04-03,ESP-002,Crema Maní Banana,Esparcibles,318,Mañana,True,2.0,Aprobado,322
+LOTE-4327,2026-04-03,PAN-001,Mix Pancake Vainilla,Pancakes & Waffles,189,Tarde,True,5.4,Aprobado,240
+LOTE-4328,2026-04-03,MER-002,Tote Bag Paranice,Merch,451,Tarde,False,,Aprobado,296
+LOTE-4329,2026-04-04,PAN-001,Mix Pancake Vainilla,Pancakes & Waffles,576,Tarde,True,7.9,Aprobado,326
+LOTE-4330,2026-04-04,COM-001,Combo Desayuno Saludable,Combos,335,Mañana,True,4.5,Aprobado,242
+LOTE-4331,2026-04-04,ESP-002,Crema Maní Banana,Esparcibles,602,Mañana,True,4.8,Aprobado,241
+LOTE-4332,2026-04-04,PAN-005,Mix Pancake Brownie,Pancakes & Waffles,165,Mañana,True,12.5,Aprobado,204
+LOTE-4333,2026-04-05,PAN-005,Mix Pancake Brownie,Pancakes & Waffles,593,Mañana,True,7.5,Aprobado,157
+LOTE-4334,2026-04-05,ESP-006,Crema Butter Cookie,Esparcibles,384,Mañana,True,11.2,Aprobado,255
+LOTE-4335,2026-04-05,AVE-001,Harina de Almendra,Avena & Harinas,299,Tarde,True,39.4,Rechazado,359
+LOTE-4336,2026-04-05,ESP-006,Crema Butter Cookie,Esparcibles,265,Mañana,True,5.9,Aprobado,262
+LOTE-4337,2026-04-05,ESP-002,Crema Maní Banana,Esparcibles,178,Tarde,True,11.3,Aprobado,307
+LOTE-4338,2026-04-06,PAN-002,Mix Pancake Chocolate Chips,Pancakes & Waffles,366,Tarde,True,4.4,Aprobado,178
+LOTE-4339,2026-04-06,PAN-004,Mix Pancake Banana,Pancakes & Waffles,498,Mañana,True,13.0,Aprobado,268
+LOTE-4340,2026-04-06,MER-001,Termo Paranice,Merch,128,Tarde,False,,Aprobado,247
+LOTE-4341,2026-04-06,AVE-001,Harina de Almendra,Avena & Harinas,214,Tarde,True,8.8,Aprobado,165
+LOTE-4342,2026-04-06,ESP-006,Crema Butter Cookie,Esparcibles,587,Mañana,True,7.7,Aprobado,310
+LOTE-4343,2026-04-07,AVE-003,Hojuelas de Avena,Avena & Harinas,211,Tarde,True,12.5,Aprobado,321
+LOTE-4344,2026-04-07,MER-001,Termo Paranice,Merch,511,Mañana,False,,Aprobado,330
+LOTE-4345,2026-04-07,GRA-004,Granola Pistacho Cookie,GranOLAs,631,Tarde,True,1.1,Aprobado,197
+LOTE-4346,2026-04-08,PAN-005,Mix Pancake Brownie,Pancakes & Waffles,296,Tarde,True,7.0,Aprobado,243
+LOTE-4347,2026-04-08,ESP-003,Crema Cacao Avellana Clásica,Esparcibles,449,Tarde,True,5.4,Aprobado,303
+LOTE-4348,2026-04-09,MER-001,Termo Paranice,Merch,646,Tarde,False,,Aprobado,277
+LOTE-4349,2026-04-09,ESP-003,Crema Cacao Avellana Clásica,Esparcibles,278,Tarde,True,7.7,Aprobado,279
+LOTE-4350,2026-04-09,GRA-002,Granola Chip Cookie,GranOLAs,420,Tarde,True,4.1,Aprobado,360
+LOTE-4351,2026-04-09,COM-001,Combo Desayuno Saludable,Combos,116,Tarde,True,6.9,Aprobado,180
+LOTE-4352,2026-04-10,ESP-005,Crema Canela Roll,Esparcibles,598,Tarde,True,12.7,Aprobado,166
+LOTE-4353,2026-04-10,AVE-001,Harina de Almendra,Avena & Harinas,488,Tarde,True,3.1,Aprobado,243
+LOTE-4354,2026-04-11,ESP-002,Crema Maní Banana,Esparcibles,613,Tarde,True,5.8,Aprobado,318
+LOTE-4355,2026-04-11,PAN-005,Mix Pancake Brownie,Pancakes & Waffles,535,Tarde,True,11.0,Aprobado,285
+LOTE-4356,2026-04-12,COM-003,Combo Esparcibles Trío,Combos,499,Tarde,True,5.1,Aprobado,287
+LOTE-4357,2026-04-12,GRA-001,Granola Vainilla Shortbread,GranOLAs,116,Mañana,True,3.3,Aprobado,179
+LOTE-4358,2026-04-12,COM-001,Combo Desayuno Saludable,Combos,492,Mañana,True,10.0,Aprobado,326
+LOTE-4359,2026-04-13,MER-002,Tote Bag Paranice,Merch,416,Mañana,False,,Aprobado,357
+LOTE-4360,2026-04-13,AVE-002,Harina de Avena,Avena & Harinas,501,Mañana,True,11.6,Aprobado,332
+LOTE-4361,2026-04-14,AVE-001,Harina de Almendra,Avena & Harinas,405,Mañana,True,10.5,Aprobado,224
+LOTE-4362,2026-04-14,ESP-005,Crema Canela Roll,Esparcibles,114,Tarde,True,6.5,Aprobado,350
+LOTE-4363,2026-04-14,PAN-003,Mix Waffle Churro,Pancakes & Waffles,85,Tarde,True,2.8,Aprobado,307
+LOTE-4364,2026-04-15,PAN-001,Mix Pancake Vainilla,Pancakes & Waffles,373,Tarde,True,0.7,Aprobado,252
+LOTE-4365,2026-04-15,PAN-005,Mix Pancake Brownie,Pancakes & Waffles,321,Mañana,True,0.5,Aprobado,251
+LOTE-4366,2026-04-15,GRA-001,Granola Vainilla Shortbread,GranOLAs,344,Mañana,True,1.8,Aprobado,232
+LOTE-4367,2026-04-15,MER-001,Termo Paranice,Merch,411,Tarde,False,,Aprobado,359
+LOTE-4368,2026-04-15,PAN-001,Mix Pancake Vainilla,Pancakes & Waffles,526,Mañana,True,4.3,Aprobado,264
+LOTE-4369,2026-04-16,ESP-004,Crema Cacao Avellana Blanca,Esparcibles,285,Mañana,True,5.3,Aprobado,307
+LOTE-4370,2026-04-16,GRA-001,Granola Vainilla Shortbread,GranOLAs,160,Tarde,True,11.2,Aprobado,288
+LOTE-4371,2026-04-17,MER-002,Tote Bag Paranice,Merch,435,Tarde,False,,Aprobado,321
+LOTE-4372,2026-04-17,COM-002,Combo Sin Gluten Starter,Combos,130,Mañana,True,1.1,Aprobado,324
+LOTE-4373,2026-04-18,PAN-005,Mix Pancake Brownie,Pancakes & Waffles,97,Tarde,True,10.2,Aprobado,188
+LOTE-4374,2026-04-18,ESP-001,Crema Pistacho Cookie,Esparcibles,437,Mañana,True,4.1,Aprobado,166
+LOTE-4375,2026-04-19,ESP-001,Crema Pistacho Cookie,Esparcibles,250,Tarde,True,10.9,Aprobado,333
+LOTE-4376,2026-04-19,MER-002,Tote Bag Paranice,Merch,539,Tarde,False,,Aprobado,274
+LOTE-4377,2026-04-19,MER-002,Tote Bag Paranice,Merch,241,Mañana,False,,Aprobado,321
+LOTE-4378,2026-04-20,PAN-002,Mix Pancake Chocolate Chips,Pancakes & Waffles,392,Tarde,True,18.5,Cuarentena,167
+LOTE-4379,2026-04-20,PAN-001,Mix Pancake Vainilla,Pancakes & Waffles,372,Tarde,True,10.9,Aprobado,296
+LOTE-4380,2026-04-20,AVE-002,Harina de Avena,Avena & Harinas,125,Mañana,True,7.4,Aprobado,272
+LOTE-4381,2026-04-21,COM-003,Combo Esparcibles Trío,Combos,276,Mañana,True,2.3,Aprobado,164
+LOTE-4382,2026-04-21,ESP-005,Crema Canela Roll,Esparcibles,460,Tarde,True,12.3,Aprobado,329
+LOTE-4383,2026-04-21,PAN-003,Mix Waffle Churro,Pancakes & Waffles,313,Mañana,True,0.4,Aprobado,217
+LOTE-4384,2026-04-21,COM-001,Combo Desayuno Saludable,Combos,381,Mañana,True,10.7,Aprobado,173
+LOTE-4385,2026-04-21,ESP-002,Crema Maní Banana,Esparcibles,184,Tarde,True,2.2,Aprobado,282
+LOTE-4386,2026-04-22,ESP-006,Crema Butter Cookie,Esparcibles,450,Tarde,True,11.5,Aprobado,214
+LOTE-4387,2026-04-22,COM-002,Combo Sin Gluten Starter,Combos,339,Tarde,True,13.0,Aprobado,303
+LOTE-4388,2026-04-22,PAN-004,Mix Pancake Banana,Pancakes & Waffles,551,Mañana,True,5.8,Aprobado,337
+LOTE-4389,2026-04-22,GRA-003,Granola Fudge Cake,GranOLAs,226,Tarde,True,2.5,Aprobado,161
+LOTE-4390,2026-04-22,AVE-001,Harina de Almendra,Avena & Harinas,263,Mañana,True,10.5,Aprobado,327
+LOTE-4391,2026-04-23,ESP-002,Crema Maní Banana,Esparcibles,578,Mañana,True,1.0,Aprobado,360
+LOTE-4392,2026-04-23,COM-001,Combo Desayuno Saludable,Combos,401,Mañana,True,0.6,Aprobado,169
+LOTE-4393,2026-04-23,COM-001,Combo Desayuno Saludable,Combos,185,Tarde,True,17.8,Cuarentena,272
+LOTE-4394,2026-04-23,ESP-004,Crema Cacao Avellana Blanca,Esparcibles,613,Mañana,True,8.5,Aprobado,233
+LOTE-4395,2026-04-24,GRA-004,Granola Pistacho Cookie,GranOLAs,136,Mañana,True,8.3,Aprobado,193
+LOTE-4396,2026-04-24,GRA-001,Granola Vainilla Shortbread,GranOLAs,323,Tarde,True,12.5,Aprobado,268
+LOTE-4397,2026-04-24,PAN-003,Mix Waffle Churro,Pancakes & Waffles,634,Tarde,True,0.3,Aprobado,182
+LOTE-4398,2026-04-24,AVE-003,Hojuelas de Avena,Avena & Harinas,227,Tarde,True,7.2,Aprobado,190
+LOTE-4399,2026-04-25,ESP-002,Crema Maní Banana,Esparcibles,500,Tarde,True,9.8,Aprobado,222
+LOTE-4400,2026-04-25,PAN-002,Mix Pancake Chocolate Chips,Pancakes & Waffles,625,Tarde,True,9.5,Aprobado,171
+LOTE-4401,2026-04-25,ESP-004,Crema Cacao Avellana Blanca,Esparcibles,269,Tarde,True,8.0,Aprobado,284
+LOTE-4402,2026-04-25,ESP-006,Crema Butter Cookie,Esparcibles,151,Mañana,True,6.8,Aprobado,233
+LOTE-4403,2026-04-25,ESP-006,Crema Butter Cookie,Esparcibles,516,Mañana,True,7.3,Aprobado,181
+LOTE-4404,2026-04-26,ESP-005,Crema Canela Roll,Esparcibles,389,Mañana,True,12.1,Aprobado,240
+LOTE-4405,2026-04-26,ESP-005,Crema Canela Roll,Esparcibles,103,Mañana,True,10.3,Aprobado,337
+LOTE-4406,2026-04-27,ESP-001,Crema Pistacho Cookie,Esparcibles,402,Mañana,True,8.9,Aprobado,193
+LOTE-4407,2026-04-27,ESP-003,Crema Cacao Avellana Clásica,Esparcibles,274,Mañana,True,11.4,Aprobado,321
+LOTE-4408,2026-04-28,MER-002,Tote Bag Paranice,Merch,307,Mañana,False,,Aprobado,171
+LOTE-4409,2026-04-28,PAN-002,Mix Pancake Chocolate Chips,Pancakes & Waffles,480,Mañana,True,11.6,Aprobado,312
+LOTE-4410,2026-04-28,ESP-006,Crema Butter Cookie,Esparcibles,370,Tarde,True,0.1,Aprobado,352
+LOTE-4411,2026-04-29,COM-001,Combo Desayuno Saludable,Combos,354,Tarde,True,9.9,Aprobado,217
+LOTE-4412,2026-04-29,COM-003,Combo Esparcibles Trío,Combos,348,Tarde,True,3.8,Aprobado,204
+LOTE-4413,2026-04-30,AVE-003,Hojuelas de Avena,Avena & Harinas,304,Mañana,True,11.5,Aprobado,326
+LOTE-4414,2026-04-30,GRA-004,Granola Pistacho Cookie,GranOLAs,519,Tarde,True,3.1,Aprobado,204
+LOTE-4415,2026-04-30,PAN-002,Mix Pancake Chocolate Chips,Pancakes & Waffles,522,Tarde,True,10.6,Aprobado,260
+LOTE-4416,2026-04-30,ESP-005,Crema Canela Roll,Esparcibles,641,Tarde,True,8.4,Aprobado,326
+LOTE-4417,2026-05-01,PAN-004,Mix Pancake Banana,Pancakes & Waffles,540,Mañana,True,9.1,Aprobado,322
+LOTE-4418,2026-05-01,PAN-004,Mix Pancake Banana,Pancakes & Waffles,346,Mañana,True,8.4,Aprobado,362
+LOTE-4419,2026-05-01,PAN-003,Mix Waffle Churro,Pancakes & Waffles,277,Tarde,True,4.7,Aprobado,161
+LOTE-4420,2026-05-01,PAN-004,Mix Pancake Banana,Pancakes & Waffles,366,Mañana,True,1.5,Aprobado,332
+LOTE-4421,2026-05-01,COM-001,Combo Desayuno Saludable,Combos,425,Tarde,True,9.4,Aprobado,275
+LOTE-4422,2026-05-02,ESP-002,Crema Maní Banana,Esparcibles,347,Mañana,True,10.5,Aprobado,204
+LOTE-4423,2026-05-02,PAN-005,Mix Pancake Brownie,Pancakes & Waffles,547,Tarde,True,5.2,Aprobado,273
+LOTE-4424,2026-05-02,COM-003,Combo Esparcibles Trío,Combos,294,Mañana,True,10.6,Aprobado,304
+LOTE-4425,2026-05-02,ESP-006,Crema Butter Cookie,Esparcibles,164,Tarde,True,9.9,Aprobado,308
+LOTE-4426,2026-05-03,COM-003,Combo Esparcibles Trío,Combos,607,Mañana,True,10.6,Aprobado,280
+LOTE-4427,2026-05-03,MER-002,Tote Bag Paranice,Merch,252,Mañana,False,,Aprobado,327
+LOTE-4428,2026-05-03,ESP-001,Crema Pistacho Cookie,Esparcibles,138,Mañana,True,5.7,Aprobado,258
+LOTE-4429,2026-05-03,COM-001,Combo Desayuno Saludable,Combos,618,Mañana,True,5.1,Aprobado,351
+LOTE-4430,2026-05-03,ESP-002,Crema Maní Banana,Esparcibles,476,Mañana,True,0.9,Aprobado,212
+LOTE-4431,2026-05-04,ESP-005,Crema Canela Roll,Esparcibles,238,Mañana,True,1.0,Aprobado,278
+LOTE-4432,2026-05-04,ESP-003,Crema Cacao Avellana Clásica,Esparcibles,457,Tarde,True,4.8,Aprobado,292
+LOTE-4433,2026-05-04,GRA-003,Granola Fudge Cake,GranOLAs,479,Tarde,True,6.5,Aprobado,256
+LOTE-4434,2026-05-05,ESP-005,Crema Canela Roll,Esparcibles,647,Tarde,True,7.8,Aprobado,153
+LOTE-4435,2026-05-05,COM-003,Combo Esparcibles Trío,Combos,313,Mañana,True,8.3,Aprobado,351
+LOTE-4436,2026-05-06,ESP-003,Crema Cacao Avellana Clásica,Esparcibles,402,Tarde,True,7.4,Aprobado,217
+LOTE-4437,2026-05-06,AVE-003,Hojuelas de Avena,Avena & Harinas,637,Mañana,True,10.1,Aprobado,291
+LOTE-4438,2026-05-06,COM-003,Combo Esparcibles Trío,Combos,141,Mañana,True,7.1,Aprobado,196
+LOTE-4439,2026-05-06,GRA-004,Granola Pistacho Cookie,GranOLAs,127,Tarde,True,2.8,Aprobado,329
+LOTE-4440,2026-05-07,ESP-006,Crema Butter Cookie,Esparcibles,322,Mañana,True,6.9,Aprobado,228
+LOTE-4441,2026-05-07,COM-001,Combo Desayuno Saludable,Combos,425,Mañana,True,0.7,Aprobado,286
+LOTE-4442,2026-05-08,GRA-002,Granola Chip Cookie,GranOLAs,129,Tarde,True,8.8,Aprobado,262
+LOTE-4443,2026-05-08,GRA-004,Granola Pistacho Cookie,GranOLAs,521,Tarde,True,2.3,Aprobado,157
+LOTE-4444,2026-05-09,GRA-004,Granola Pistacho Cookie,GranOLAs,175,Mañana,True,2.8,Aprobado,288
+LOTE-4445,2026-05-09,PAN-004,Mix Pancake Banana,Pancakes & Waffles,629,Tarde,True,2.6,Aprobado,261
+LOTE-4446,2026-05-09,PAN-005,Mix Pancake Brownie,Pancakes & Waffles,586,Tarde,True,0.4,Aprobado,199
+LOTE-4447,2026-05-09,PAN-002,Mix Pancake Chocolate Chips,Pancakes & Waffles,583,Tarde,True,9.9,Aprobado,290
+LOTE-4448,2026-05-09,COM-001,Combo Desayuno Saludable,Combos,480,Mañana,True,10.9,Aprobado,355
+LOTE-4449,2026-05-10,AVE-003,Hojuelas de Avena,Avena & Harinas,452,Mañana,True,9.9,Aprobado,308
+LOTE-4450,2026-05-10,AVE-001,Harina de Almendra,Avena & Harinas,429,Mañana,True,12.1,Aprobado,285
+LOTE-4451,2026-05-10,PAN-001,Mix Pancake Vainilla,Pancakes & Waffles,377,Tarde,True,8.0,Aprobado,312
+LOTE-4452,2026-05-11,AVE-002,Harina de Avena,Avena & Harinas,236,Mañana,True,9.6,Aprobado,251
+LOTE-4453,2026-05-11,PAN-001,Mix Pancake Vainilla,Pancakes & Waffles,505,Mañana,True,11.2,Aprobado,306
+LOTE-4454,2026-05-11,AVE-003,Hojuelas de Avena,Avena & Harinas,400,Tarde,True,4.0,Aprobado,339
+LOTE-4455,2026-05-11,PAN-005,Mix Pancake Brownie,Pancakes & Waffles,256,Mañana,True,4.6,Aprobado,307
+LOTE-4456,2026-05-11,PAN-003,Mix Waffle Churro,Pancakes & Waffles,403,Mañana,True,1.5,Aprobado,173
+LOTE-4457,2026-05-12,ESP-004,Crema Cacao Avellana Blanca,Esparcibles,292,Mañana,True,2.3,Aprobado,262
+LOTE-4458,2026-05-12,ESP-002,Crema Maní Banana,Esparcibles,436,Tarde,True,1.8,Aprobado,316
+LOTE-4459,2026-05-12,PAN-001,Mix Pancake Vainilla,Pancakes & Waffles,147,Tarde,True,8.3,Aprobado,298
+LOTE-4460,2026-05-12,ESP-002,Crema Maní Banana,Esparcibles,249,Tarde,True,5.5,Aprobado,347
+LOTE-4461,2026-05-13,PAN-003,Mix Waffle Churro,Pancakes & Waffles,427,Mañana,True,4.6,Aprobado,343
+LOTE-4462,2026-05-13,COM-001,Combo Desayuno Saludable,Combos,237,Tarde,True,9.9,Aprobado,273
+LOTE-4463,2026-05-13,ESP-003,Crema Cacao Avellana Clásica,Esparcibles,424,Mañana,True,3.2,Aprobado,295
+LOTE-4464,2026-05-13,PAN-004,Mix Pancake Banana,Pancakes & Waffles,496,Mañana,True,12.4,Aprobado,237
+LOTE-4465,2026-05-13,PAN-003,Mix Waffle Churro,Pancakes & Waffles,133,Tarde,True,39.2,Rechazado,290
+LOTE-4466,2026-05-14,PAN-005,Mix Pancake Brownie,Pancakes & Waffles,339,Mañana,True,4.3,Aprobado,345
+LOTE-4467,2026-05-14,GRA-003,Granola Fudge Cake,GranOLAs,88,Tarde,True,12.6,Aprobado,223
+LOTE-4468,2026-05-14,AVE-002,Harina de Avena,Avena & Harinas,327,Mañana,True,6.7,Aprobado,159
+LOTE-4469,2026-05-15,GRA-001,Granola Vainilla Shortbread,GranOLAs,109,Tarde,True,10.6,Aprobado,245
+LOTE-4470,2026-05-15,ESP-006,Crema Butter Cookie,Esparcibles,564,Mañana,True,10.2,Aprobado,201
+LOTE-4471,2026-05-15,PAN-001,Mix Pancake Vainilla,Pancakes & Waffles,354,Tarde,True,2.3,Aprobado,263
+LOTE-4472,2026-05-16,AVE-002,Harina de Avena,Avena & Harinas,241,Mañana,True,3.4,Aprobado,164
+LOTE-4473,2026-05-16,PAN-002,Mix Pancake Chocolate Chips,Pancakes & Waffles,487,Tarde,True,3.4,Aprobado,363
+LOTE-4474,2026-05-16,COM-002,Combo Sin Gluten Starter,Combos,443,Mañana,True,40.0,Rechazado,236
+LOTE-4475,2026-05-16,ESP-003,Crema Cacao Avellana Clásica,Esparcibles,91,Mañana,True,11.6,Aprobado,294
+LOTE-4476,2026-05-16,COM-001,Combo Desayuno Saludable,Combos,554,Tarde,True,5.2,Aprobado,197
+LOTE-4477,2026-05-17,ESP-006,Crema Butter Cookie,Esparcibles,613,Tarde,True,7.0,Aprobado,185
+LOTE-4478,2026-05-17,GRA-001,Granola Vainilla Shortbread,GranOLAs,636,Tarde,True,9.3,Aprobado,345
+LOTE-4479,2026-05-17,AVE-001,Harina de Almendra,Avena & Harinas,632,Mañana,True,13.0,Aprobado,211
+LOTE-4480,2026-05-17,ESP-002,Crema Maní Banana,Esparcibles,208,Tarde,True,7.4,Aprobado,200
+LOTE-4481,2026-05-17,COM-003,Combo Esparcibles Trío,Combos,362,Tarde,True,7.1,Aprobado,163
+LOTE-4482,2026-05-18,ESP-005,Crema Canela Roll,Esparcibles,546,Mañana,True,4.5,Aprobado,172
+LOTE-4483,2026-05-18,GRA-002,Granola Chip Cookie,GranOLAs,464,Tarde,True,4.5,Aprobado,185
+LOTE-4484,2026-05-18,PAN-003,Mix Waffle Churro,Pancakes & Waffles,439,Mañana,True,9.6,Aprobado,236
+LOTE-4485,2026-05-19,COM-002,Combo Sin Gluten Starter,Combos,633,Mañana,True,7.0,Aprobado,351
+LOTE-4486,2026-05-19,ESP-003,Crema Cacao Avellana Clásica,Esparcibles,371,Mañana,True,3.5,Aprobado,153
+LOTE-4487,2026-05-19,MER-002,Tote Bag Paranice,Merch,489,Mañana,False,,Aprobado,158
+LOTE-4488,2026-05-19,PAN-002,Mix Pancake Chocolate Chips,Pancakes & Waffles,185,Tarde,True,6.6,Aprobado,259
+LOTE-4489,2026-05-19,ESP-003,Crema Cacao Avellana Clásica,Esparcibles,372,Tarde,True,0.1,Aprobado,237
+LOTE-4490,2026-05-20,GRA-002,Granola Chip Cookie,GranOLAs,525,Tarde,True,2.5,Aprobado,168
+LOTE-4491,2026-05-20,COM-003,Combo Esparcibles Trío,Combos,296,Mañana,True,0.2,Aprobado,214
+LOTE-4492,2026-05-20,MER-002,Tote Bag Paranice,Merch,455,Mañana,False,,Aprobado,303
+LOTE-4493,2026-05-20,GRA-001,Granola Vainilla Shortbread,GranOLAs,220,Tarde,True,11.2,Aprobado,357
+LOTE-4494,2026-05-21,ESP-005,Crema Canela Roll,Esparcibles,613,Tarde,True,8.9,Aprobado,187
+LOTE-4495,2026-05-21,GRA-003,Granola Fudge Cake,GranOLAs,595,Tarde,True,12.4,Aprobado,357
+LOTE-4496,2026-05-21,MER-001,Termo Paranice,Merch,607,Tarde,False,,Aprobado,299
+LOTE-4497,2026-05-21,GRA-002,Granola Chip Cookie,GranOLAs,418,Mañana,True,6.7,Aprobado,342
+LOTE-4498,2026-05-21,COM-001,Combo Desayuno Saludable,Combos,189,Mañana,True,6.5,Aprobado,324
+LOTE-4499,2026-05-22,GRA-004,Granola Pistacho Cookie,GranOLAs,374,Tarde,True,6.7,Aprobado,362
+LOTE-4500,2026-05-22,ESP-006,Crema Butter Cookie,Esparcibles,127,Tarde,True,9.3,Aprobado,341
+LOTE-4501,2026-05-23,ESP-003,Crema Cacao Avellana Clásica,Esparcibles,98,Tarde,True,1.9,Aprobado,164
+LOTE-4502,2026-05-23,PAN-002,Mix Pancake Chocolate Chips,Pancakes & Waffles,510,Mañana,True,43.9,Rechazado,160
+LOTE-4503,2026-05-23,PAN-002,Mix Pancake Chocolate Chips,Pancakes & Waffles,272,Mañana,True,12.6,Aprobado,355
+LOTE-4504,2026-05-23,PAN-005,Mix Pancake Brownie,Pancakes & Waffles,457,Mañana,True,3.2,Aprobado,199
+LOTE-4505,2026-05-23,GRA-004,Granola Pistacho Cookie,GranOLAs,279,Mañana,True,0.4,Aprobado,225
+LOTE-4506,2026-05-24,COM-001,Combo Desayuno Saludable,Combos,296,Mañana,True,4.3,Aprobado,209
+LOTE-4507,2026-05-24,ESP-003,Crema Cacao Avellana Clásica,Esparcibles,439,Tarde,True,4.6,Aprobado,226
+LOTE-4508,2026-05-24,COM-003,Combo Esparcibles Trío,Combos,122,Tarde,True,5.8,Aprobado,273
+LOTE-4509,2026-05-24,AVE-001,Harina de Almendra,Avena & Harinas,455,Mañana,True,10.2,Aprobado,175
+LOTE-4510,2026-05-25,PAN-004,Mix Pancake Banana,Pancakes & Waffles,272,Tarde,True,3.3,Aprobado,193
+LOTE-4511,2026-05-25,PAN-005,Mix Pancake Brownie,Pancakes & Waffles,614,Tarde,True,2.0,Aprobado,308
+LOTE-4512,2026-05-25,COM-003,Combo Esparcibles Trío,Combos,476,Mañana,True,1.5,Aprobado,225
+LOTE-4513,2026-05-26,ESP-006,Crema Butter Cookie,Esparcibles,319,Tarde,True,3.4,Aprobado,328
+LOTE-4514,2026-05-26,ESP-005,Crema Canela Roll,Esparcibles,219,Mañana,True,11.6,Aprobado,186
+LOTE-4515,2026-05-26,GRA-004,Granola Pistacho Cookie,GranOLAs,164,Tarde,True,10.3,Aprobado,274
+LOTE-4516,2026-05-27,PAN-003,Mix Waffle Churro,Pancakes & Waffles,361,Tarde,True,0.4,Aprobado,241
+LOTE-4517,2026-05-27,MER-002,Tote Bag Paranice,Merch,644,Mañana,False,,Aprobado,310
+LOTE-4518,2026-05-27,COM-002,Combo Sin Gluten Starter,Combos,595,Tarde,True,3.9,Aprobado,170
+LOTE-4519,2026-05-28,PAN-002,Mix Pancake Chocolate Chips,Pancakes & Waffles,558,Tarde,True,1.9,Aprobado,287
+LOTE-4520,2026-05-28,GRA-002,Granola Chip Cookie,GranOLAs,597,Tarde,True,11.9,Aprobado,197
+LOTE-4521,2026-05-29,GRA-004,Granola Pistacho Cookie,GranOLAs,484,Mañana,True,10.2,Aprobado,260
+LOTE-4522,2026-05-29,ESP-001,Crema Pistacho Cookie,Esparcibles,484,Tarde,True,8.9,Aprobado,248
+LOTE-4523,2026-05-29,ESP-001,Crema Pistacho Cookie,Esparcibles,281,Mañana,True,6.9,Aprobado,163
+LOTE-4524,2026-05-29,PAN-004,Mix Pancake Banana,Pancakes & Waffles,447,Mañana,True,9.0,Aprobado,234
+LOTE-4525,2026-05-29,GRA-001,Granola Vainilla Shortbread,GranOLAs,101,Mañana,True,7.3,Aprobado,199
+LOTE-4526,2026-05-30,COM-001,Combo Desayuno Saludable,Combos,647,Tarde,True,3.1,Aprobado,217
+LOTE-4527,2026-05-30,COM-003,Combo Esparcibles Trío,Combos,604,Tarde,True,13.0,Aprobado,272
+LOTE-4528,2026-05-30,AVE-001,Harina de Almendra,Avena & Harinas,399,Mañana,True,1.5,Aprobado,164
+LOTE-4529,2026-05-30,COM-003,Combo Esparcibles Trío,Combos,269,Tarde,True,0.4,Aprobado,163
+LOTE-4530,2026-05-30,PAN-003,Mix Waffle Churro,Pancakes & Waffles,159,Tarde,True,10.6,Aprobado,239
+LOTE-4531,2026-05-31,COM-001,Combo Desayuno Saludable,Combos,627,Mañana,True,4.6,Aprobado,170
+LOTE-4532,2026-05-31,ESP-001,Crema Pistacho Cookie,Esparcibles,397,Mañana,True,1.4,Aprobado,303
+LOTE-4533,2026-05-31,GRA-004,Granola Pistacho Cookie,GranOLAs,239,Tarde,True,1.9,Aprobado,206
+LOTE-4534,2026-06-01,COM-001,Combo Desayuno Saludable,Combos,348,Mañana,True,9.8,Aprobado,233
+LOTE-4535,2026-06-01,ESP-003,Crema Cacao Avellana Clásica,Esparcibles,322,Tarde,True,6.4,Aprobado,215
+LOTE-4536,2026-06-01,ESP-005,Crema Canela Roll,Esparcibles,521,Tarde,True,5.4,Aprobado,210
+LOTE-4537,2026-06-01,COM-002,Combo Sin Gluten Starter,Combos,550,Tarde,True,1.5,Aprobado,278
+LOTE-4538,2026-06-02,GRA-004,Granola Pistacho Cookie,GranOLAs,378,Mañana,True,3.2,Aprobado,281
+LOTE-4539,2026-06-02,GRA-003,Granola Fudge Cake,GranOLAs,649,Tarde,True,7.6,Aprobado,180
+LOTE-4540,2026-06-03,COM-003,Combo Esparcibles Trío,Combos,241,Mañana,True,3.0,Aprobado,173
+LOTE-4541,2026-06-03,COM-001,Combo Desayuno Saludable,Combos,560,Tarde,True,37.8,Rechazado,234
+LOTE-4542,2026-06-03,COM-002,Combo Sin Gluten Starter,Combos,348,Tarde,True,12.4,Aprobado,183
+LOTE-4543,2026-06-04,COM-003,Combo Esparcibles Trío,Combos,589,Mañana,True,3.6,Aprobado,214
+LOTE-4544,2026-06-04,GRA-001,Granola Vainilla Shortbread,GranOLAs,370,Mañana,True,0.9,Aprobado,236
+LOTE-4545,2026-06-04,ESP-005,Crema Canela Roll,Esparcibles,585,Mañana,True,4.4,Aprobado,348
+LOTE-4546,2026-06-04,PAN-001,Mix Pancake Vainilla,Pancakes & Waffles,513,Tarde,True,3.1,Aprobado,342
+LOTE-4547,2026-06-05,PAN-002,Mix Pancake Chocolate Chips,Pancakes & Waffles,449,Tarde,True,13.0,Aprobado,208
+LOTE-4548,2026-06-05,PAN-002,Mix Pancake Chocolate Chips,Pancakes & Waffles,584,Mañana,True,4.6,Aprobado,349
+LOTE-4549,2026-06-05,GRA-004,Granola Pistacho Cookie,GranOLAs,618,Mañana,True,3.4,Aprobado,359
+LOTE-4550,2026-06-05,GRA-002,Granola Chip Cookie,GranOLAs,536,Tarde,True,5.2,Aprobado,197
+LOTE-4551,2026-06-05,PAN-003,Mix Waffle Churro,Pancakes & Waffles,449,Mañana,True,7.5,Aprobado,222
+LOTE-4552,2026-06-06,COM-001,Combo Desayuno Saludable,Combos,242,Tarde,True,10.2,Aprobado,227
+LOTE-4553,2026-06-06,AVE-001,Harina de Almendra,Avena & Harinas,351,Tarde,True,12.0,Aprobado,215
+LOTE-4554,2026-06-07,PAN-004,Mix Pancake Banana,Pancakes & Waffles,205,Mañana,True,0.4,Aprobado,242
+LOTE-4555,2026-06-07,GRA-004,Granola Pistacho Cookie,GranOLAs,278,Tarde,True,6.6,Aprobado,324
+LOTE-4556,2026-06-07,PAN-004,Mix Pancake Banana,Pancakes & Waffles,591,Tarde,True,3.2,Aprobado,238
+LOTE-4557,2026-06-07,ESP-001,Crema Pistacho Cookie,Esparcibles,168,Mañana,True,7.1,Aprobado,363
+LOTE-4558,2026-06-08,ESP-003,Crema Cacao Avellana Clásica,Esparcibles,402,Tarde,True,6.5,Aprobado,235
+LOTE-4559,2026-06-08,PAN-004,Mix Pancake Banana,Pancakes & Waffles,293,Tarde,True,1.2,Aprobado,163
+LOTE-4560,2026-06-08,PAN-002,Mix Pancake Chocolate Chips,Pancakes & Waffles,457,Tarde,True,11.7,Aprobado,202
+LOTE-4561,2026-06-08,AVE-002,Harina de Avena,Avena & Harinas,560,Mañana,True,1.6,Aprobado,185
+LOTE-4562,2026-06-09,PAN-003,Mix Waffle Churro,Pancakes & Waffles,87,Mañana,True,0.3,Aprobado,188
+LOTE-4563,2026-06-09,ESP-001,Crema Pistacho Cookie,Esparcibles,205,Tarde,True,3.7,Aprobado,268
+LOTE-4564,2026-06-09,ESP-001,Crema Pistacho Cookie,Esparcibles,337,Tarde,True,9.3,Aprobado,332
+LOTE-4565,2026-06-09,ESP-001,Crema Pistacho Cookie,Esparcibles,259,Tarde,True,5.1,Aprobado,219
+LOTE-4566,2026-06-09,ESP-002,Crema Maní Banana,Esparcibles,537,Tarde,True,9.7,Aprobado,291
+LOTE-4567,2026-06-10,AVE-002,Harina de Avena,Avena & Harinas,319,Tarde,True,11.5,Aprobado,284
+LOTE-4568,2026-06-10,AVE-001,Harina de Almendra,Avena & Harinas,88,Mañana,True,10.8,Aprobado,348
+LOTE-4569,2026-06-10,PAN-004,Mix Pancake Banana,Pancakes & Waffles,494,Tarde,True,3.1,Aprobado,204
+LOTE-4570,2026-06-10,ESP-003,Crema Cacao Avellana Clásica,Esparcibles,554,Tarde,True,6.8,Aprobado,266
+LOTE-4571,2026-06-11,ESP-001,Crema Pistacho Cookie,Esparcibles,534,Mañana,True,7.4,Aprobado,192
+LOTE-4572,2026-06-11,COM-003,Combo Esparcibles Trío,Combos,97,Mañana,True,2.0,Aprobado,243
+LOTE-4573,2026-06-11,GRA-002,Granola Chip Cookie,GranOLAs,428,Mañana,True,11.9,Aprobado,262
+LOTE-4574,2026-06-11,COM-002,Combo Sin Gluten Starter,Combos,250,Tarde,True,3.2,Aprobado,350
+LOTE-4575,2026-06-11,AVE-003,Hojuelas de Avena,Avena & Harinas,556,Mañana,True,2.6,Aprobado,226
+LOTE-4576,2026-06-12,PAN-003,Mix Waffle Churro,Pancakes & Waffles,495,Mañana,True,12.9,Aprobado,364
+LOTE-4577,2026-06-12,GRA-004,Granola Pistacho Cookie,GranOLAs,330,Tarde,True,4.8,Aprobado,174
+LOTE-4578,2026-06-12,COM-003,Combo Esparcibles Trío,Combos,416,Mañana,True,1.5,Aprobado,315
+LOTE-4579,2026-06-12,ESP-004,Crema Cacao Avellana Blanca,Esparcibles,457,Mañana,True,1.1,Aprobado,267
+LOTE-4580,2026-06-12,ESP-001,Crema Pistacho Cookie,Esparcibles,521,Tarde,True,12.1,Aprobado,328
+LOTE-4581,2026-06-13,PAN-003,Mix Waffle Churro,Pancakes & Waffles,154,Tarde,True,36.6,Rechazado,278
+LOTE-4582,2026-06-13,MER-002,Tote Bag Paranice,Merch,266,Mañana,False,,Aprobado,216
+LOTE-4583,2026-06-13,MER-001,Termo Paranice,Merch,642,Mañana,False,,Aprobado,222
+LOTE-4584,2026-06-13,PAN-002,Mix Pancake Chocolate Chips,Pancakes & Waffles,227,Tarde,True,0.6,Aprobado,207
+LOTE-4585,2026-06-13,GRA-001,Granola Vainilla Shortbread,GranOLAs,347,Tarde,True,4.2,Aprobado,288
+LOTE-4586,2026-06-14,PAN-005,Mix Pancake Brownie,Pancakes & Waffles,511,Tarde,True,8.7,Aprobado,294
+LOTE-4587,2026-06-14,COM-001,Combo Desayuno Saludable,Combos,340,Mañana,True,7.7,Aprobado,356
+LOTE-4588,2026-06-14,GRA-003,Granola Fudge Cake,GranOLAs,440,Mañana,True,5.4,Aprobado,258
+LOTE-4589,2026-06-14,GRA-003,Granola Fudge Cake,GranOLAs,604,Mañana,True,10.1,Aprobado,178
+LOTE-4590,2026-06-14,PAN-001,Mix Pancake Vainilla,Pancakes & Waffles,435,Mañana,True,5.2,Aprobado,347
+LOTE-4591,2026-06-15,COM-001,Combo Desayuno Saludable,Combos,534,Tarde,True,9.4,Aprobado,192
+LOTE-4592,2026-06-15,PAN-001,Mix Pancake Vainilla,Pancakes & Waffles,313,Tarde,True,4.6,Aprobado,326
+LOTE-4593,2026-06-15,COM-001,Combo Desayuno Saludable,Combos,522,Mañana,True,12.7,Aprobado,183
+LOTE-4594,2026-06-16,COM-003,Combo Esparcibles Trío,Combos,326,Tarde,True,9.1,Aprobado,310
+LOTE-4595,2026-06-16,AVE-003,Hojuelas de Avena,Avena & Harinas,361,Mañana,True,4.5,Aprobado,233
+LOTE-4596,2026-06-16,ESP-002,Crema Maní Banana,Esparcibles,152,Mañana,True,2.4,Aprobado,220
+LOTE-4597,2026-06-17,COM-001,Combo Desayuno Saludable,Combos,417,Tarde,True,9.0,Aprobado,207
+LOTE-4598,2026-06-17,PAN-001,Mix Pancake Vainilla,Pancakes & Waffles,87,Mañana,True,1.0,Aprobado,227
+LOTE-4599,2026-06-17,ESP-006,Crema Butter Cookie,Esparcibles,167,Mañana,True,3.7,Aprobado,332
+LOTE-4600,2026-06-17,COM-002,Combo Sin Gluten Starter,Combos,248,Mañana,True,8.8,Aprobado,247
+LOTE-4601,2026-06-17,COM-002,Combo Sin Gluten Starter,Combos,282,Mañana,True,11.8,Aprobado,320
+LOTE-4602,2026-06-18,GRA-003,Granola Fudge Cake,GranOLAs,254,Tarde,True,4.5,Aprobado,239
+LOTE-4603,2026-06-18,ESP-001,Crema Pistacho Cookie,Esparcibles,81,Mañana,True,0.2,Aprobado,222
+LOTE-4604,2026-06-18,COM-001,Combo Desayuno Saludable,Combos,346,Mañana,True,9.3,Aprobado,217
+LOTE-4605,2026-06-18,MER-002,Tote Bag Paranice,Merch,498,Tarde,False,,Aprobado,359
+LOTE-4606,2026-06-18,AVE-002,Harina de Avena,Avena & Harinas,518,Mañana,True,2.8,Aprobado,190
+LOTE-4607,2026-06-19,AVE-001,Harina de Almendra,Avena & Harinas,106,Mañana,True,8.6,Aprobado,207
+LOTE-4608,2026-06-19,PAN-004,Mix Pancake Banana,Pancakes & Waffles,530,Tarde,True,1.5,Aprobado,266
+LOTE-4609,2026-06-20,GRA-003,Granola Fudge Cake,GranOLAs,332,Mañana,True,3.6,Aprobado,242
+LOTE-4610,2026-06-20,GRA-003,Granola Fudge Cake,GranOLAs,87,Mañana,True,3.9,Aprobado,155
+LOTE-4611,2026-06-20,PAN-003,Mix Waffle Churro,Pancakes & Waffles,520,Mañana,True,10.0,Aprobado,166
+LOTE-4612,2026-06-20,GRA-001,Granola Vainilla Shortbread,GranOLAs,478,Mañana,True,12.3,Aprobado,229
+LOTE-4613,2026-06-21,AVE-003,Hojuelas de Avena,Avena & Harinas,330,Tarde,True,11.0,Aprobado,253
+LOTE-4614,2026-06-21,GRA-004,Granola Pistacho Cookie,GranOLAs,557,Tarde,True,12.2,Aprobado,360
+LOTE-4615,2026-06-21,ESP-005,Crema Canela Roll,Esparcibles,549,Tarde,True,0.4,Aprobado,150
+LOTE-4616,2026-06-22,COM-003,Combo Esparcibles Trío,Combos,520,Mañana,True,12.8,Aprobado,347
+LOTE-4617,2026-06-22,AVE-001,Harina de Almendra,Avena & Harinas,285,Tarde,True,9.2,Aprobado,360
+LOTE-4618,2026-06-23,PAN-002,Mix Pancake Chocolate Chips,Pancakes & Waffles,491,Tarde,True,11.5,Aprobado,182
+LOTE-4619,2026-06-23,ESP-002,Crema Maní Banana,Esparcibles,179,Mañana,True,2.5,Aprobado,170
+LOTE-4620,2026-06-23,COM-002,Combo Sin Gluten Starter,Combos,523,Tarde,True,6.4,Aprobado,189
+LOTE-4621,2026-06-24,PAN-003,Mix Waffle Churro,Pancakes & Waffles,185,Tarde,True,3.4,Aprobado,224
+LOTE-4622,2026-06-24,ESP-004,Crema Cacao Avellana Blanca,Esparcibles,100,Mañana,True,11.8,Aprobado,150
+LOTE-4623,2026-06-25,PAN-001,Mix Pancake Vainilla,Pancakes & Waffles,325,Mañana,True,4.5,Aprobado,318
+LOTE-4624,2026-06-25,GRA-001,Granola Vainilla Shortbread,GranOLAs,393,Mañana,True,2.4,Aprobado,157
+LOTE-4625,2026-06-25,ESP-001,Crema Pistacho Cookie,Esparcibles,131,Mañana,True,13.0,Aprobado,203
+LOTE-4626,2026-06-25,ESP-002,Crema Maní Banana,Esparcibles,581,Mañana,True,10.2,Aprobado,340
+LOTE-4627,2026-06-25,ESP-005,Crema Canela Roll,Esparcibles,399,Tarde,True,8.8,Aprobado,310
+LOTE-4628,2026-06-26,GRA-003,Granola Fudge Cake,GranOLAs,588,Mañana,True,4.1,Aprobado,182
+LOTE-4629,2026-06-26,PAN-002,Mix Pancake Chocolate Chips,Pancakes & Waffles,594,Tarde,True,8.1,Aprobado,196
+LOTE-4630,2026-06-27,GRA-001,Granola Vainilla Shortbread,GranOLAs,275,Tarde,True,11.8,Aprobado,222
+LOTE-4631,2026-06-27,GRA-004,Granola Pistacho Cookie,GranOLAs,344,Mañana,True,8.4,Aprobado,217
+LOTE-4632,2026-06-28,COM-001,Combo Desayuno Saludable,Combos,346,Mañana,True,0.8,Aprobado,286
+LOTE-4633,2026-06-28,GRA-004,Granola Pistacho Cookie,GranOLAs,246,Mañana,True,0.3,Aprobado,360
+LOTE-4634,2026-06-28,MER-001,Termo Paranice,Merch,293,Tarde,False,,Aprobado,336
+LOTE-4635,2026-06-29,ESP-002,Crema Maní Banana,Esparcibles,179,Tarde,True,10.2,Aprobado,269
+LOTE-4636,2026-06-29,COM-002,Combo Sin Gluten Starter,Combos,445,Mañana,True,4.8,Aprobado,216
+LOTE-4637,2026-06-29,MER-002,Tote Bag Paranice,Merch,202,Mañana,False,,Aprobado,304
+LOTE-4638,2026-06-29,PAN-005,Mix Pancake Brownie,Pancakes & Waffles,615,Mañana,True,6.8,Aprobado,242
+LOTE-4639,2026-06-29,GRA-001,Granola Vainilla Shortbread,GranOLAs,187,Tarde,True,2.9,Aprobado,152
+LOTE-4640,2026-06-30,MER-002,Tote Bag Paranice,Merch,518,Mañana,False,,Aprobado,191
+LOTE-4641,2026-06-30,ESP-001,Crema Pistacho Cookie,Esparcibles,136,Tarde,True,7.7,Aprobado,180
+LOTE-4642,2026-06-30,COM-002,Combo Sin Gluten Starter,Combos,467,Mañana,True,5.5,Aprobado,249
+LOTE-4643,2026-07-01,ESP-004,Crema Cacao Avellana Blanca,Esparcibles,173,Tarde,True,0.6,Aprobado,353
+LOTE-4644,2026-07-01,GRA-001,Granola Vainilla Shortbread,GranOLAs,635,Mañana,True,10.7,Aprobado,278
+LOTE-4645,2026-07-01,COM-001,Combo Desayuno Saludable,Combos,280,Tarde,True,1.2,Aprobado,163
+LOTE-4646,2026-07-01,ESP-004,Crema Cacao Avellana Blanca,Esparcibles,128,Tarde,True,4.3,Aprobado,306
+LOTE-4647,2026-07-02,MER-001,Termo Paranice,Merch,95,Mañana,False,,Aprobado,242
+LOTE-4648,2026-07-02,PAN-005,Mix Pancake Brownie,Pancakes & Waffles,580,Mañana,True,8.1,Aprobado,209
+LOTE-4649,2026-07-02,ESP-002,Crema Maní Banana,Esparcibles,435,Mañana,True,2.3,Aprobado,152
+LOTE-4650,2026-07-03,AVE-002,Harina de Avena,Avena & Harinas,226,Mañana,True,9.8,Aprobado,306
+LOTE-4651,2026-07-03,ESP-003,Crema Cacao Avellana Clásica,Esparcibles,271,Tarde,True,6.8,Aprobado,267
+LOTE-4652,2026-07-03,ESP-004,Crema Cacao Avellana Blanca,Esparcibles,442,Tarde,True,8.7,Aprobado,287
+LOTE-4653,2026-07-04,AVE-002,Harina de Avena,Avena & Harinas,612,Tarde,True,10.5,Aprobado,203
+LOTE-4654,2026-07-04,PAN-002,Mix Pancake Chocolate Chips,Pancakes & Waffles,474,Mañana,True,7.8,Aprobado,210
+LOTE-4655,2026-07-04,MER-001,Termo Paranice,Merch,600,Mañana,False,,Aprobado,165
+LOTE-4656,2026-07-04,PAN-004,Mix Pancake Banana,Pancakes & Waffles,228,Mañana,True,7.6,Aprobado,322
+LOTE-4657,2026-07-05,GRA-001,Granola Vainilla Shortbread,GranOLAs,560,Mañana,True,8.2,Aprobado,235
+LOTE-4658,2026-07-05,AVE-003,Hojuelas de Avena,Avena & Harinas,624,Mañana,True,8.3,Aprobado,251
+LOTE-4659,2026-07-06,PAN-003,Mix Waffle Churro,Pancakes & Waffles,480,Mañana,True,2.1,Aprobado,216
+LOTE-4660,2026-07-06,PAN-003,Mix Waffle Churro,Pancakes & Waffles,190,Tarde,True,10.8,Aprobado,190
+LOTE-4661,2026-07-06,COM-001,Combo Desayuno Saludable,Combos,84,Mañana,True,6.9,Aprobado,302
+LOTE-4662,2026-07-06,AVE-001,Harina de Almendra,Avena & Harinas,307,Tarde,True,1.1,Aprobado,182
+LOTE-4663,2026-07-06,MER-002,Tote Bag Paranice,Merch,409,Mañana,False,,Aprobado,250
+LOTE-4664,2026-07-07,PAN-004,Mix Pancake Banana,Pancakes & Waffles,614,Mañana,True,40.7,Rechazado,274
+LOTE-4665,2026-07-07,ESP-006,Crema Butter Cookie,Esparcibles,211,Tarde,True,6.6,Aprobado,206
+LOTE-4666,2026-07-07,COM-002,Combo Sin Gluten Starter,Combos,146,Tarde,True,10.0,Aprobado,272
+LOTE-4667,2026-07-08,MER-002,Tote Bag Paranice,Merch,262,Tarde,False,,Aprobado,268
+LOTE-4668,2026-07-08,AVE-003,Hojuelas de Avena,Avena & Harinas,106,Tarde,True,2.6,Aprobado,253
+LOTE-4669,2026-07-08,ESP-002,Crema Maní Banana,Esparcibles,132,Mañana,True,10.5,Aprobado,257
+LOTE-4670,2026-07-09,MER-002,Tote Bag Paranice,Merch,194,Mañana,False,,Aprobado,343
+LOTE-4671,2026-07-09,PAN-004,Mix Pancake Banana,Pancakes & Waffles,253,Mañana,True,6.7,Aprobado,232
+LOTE-4672,2026-07-09,PAN-004,Mix Pancake Banana,Pancakes & Waffles,87,Tarde,True,12.1,Aprobado,330
+LOTE-4673,2026-07-09,MER-001,Termo Paranice,Merch,388,Mañana,False,,Aprobado,354
+LOTE-4674,2026-07-09,GRA-004,Granola Pistacho Cookie,GranOLAs,631,Tarde,True,2.0,Aprobado,309
+LOTE-4675,2026-07-10,ESP-003,Crema Cacao Avellana Clásica,Esparcibles,384,Tarde,True,7.0,Aprobado,218
+LOTE-4676,2026-07-10,ESP-002,Crema Maní Banana,Esparcibles,546,Mañana,True,3.4,Aprobado,289
+LOTE-4677,2026-07-10,AVE-003,Hojuelas de Avena,Avena & Harinas,502,Tarde,True,8.2,Aprobado,267
+LOTE-4678,2026-07-10,MER-002,Tote Bag Paranice,Merch,611,Tarde,False,,Aprobado,332
+LOTE-4679,2026-07-11,COM-002,Combo Sin Gluten Starter,Combos,644,Tarde,True,8.0,Aprobado,228
+LOTE-4680,2026-07-11,PAN-001,Mix Pancake Vainilla,Pancakes & Waffles,629,Tarde,True,5.7,Aprobado,197
+LOTE-4681,2026-07-11,GRA-001,Granola Vainilla Shortbread,GranOLAs,617,Mañana,True,12.1,Aprobado,173
+LOTE-4682,2026-07-12,ESP-001,Crema Pistacho Cookie,Esparcibles,132,Tarde,True,5.0,Aprobado,248
+LOTE-4683,2026-07-12,AVE-002,Harina de Avena,Avena & Harinas,329,Mañana,True,5.1,Aprobado,293
+LOTE-4684,2026-07-12,COM-003,Combo Esparcibles Trío,Combos,628,Mañana,True,9.6,Aprobado,327
+LOTE-4685,2026-07-12,ESP-002,Crema Maní Banana,Esparcibles,549,Tarde,True,6.8,Aprobado,332
+LOTE-4686,2026-07-13,ESP-005,Crema Canela Roll,Esparcibles,413,Tarde,True,3.9,Aprobado,195
+LOTE-4687,2026-07-13,ESP-004,Crema Cacao Avellana Blanca,Esparcibles,420,Mañana,True,10.6,Aprobado,186
+LOTE-4688,2026-07-13,ESP-004,Crema Cacao Avellana Blanca,Esparcibles,445,Mañana,True,6.5,Aprobado,221
+LOTE-4689,2026-07-13,AVE-001,Harina de Almendra,Avena & Harinas,154,Tarde,True,4.1,Aprobado,345
+LOTE-4690,2026-07-14,MER-001,Termo Paranice,Merch,462,Tarde,False,,Aprobado,286
+LOTE-4691,2026-07-14,PAN-001,Mix Pancake Vainilla,Pancakes & Waffles,236,Mañana,True,12.2,Aprobado,239
+LOTE-4692,2026-07-14,COM-002,Combo Sin Gluten Starter,Combos,422,Tarde,True,2.6,Aprobado,335
+LOTE-4693,2026-07-14,GRA-001,Granola Vainilla Shortbread,GranOLAs,484,Mañana,True,12.7,Aprobado,278
+LOTE-4694,2026-07-15,COM-003,Combo Esparcibles Trío,Combos,159,Mañana,True,9.7,Aprobado,282
+LOTE-4695,2026-07-15,ESP-006,Crema Butter Cookie,Esparcibles,183,Mañana,True,12.7,Aprobado,228
+LOTE-4696,2026-07-15,GRA-001,Granola Vainilla Shortbread,GranOLAs,517,Tarde,True,4.3,Aprobado,350
+LOTE-4697,2026-07-16,PAN-005,Mix Pancake Brownie,Pancakes & Waffles,287,Mañana,True,1.9,Aprobado,214
+LOTE-4698,2026-07-16,MER-002,Tote Bag Paranice,Merch,347,Mañana,False,,Aprobado,168
+LOTE-4699,2026-07-16,ESP-001,Crema Pistacho Cookie,Esparcibles,340,Tarde,True,6.5,Aprobado,252
+LOTE-4700,2026-07-17,GRA-004,Granola Pistacho Cookie,GranOLAs,180,Tarde,True,10.7,Aprobado,295
+LOTE-4701,2026-07-17,AVE-002,Harina de Avena,Avena & Harinas,412,Mañana,True,4.4,Aprobado,291
+LOTE-4702,2026-07-17,ESP-004,Crema Cacao Avellana Blanca,Esparcibles,503,Mañana,True,6.4,Aprobado,208
+LOTE-4703,2026-07-17,GRA-001,Granola Vainilla Shortbread,GranOLAs,534,Mañana,True,11.8,Aprobado,271
+LOTE-4704,2026-07-18,PAN-001,Mix Pancake Vainilla,Pancakes & Waffles,241,Tarde,True,0.5,Aprobado,183
+LOTE-4705,2026-07-18,COM-002,Combo Sin Gluten Starter,Combos,287,Tarde,True,10.3,Aprobado,260
+LOTE-4706,2026-07-18,COM-002,Combo Sin Gluten Starter,Combos,113,Tarde,True,1.4,Aprobado,336
+LOTE-4707,2026-07-18,COM-001,Combo Desayuno Saludable,Combos,383,Tarde,True,11.3,Aprobado,304
+LOTE-4708,2026-07-18,MER-001,Termo Paranice,Merch,215,Tarde,False,,Aprobado,251
+LOTE-4709,2026-07-19,ESP-005,Crema Canela Roll,Esparcibles,293,Tarde,True,6.9,Aprobado,302
+LOTE-4710,2026-07-19,PAN-001,Mix Pancake Vainilla,Pancakes & Waffles,451,Tarde,True,0.8,Aprobado,363
+LOTE-4711,2026-07-19,PAN-005,Mix Pancake Brownie,Pancakes & Waffles,524,Mañana,True,7.9,Aprobado,345
+LOTE-4712,2026-07-19,AVE-001,Harina de Almendra,Avena & Harinas,504,Tarde,True,7.5,Aprobado,354
+LOTE-4713,2026-07-19,PAN-004,Mix Pancake Banana,Pancakes & Waffles,522,Mañana,True,4.5,Aprobado,337
+LOTE-4714,2026-07-20,COM-003,Combo Esparcibles Trío,Combos,573,Tarde,True,34.1,Rechazado,316
+LOTE-4715,2026-07-20,ESP-003,Crema Cacao Avellana Clásica,Esparcibles,583,Tarde,True,5.1,Aprobado,236
+LOTE-4716,2026-07-20,ESP-001,Crema Pistacho Cookie,Esparcibles,632,Mañana,True,6.6,Aprobado,306
+LOTE-4717,2026-07-21,GRA-004,Granola Pistacho Cookie,GranOLAs,258,Tarde,True,2.1,Aprobado,284
+LOTE-4718,2026-07-21,MER-002,Tote Bag Paranice,Merch,347,Mañana,False,,Aprobado,170
+LOTE-4719,2026-07-22,COM-001,Combo Desayuno Saludable,Combos,537,Mañana,True,8.2,Aprobado,333
+LOTE-4720,2026-07-22,ESP-002,Crema Maní Banana,Esparcibles,116,Mañana,True,10.7,Aprobado,151
+LOTE-4721,2026-07-22,GRA-002,Granola Chip Cookie,GranOLAs,323,Tarde,True,7.1,Aprobado,230
+LOTE-4722,2026-07-22,ESP-004,Crema Cacao Avellana Blanca,Esparcibles,616,Mañana,True,3.5,Aprobado,325
+LOTE-4723,2026-07-22,COM-003,Combo Esparcibles Trío,Combos,490,Mañana,True,12.4,Aprobado,313
+LOTE-4724,2026-07-23,ESP-003,Crema Cacao Avellana Clásica,Esparcibles,520,Mañana,True,7.9,Aprobado,259
+LOTE-4725,2026-07-23,ESP-005,Crema Canela Roll,Esparcibles,269,Mañana,True,2.7,Aprobado,171
+LOTE-4726,2026-07-24,GRA-002,Granola Chip Cookie,GranOLAs,293,Mañana,True,9.3,Aprobado,273
+LOTE-4727,2026-07-24,GRA-002,Granola Chip Cookie,GranOLAs,171,Tarde,True,6.0,Aprobado,331
+LOTE-4728,2026-07-25,GRA-003,Granola Fudge Cake,GranOLAs,545,Mañana,True,5.5,Aprobado,177
+LOTE-4729,2026-07-25,AVE-002,Harina de Avena,Avena & Harinas,435,Mañana,True,5.7,Aprobado,330
+LOTE-4730,2026-07-25,MER-002,Tote Bag Paranice,Merch,82,Mañana,False,,Aprobado,262
+LOTE-4731,2026-07-25,MER-002,Tote Bag Paranice,Merch,280,Tarde,False,,Aprobado,284
+LOTE-4732,2026-07-26,MER-002,Tote Bag Paranice,Merch,475,Mañana,False,,Aprobado,287
+LOTE-4733,2026-07-26,ESP-006,Crema Butter Cookie,Esparcibles,341,Tarde,True,3.7,Aprobado,260
+LOTE-4734,2026-07-27,PAN-004,Mix Pancake Banana,Pancakes & Waffles,223,Mañana,True,3.1,Aprobado,201
+LOTE-4735,2026-07-27,ESP-004,Crema Cacao Avellana Blanca,Esparcibles,524,Tarde,True,9.7,Aprobado,171
+LOTE-4736,2026-07-27,COM-003,Combo Esparcibles Trío,Combos,338,Tarde,True,10.2,Aprobado,164
+LOTE-4737,2026-07-27,GRA-001,Granola Vainilla Shortbread,GranOLAs,584,Mañana,True,3.6,Aprobado,265
+LOTE-4738,2026-07-28,ESP-005,Crema Canela Roll,Esparcibles,163,Tarde,True,0.4,Aprobado,197
+LOTE-4739,2026-07-28,AVE-002,Harina de Avena,Avena & Harinas,235,Tarde,True,38.6,Rechazado,274
+LOTE-4740,2026-07-29,PAN-001,Mix Pancake Vainilla,Pancakes & Waffles,307,Tarde,True,1.3,Aprobado,297
+LOTE-4741,2026-07-29,GRA-004,Granola Pistacho Cookie,GranOLAs,394,Tarde,True,6.1,Aprobado,204
+LOTE-4742,2026-07-29,AVE-001,Harina de Almendra,Avena & Harinas,159,Tarde,True,3.9,Aprobado,334
+LOTE-4743,2026-07-30,ESP-005,Crema Canela Roll,Esparcibles,349,Tarde,True,11.0,Aprobado,212
+LOTE-4744,2026-07-30,PAN-001,Mix Pancake Vainilla,Pancakes & Waffles,494,Tarde,True,39.3,Rechazado,280
+LOTE-4745,2026-07-30,ESP-003,Crema Cacao Avellana Clásica,Esparcibles,601,Mañana,True,7.7,Aprobado,308
+LOTE-4746,2026-07-30,GRA-003,Granola Fudge Cake,GranOLAs,80,Mañana,True,1.2,Aprobado,209
+LOTE-4747,2026-07-30,COM-003,Combo Esparcibles Trío,Combos,491,Mañana,True,0.4,Aprobado,320
+LOTE-4748,2026-07-31,COM-001,Combo Desayuno Saludable,Combos,98,Tarde,True,12.4,Aprobado,174
+LOTE-4749,2026-07-31,MER-001,Termo Paranice,Merch,236,Mañana,False,,Aprobado,355
+LOTE-4750,2026-07-31,MER-002,Tote Bag Paranice,Merch,184,Tarde,False,,Aprobado,326
+LOTE-4751,2026-07-31,GRA-002,Granola Chip Cookie,GranOLAs,319,Tarde,True,10.5,Aprobado,225
+LOTE-4752,2026-07-31,PAN-004,Mix Pancake Banana,Pancakes & Waffles,434,Tarde,True,10.9,Aprobado,161
+LOTE-4753,2026-08-01,GRA-001,Granola Vainilla Shortbread,GranOLAs,148,Tarde,True,0.4,Aprobado,257
+LOTE-4754,2026-08-01,AVE-001,Harina de Almendra,Avena & Harinas,227,Tarde,True,10.2,Aprobado,169
+LOTE-4755,2026-08-02,PAN-002,Mix Pancake Chocolate Chips,Pancakes & Waffles,155,Mañana,True,9.6,Aprobado,321
+LOTE-4756,2026-08-02,PAN-003,Mix Waffle Churro,Pancakes & Waffles,555,Tarde,True,7.6,Aprobado,238
+LOTE-4757,2026-08-02,ESP-005,Crema Canela Roll,Esparcibles,503,Tarde,True,7.7,Aprobado,325
+LOTE-4758,2026-08-03,PAN-003,Mix Waffle Churro,Pancakes & Waffles,228,Tarde,True,3.2,Aprobado,276
+LOTE-4759,2026-08-03,ESP-003,Crema Cacao Avellana Clásica,Esparcibles,237,Mañana,True,3.0,Aprobado,324
+LOTE-4760,2026-08-03,PAN-002,Mix Pancake Chocolate Chips,Pancakes & Waffles,423,Tarde,True,10.9,Aprobado,220
+LOTE-4761,2026-08-03,COM-001,Combo Desayuno Saludable,Combos,557,Tarde,True,7.8,Aprobado,308
+LOTE-4762,2026-08-04,GRA-001,Granola Vainilla Shortbread,GranOLAs,141,Tarde,True,10.4,Aprobado,184
+LOTE-4763,2026-08-04,PAN-001,Mix Pancake Vainilla,Pancakes & Waffles,644,Tarde,True,2.4,Aprobado,275
+LOTE-4764,2026-08-04,ESP-002,Crema Maní Banana,Esparcibles,192,Mañana,True,30.4,Rechazado,185
+LOTE-4765,2026-08-05,PAN-003,Mix Waffle Churro,Pancakes & Waffles,156,Tarde,True,9.4,Aprobado,257
+LOTE-4766,2026-08-05,ESP-005,Crema Canela Roll,Esparcibles,291,Mañana,True,6.3,Aprobado,257
+LOTE-4767,2026-08-05,ESP-002,Crema Maní Banana,Esparcibles,403,Tarde,True,1.0,Aprobado,273
+LOTE-4768,2026-08-05,GRA-002,Granola Chip Cookie,GranOLAs,309,Tarde,True,3.7,Aprobado,229
+LOTE-4769,2026-08-05,ESP-001,Crema Pistacho Cookie,Esparcibles,462,Tarde,True,2.5,Aprobado,334
+LOTE-4770,2026-08-06,ESP-003,Crema Cacao Avellana Clásica,Esparcibles,145,Mañana,True,4.5,Aprobado,274
+LOTE-4771,2026-08-06,PAN-002,Mix Pancake Chocolate Chips,Pancakes & Waffles,394,Tarde,True,5.6,Aprobado,313
+LOTE-4772,2026-08-06,ESP-001,Crema Pistacho Cookie,Esparcibles,314,Tarde,True,28.3,Rechazado,258
+LOTE-4773,2026-08-06,PAN-001,Mix Pancake Vainilla,Pancakes & Waffles,181,Mañana,True,3.5,Aprobado,244
+LOTE-4774,2026-08-06,GRA-002,Granola Chip Cookie,GranOLAs,172,Mañana,True,1.5,Aprobado,330
+LOTE-4775,2026-08-07,ESP-002,Crema Maní Banana,Esparcibles,274,Tarde,True,7.6,Aprobado,174
+LOTE-4776,2026-08-07,PAN-005,Mix Pancake Brownie,Pancakes & Waffles,458,Mañana,True,2.7,Aprobado,211
+LOTE-4777,2026-08-07,AVE-002,Harina de Avena,Avena & Harinas,300,Mañana,True,31.3,Rechazado,268
+LOTE-4778,2026-08-07,AVE-003,Hojuelas de Avena,Avena & Harinas,491,Mañana,True,12.2,Aprobado,220
+LOTE-4779,2026-08-07,PAN-002,Mix Pancake Chocolate Chips,Pancakes & Waffles,283,Mañana,True,10.6,Aprobado,316
+LOTE-4780,2026-08-08,PAN-004,Mix Pancake Banana,Pancakes & Waffles,195,Tarde,True,7.9,Aprobado,300
+LOTE-4781,2026-08-08,ESP-003,Crema Cacao Avellana Clásica,Esparcibles,508,Tarde,True,38.0,Rechazado,151
+LOTE-4782,2026-08-08,AVE-003,Hojuelas de Avena,Avena & Harinas,203,Tarde,True,2.8,Aprobado,178
+LOTE-4783,2026-08-08,ESP-002,Crema Maní Banana,Esparcibles,198,Mañana,True,6.9,Aprobado,360
+LOTE-4784,2026-08-09,ESP-004,Crema Cacao Avellana Blanca,Esparcibles,343,Tarde,True,2.3,Aprobado,322
+LOTE-4785,2026-08-09,PAN-002,Mix Pancake Chocolate Chips,Pancakes & Waffles,122,Tarde,True,3.2,Aprobado,152
+LOTE-4786,2026-08-09,MER-001,Termo Paranice,Merch,446,Tarde,False,,Aprobado,352
+LOTE-4787,2026-08-09,GRA-004,Granola Pistacho Cookie,GranOLAs,341,Tarde,True,0.8,Aprobado,200
+LOTE-4788,2026-08-10,COM-003,Combo Esparcibles Trío,Combos,339,Tarde,True,6.1,Aprobado,361
+LOTE-4789,2026-08-10,ESP-006,Crema Butter Cookie,Esparcibles,555,Mañana,True,5.6,Aprobado,341
+LOTE-4790,2026-08-10,ESP-003,Crema Cacao Avellana Clásica,Esparcibles,484,Mañana,True,8.8,Aprobado,231
+LOTE-4791,2026-08-10,ESP-005,Crema Canela Roll,Esparcibles,180,Mañana,True,1.9,Aprobado,356
+LOTE-4792,2026-08-11,ESP-005,Crema Canela Roll,Esparcibles,564,Mañana,True,2.0,Aprobado,321
+LOTE-4793,2026-08-11,AVE-002,Harina de Avena,Avena & Harinas,581,Tarde,True,10.2,Aprobado,209
+LOTE-4794,2026-08-11,COM-001,Combo Desayuno Saludable,Combos,116,Tarde,True,4.2,Aprobado,197
+LOTE-4795,2026-08-11,GRA-002,Granola Chip Cookie,GranOLAs,404,Mañana,True,7.2,Aprobado,332
+LOTE-4796,2026-08-11,PAN-004,Mix Pancake Banana,Pancakes & Waffles,605,Tarde,True,10.8,Aprobado,334
+LOTE-4797,2026-08-12,MER-001,Termo Paranice,Merch,615,Mañana,False,,Aprobado,211
+LOTE-4798,2026-08-12,GRA-003,Granola Fudge Cake,GranOLAs,335,Tarde,True,3.4,Aprobado,330
+LOTE-4799,2026-08-13,PAN-004,Mix Pancake Banana,Pancakes & Waffles,253,Mañana,True,7.1,Aprobado,213
+LOTE-4800,2026-08-13,ESP-001,Crema Pistacho Cookie,Esparcibles,153,Tarde,True,1.6,Aprobado,364
+LOTE-4801,2026-08-13,ESP-004,Crema Cacao Avellana Blanca,Esparcibles,616,Mañana,True,9.5,Aprobado,193
+LOTE-4802,2026-08-13,COM-003,Combo Esparcibles Trío,Combos,269,Tarde,True,9.1,Aprobado,182
+LOTE-4803,2026-08-13,ESP-004,Crema Cacao Avellana Blanca,Esparcibles,280,Tarde,True,9.1,Aprobado,248
+LOTE-4804,2026-08-14,GRA-004,Granola Pistacho Cookie,GranOLAs,219,Mañana,True,3.9,Aprobado,243
+LOTE-4805,2026-08-14,PAN-005,Mix Pancake Brownie,Pancakes & Waffles,226,Mañana,True,8.8,Aprobado,163
+LOTE-4806,2026-08-14,ESP-003,Crema Cacao Avellana Clásica,Esparcibles,638,Tarde,True,1.6,Aprobado,255
+LOTE-4807,2026-08-14,AVE-002,Harina de Avena,Avena & Harinas,335,Mañana,True,8.2,Aprobado,305
+LOTE-4808,2026-08-14,ESP-005,Crema Canela Roll,Esparcibles,633,Tarde,True,4.8,Aprobado,311
+LOTE-4809,2026-08-15,PAN-002,Mix Pancake Chocolate Chips,Pancakes & Waffles,372,Tarde,True,11.6,Aprobado,207
+LOTE-4810,2026-08-15,AVE-003,Hojuelas de Avena,Avena & Harinas,630,Mañana,True,12.3,Aprobado,221
+LOTE-4811,2026-08-15,COM-003,Combo Esparcibles Trío,Combos,517,Tarde,True,1.6,Aprobado,362
+LOTE-4812,2026-08-15,ESP-002,Crema Maní Banana,Esparcibles,163,Mañana,True,6.5,Aprobado,280
+LOTE-4813,2026-08-16,ESP-001,Crema Pistacho Cookie,Esparcibles,340,Tarde,True,8.7,Aprobado,335
+LOTE-4814,2026-08-16,GRA-003,Granola Fudge Cake,GranOLAs,185,Mañana,True,8.1,Aprobado,288
+LOTE-4815,2026-08-16,ESP-004,Crema Cacao Avellana Blanca,Esparcibles,155,Tarde,True,3.5,Aprobado,308
+LOTE-4816,2026-08-16,PAN-003,Mix Waffle Churro,Pancakes & Waffles,100,Tarde,True,6.9,Aprobado,250
+LOTE-4817,2026-08-17,GRA-001,Granola Vainilla Shortbread,GranOLAs,114,Mañana,True,9.0,Aprobado,237
+LOTE-4818,2026-08-17,COM-001,Combo Desayuno Saludable,Combos,93,Tarde,True,11.8,Aprobado,250
+LOTE-4819,2026-08-18,COM-001,Combo Desayuno Saludable,Combos,157,Mañana,True,5.1,Aprobado,256
+LOTE-4820,2026-08-18,GRA-001,Granola Vainilla Shortbread,GranOLAs,514,Tarde,True,3.8,Aprobado,353
+LOTE-4821,2026-08-18,ESP-004,Crema Cacao Avellana Blanca,Esparcibles,397,Mañana,True,2.4,Aprobado,234
+LOTE-4822,2026-08-19,ESP-005,Crema Canela Roll,Esparcibles,456,Mañana,True,2.0,Aprobado,278
+LOTE-4823,2026-08-19,ESP-003,Crema Cacao Avellana Clásica,Esparcibles,514,Mañana,True,12.5,Aprobado,203
+LOTE-4824,2026-08-20,PAN-004,Mix Pancake Banana,Pancakes & Waffles,113,Tarde,True,1.9,Aprobado,183
+LOTE-4825,2026-08-20,AVE-002,Harina de Avena,Avena & Harinas,473,Mañana,True,4.1,Aprobado,346
+LOTE-4826,2026-08-20,AVE-001,Harina de Almendra,Avena & Harinas,490,Tarde,True,28.5,Rechazado,152
+LOTE-4827,2026-08-20,AVE-003,Hojuelas de Avena,Avena & Harinas,385,Mañana,True,0.1,Aprobado,293
+LOTE-4828,2026-08-21,ESP-003,Crema Cacao Avellana Clásica,Esparcibles,599,Tarde,True,3.5,Aprobado,223
+LOTE-4829,2026-08-21,COM-001,Combo Desayuno Saludable,Combos,150,Tarde,True,7.9,Aprobado,229
+LOTE-4830,2026-08-21,ESP-005,Crema Canela Roll,Esparcibles,204,Tarde,True,11.4,Aprobado,211
+LOTE-4831,2026-08-21,AVE-001,Harina de Almendra,Avena & Harinas,157,Mañana,True,0.8,Aprobado,316
+LOTE-4832,2026-08-22,COM-001,Combo Desayuno Saludable,Combos,533,Mañana,True,7.8,Aprobado,166
+LOTE-4833,2026-08-22,ESP-001,Crema Pistacho Cookie,Esparcibles,378,Tarde,True,1.0,Aprobado,279
+LOTE-4834,2026-08-22,GRA-002,Granola Chip Cookie,GranOLAs,299,Tarde,True,7.0,Aprobado,291
+LOTE-4835,2026-08-22,COM-003,Combo Esparcibles Trío,Combos,198,Mañana,True,5.2,Aprobado,254
+LOTE-4836,2026-08-23,GRA-001,Granola Vainilla Shortbread,GranOLAs,642,Tarde,True,4.2,Aprobado,325
+LOTE-4837,2026-08-23,ESP-003,Crema Cacao Avellana Clásica,Esparcibles,502,Tarde,True,5.1,Aprobado,211
+LOTE-4838,2026-08-23,MER-001,Termo Paranice,Merch,381,Mañana,False,,Aprobado,224
+LOTE-4839,2026-08-23,ESP-006,Crema Butter Cookie,Esparcibles,558,Tarde,True,0.6,Aprobado,328
+LOTE-4840,2026-08-24,ESP-004,Crema Cacao Avellana Blanca,Esparcibles,353,Mañana,True,11.3,Aprobado,282
+LOTE-4841,2026-08-24,AVE-002,Harina de Avena,Avena & Harinas,495,Tarde,True,11.4,Aprobado,300
+LOTE-4842,2026-08-24,ESP-005,Crema Canela Roll,Esparcibles,373,Mañana,True,1.0,Aprobado,171
+LOTE-4843,2026-08-25,COM-003,Combo Esparcibles Trío,Combos,338,Mañana,True,10.2,Aprobado,181
+LOTE-4844,2026-08-25,MER-001,Termo Paranice,Merch,185,Mañana,False,,Aprobado,265
+LOTE-4845,2026-08-25,MER-002,Tote Bag Paranice,Merch,526,Tarde,False,,Aprobado,290
+LOTE-4846,2026-08-25,AVE-002,Harina de Avena,Avena & Harinas,94,Mañana,True,5.3,Aprobado,294
+LOTE-4847,2026-08-25,ESP-006,Crema Butter Cookie,Esparcibles,279,Tarde,True,7.4,Aprobado,333
+LOTE-4848,2026-08-26,ESP-001,Crema Pistacho Cookie,Esparcibles,529,Mañana,True,10.2,Aprobado,339
+LOTE-4849,2026-08-26,AVE-003,Hojuelas de Avena,Avena & Harinas,295,Tarde,True,0.9,Aprobado,238
+LOTE-4850,2026-08-26,AVE-001,Harina de Almendra,Avena & Harinas,122,Tarde,True,0.3,Aprobado,157
+LOTE-4851,2026-08-26,COM-003,Combo Esparcibles Trío,Combos,89,Tarde,True,4.8,Aprobado,161
+LOTE-4852,2026-08-27,PAN-002,Mix Pancake Chocolate Chips,Pancakes & Waffles,438,Tarde,True,12.4,Aprobado,158
+LOTE-4853,2026-08-27,GRA-002,Granola Chip Cookie,GranOLAs,630,Mañana,True,11.4,Aprobado,314
+LOTE-4854,2026-08-28,ESP-002,Crema Maní Banana,Esparcibles,114,Mañana,True,9.9,Aprobado,268
+LOTE-4855,2026-08-28,COM-003,Combo Esparcibles Trío,Combos,172,Tarde,True,7.7,Aprobado,166
+LOTE-4856,2026-08-28,AVE-002,Harina de Avena,Avena & Harinas,248,Mañana,True,12.7,Aprobado,192
+LOTE-4857,2026-08-28,ESP-003,Crema Cacao Avellana Clásica,Esparcibles,411,Tarde,True,38.0,Rechazado,181
+LOTE-4858,2026-08-29,GRA-003,Granola Fudge Cake,GranOLAs,587,Mañana,True,5.9,Aprobado,306
+LOTE-4859,2026-08-29,PAN-001,Mix Pancake Vainilla,Pancakes & Waffles,366,Tarde,True,4.2,Aprobado,290
+LOTE-4860,2026-08-30,GRA-001,Granola Vainilla Shortbread,GranOLAs,155,Mañana,True,1.8,Aprobado,320
+LOTE-4861,2026-08-30,GRA-002,Granola Chip Cookie,GranOLAs,623,Mañana,True,0.5,Aprobado,222
+LOTE-4862,2026-08-30,PAN-005,Mix Pancake Brownie,Pancakes & Waffles,463,Mañana,True,10.5,Aprobado,180
+LOTE-4863,2026-08-30,PAN-005,Mix Pancake Brownie,Pancakes & Waffles,344,Mañana,True,3.3,Aprobado,294
+LOTE-4864,2026-08-31,MER-002,Tote Bag Paranice,Merch,410,Mañana,False,,Aprobado,281
+LOTE-4865,2026-08-31,PAN-004,Mix Pancake Banana,Pancakes & Waffles,356,Mañana,True,3.1,Aprobado,362
+LOTE-4866,2026-08-31,PAN-002,Mix Pancake Chocolate Chips,Pancakes & Waffles,624,Mañana,True,6.2,Aprobado,279

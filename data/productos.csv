@@ -1,0 +1,24 @@
+producto_id,nombre,categoria,precio_venta,costo_unitario,sin_gluten,vegano,sin_azucar,fecha_lanzamiento,stock_min,lead_time_dias
+GRA-001,Granola Vainilla Shortbread,GranOLAs,37950,14200,True,True,True,2024-01-15,120,18
+GRA-002,Granola Chip Cookie,GranOLAs,37950,14400,True,True,True,2024-01-15,120,18
+GRA-003,Granola Fudge Cake,GranOLAs,37950,14600,True,True,True,2024-06-01,100,18
+GRA-004,Granola Pistacho Cookie,GranOLAs,44950,17800,True,True,True,2025-02-10,80,20
+PAN-001,Mix Pancake Vainilla,Pancakes & Waffles,41690,15900,True,False,False,2024-03-01,90,15
+PAN-002,Mix Pancake Chocolate Chips,Pancakes & Waffles,41690,16400,True,False,False,2024-03-01,90,15
+PAN-003,Mix Waffle Churro,Pancakes & Waffles,41690,16100,True,False,False,2024-09-15,70,15
+PAN-004,Mix Pancake Banana,Pancakes & Waffles,32890,12600,True,True,True,2025-01-20,100,15
+PAN-005,Mix Pancake Brownie,Pancakes & Waffles,32890,12800,True,True,False,2025-01-20,100,15
+AVE-001,Harina de Almendra,Avena & Harinas,34650,15200,True,True,True,2024-01-15,150,25
+AVE-002,Harina de Avena,Avena & Harinas,31350,11400,True,True,True,2024-01-15,150,22
+AVE-003,Hojuelas de Avena,Avena & Harinas,31350,11000,True,True,True,2024-02-01,150,22
+ESP-001,Crema Pistacho Cookie,Esparcibles,63500,26800,True,True,True,2025-03-10,60,20
+ESP-002,Crema Maní Banana,Esparcibles,48590,19600,True,True,True,2024-04-01,90,18
+ESP-003,Crema Cacao Avellana Clásica,Esparcibles,48590,19900,True,True,True,2024-04-01,90,18
+ESP-004,Crema Cacao Avellana Blanca,Esparcibles,48590,20200,True,True,True,2024-11-01,80,18
+ESP-005,Crema Canela Roll,Esparcibles,48590,19700,True,True,True,2025-02-01,80,18
+ESP-006,Crema Butter Cookie,Esparcibles,59900,24900,True,True,False,2025-05-15,60,18
+COM-001,Combo Desayuno Saludable,Combos,89900,36500,True,True,True,2024-05-01,50,12
+COM-002,Combo Sin Gluten Starter,Combos,119900,48200,True,True,True,2024-08-01,40,12
+COM-003,Combo Esparcibles Trío,Combos,139900,58600,True,True,True,2025-04-01,40,12
+MER-001,Termo Paranice,Merch,45000,21000,False,False,False,2024-07-01,40,30
+MER-002,Tote Bag Paranice,Merch,28000,11500,False,False,False,2024-07-01,60,30

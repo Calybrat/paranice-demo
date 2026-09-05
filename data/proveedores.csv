@@ -1,0 +1,10 @@
+proveedor_id,proveedor,pais,moneda,lead_time_avg_dias,especialidad,score_calidad,score_puntualidad,score_precio,score_general
+PRO-001,Avena Foods (certificada GF),Finlandia,EUR,45,Avena certificada libre de gluten <20ppm,9.5,8.6,7.0,8.56
+PRO-002,California Almond Co.,EEUU,USD,30,Almendra en grano y harina de almendra,9.0,8.8,7.6,8.58
+PRO-003,Ecuacacao S.A.,Ecuador,USD,25,Cacao en polvo y pasta de cacao,8.8,8.5,8.2,8.54
+PRO-004,Maní del Llano,Colombia,COP,8,Maní tostado nacional,8.4,9.0,8.9,8.74
+PRO-005,Ingenio La Palma,Colombia,COP,10,Panela pulverizada y stevia,8.2,8.9,9.0,8.64
+PRO-006,Andes Nuts Perú,Perú,USD,28,Pistacho y frutos secos premium,9.1,8.2,7.1,8.28
+PRO-007,Coco Pacífico,Filipinas,USD,40,Aceite de coco prensado en frío,8.6,8.0,7.8,8.19
+PRO-008,EmpaqSostenible S.A.S.,Colombia,COP,12,Empaques flexibles compostables,8.3,9.1,8.5,8.63
+PRO-009,Aditivos Naturales Ltda.,Colombia,COP,9,Saborizantes y colorantes naturales,8.5,8.9,8.7,8.69

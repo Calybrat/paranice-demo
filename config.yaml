@@ -1,0 +1,14 @@
+cookie:
+  expiry_days: 7
+  key: 3775a47abd58a3a68bc34e5753b7c0625087b01d618ea43448b3921c164bee10
+  name: calybrat_paranice
+credentials:
+  usernames:
+    nicolas:
+      email: nicolasgort@gmail.com
+      name: Nicolás Gort
+      password: $2b$12$SEKAp39zuCm0zkKlnKf.iO46VK1OpTOyOJ9FqaqMKGcQAyBdz68ei
+    paranice_demo:
+      email: ''
+      name: Paranice Demo
+      password: $2b$12$Kbf3dm3nhXmVwXF8AXvPaesRTtzjB7Yv70u3v38zETO0P7MPRHFS.
