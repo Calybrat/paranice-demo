@@ -25,8 +25,8 @@ def render():
     n_sku = len(prods)
     gf = prods["sin_gluten"].mean() * 100
     vegan = prods["vegano"].mean() * 100
-    margen_cat = v26.groupby("categoria").apply(
-        lambda g: g["margen_cop"].sum() / g["venta_cop"].sum() * 100, include_groups=False)
+    _agg_cat = v26.groupby("categoria", observed=True)[["margen_cop", "venta_cop"]].sum()
+    margen_cat = _agg_cat["margen_cop"] / _agg_cat["venta_cop"] * 100
     top_sku = v26.groupby("producto")["venta_cop"].sum().idxmax() if len(v26) else "—"
     brecha_max = precios.groupby("canal")["brecha_vs_propio_pct"].mean().max()
 

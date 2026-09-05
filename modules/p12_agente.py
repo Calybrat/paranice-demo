@@ -88,10 +88,10 @@ def responder_demo(pregunta: str) -> str:
                 f"y paga a 60 días. Cada punto que crezca el canal propio mejora margen y caja al tiempo.")
 
     if any(x in q for x in ["margen", "canal", "rentab", "utilidad"]):
-        g = v.groupby(["canal"]).apply(
-            lambda x: pd.Series({"ventas": x["venta_cop"].sum(),
-                                 "margen": x["margen_cop"].sum() / x["venta_cop"].sum() * 100}),
-            include_groups=False).sort_values("margen", ascending=False)
+        g = v.groupby("canal", observed=True)[["venta_cop", "margen_cop"]].sum()
+        g = pd.DataFrame({"ventas": g["venta_cop"],
+                          "margen": g["margen_cop"] / g["venta_cop"] * 100}
+                         ).sort_values("margen", ascending=False)
         lineas = "\n".join(f"  • {k}: {r['margen']:.0f}% de margen · {cop(r['ventas'],1)} vendidos"
                            for k, r in g.iterrows())
         return (f"💰 Margen por canal:\n\n{lineas}\n\n"
@@ -147,10 +147,10 @@ def responder_demo(pregunta: str) -> str:
                 f"{'Todo bajo control.' if fuera==0 else f'Los {fuera} lotes por encima de 20 ppm quedaron bloqueados y no salieron al mercado, que es exactamente lo que debe pasar. Vale la pena revisar la línea y el turno donde ocurrieron.'}")
 
     if any(x in q for x in ["costa rica", "estados unidos", "internacional", "expansión", "expansion", "país", "pais", "usa"]):
-        g = v.groupby("pais").apply(
-            lambda x: pd.Series({"ventas": x["venta_cop"].sum(),
-                                 "margen": x["margen_cop"].sum() / x["venta_cop"].sum() * 100}),
-            include_groups=False).sort_values("ventas", ascending=False)
+        g = v.groupby("pais", observed=True)[["venta_cop", "margen_cop"]].sum()
+        g = pd.DataFrame({"ventas": g["venta_cop"],
+                          "margen": g["margen_cop"] / g["venta_cop"] * 100}
+                         ).sort_values("ventas", ascending=False)
         lineas = "\n".join(f"  • {k}: {cop(r['ventas'],1)} ({r['ventas']/g['ventas'].sum()*100:.0f}% del total) · margen {r['margen']:.0f}%"
                            for k, r in g.iterrows())
         return (f"🌎 Los tres mercados:\n\n{lineas}\n\n"

@@ -114,9 +114,11 @@ def render():
             st.plotly_chart(light(fig, 300, "Valor de sell-out por cadena (a PVP)"),
                             use_container_width=True)
         with c4:
-            rot_ciudad = sf.groupby("ciudad").apply(
-                lambda g: g["unidades_sell_out"].sum() / max(g.groupby("cadena")["pdv_activos"].max().sum(), 1)
-                / max(len(g["mes"].unique()), 1), include_groups=False).sort_values()
+            _so_ciudad = sf.groupby("ciudad", observed=True)["unidades_sell_out"].sum()
+            _pdv_ciudad = (sf.groupby(["ciudad", "cadena"], observed=True)["pdv_activos"].max()
+                           .groupby("ciudad", observed=True).sum().clip(lower=1))
+            _n_meses = max(len(sf["mes"].unique()), 1)
+            rot_ciudad = (_so_ciudad / _pdv_ciudad / _n_meses).dropna().sort_values()
             fig = go.Figure(go.Bar(x=rot_ciudad.values, y=rot_ciudad.index, orientation="h",
                                    marker_color=PINK,
                                    text=[f"{x:.1f}" for x in rot_ciudad.values], textposition="outside"))

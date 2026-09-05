@@ -132,8 +132,8 @@ def render():
                                customdata=[cop(x, 1) for x in cat.values]))
         st.plotly_chart(light(fig, 300, "Ventas por categoría"), use_container_width=True)
     with c5:
-        mg = vf.groupby("tipo_canal").apply(
-            lambda g: g["margen_cop"].sum() / g["venta_cop"].sum() * 100, include_groups=False).sort_values()
+        _agg = vf.groupby("tipo_canal", observed=True)[["margen_cop", "venta_cop"]].sum()
+        mg = (_agg["margen_cop"] / _agg["venta_cop"] * 100).sort_values()
         fig = go.Figure(go.Bar(x=mg.values, y=mg.index, orientation="h",
                                marker_color=[GOOD if x >= 55 else WARN for x in mg.values],
                                text=[f"{x:.0f}%" for x in mg.values], textposition="outside"))

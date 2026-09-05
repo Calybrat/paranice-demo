@@ -2,10 +2,16 @@
 Carga de datos compartida.
 
 Todos los módulos leen de aquí para que cada tabla se cargue UNA sola vez en
-memoria (st.cache_data cachea por función, así que si cada módulo definiera su
-propio loader se guardaría una copia por módulo). Además se usan tipos
-`category` en las columnas de texto repetido, que reduce el consumo de memoria
-del orden de 10x — importante para que el panel corra holgado en la nube.
+memoria: st.cache_data cachea por función, así que si cada módulo definiera su
+propio loader se guardaría una copia por módulo (con siete módulos leyendo
+ventas eso llegaba a ~1,5 GB).
+
+Sobre los tipos: se hace downcast de las columnas numéricas, que es seguro.
+NO se convierte el texto a `category` a propósito: al agrupar por columnas
+categóricas pandas devuelve también las combinaciones que no existen, lo que
+metería filas en cero en las gráficas (por ejemplo, un canal facturando $0 en
+meses anteriores a su lanzamiento). Preferimos gastar algo más de memoria
+antes que mostrar un dato que no ocurrió.
 """
 from pathlib import Path
 
@@ -24,9 +30,8 @@ def _leer(nombre: str, **kw) -> pd.DataFrame:
 
 
 def _categorizar(df: pd.DataFrame, columnas) -> pd.DataFrame:
-    for c in columnas:
-        if c in df.columns:
-            df[c] = df[c].astype("category")
+    """Se conserva por compatibilidad, pero no convierte a category a propósito
+    (ver la nota del encabezado del módulo). Devuelve el DataFrame intacto."""
     return df
 
 
