@@ -1,0 +1,225 @@
+sku,nombre,categoria,canal,tipo_canal,pais,pvp_consumidor_cop,precio_factura_paranice_cop,costo_unitario_cop,margen_paranice_pct,brecha_vs_propio_pct
+GRA-VAN,Vanilla Shortbread,GranOLAS,E-commerce propio,D2C,Colombia,37950,37950,14100,62.8,0.0
+GRA-VAN,Vanilla Shortbread,GranOLAS,Éxito,Retail,Colombia,42100,28628,14100,50.7,10.9
+GRA-VAN,Vanilla Shortbread,GranOLAS,Carulla,Retail,Colombia,42900,29172,14100,51.7,13.0
+GRA-VAN,Vanilla Shortbread,GranOLAS,Rappi,Marketplace,Colombia,43650,32738,14100,56.9,15.0
+GRA-VAN,Vanilla Shortbread,GranOLAS,Fithub,Especializado,Colombia,46700,32690,14100,56.9,23.1
+GRA-VAN,Vanilla Shortbread,GranOLAS,Tiendas naturistas,Especializado,Colombia,44800,32256,14100,56.3,18.1
+GRA-VAN,Vanilla Shortbread,GranOLAS,Paranice US,Internacional,Estados Unidos,49350,49350,14100,71.4,30.0
+GRA-VAN,Vanilla Shortbread,GranOLAS,Distribuidor CR,Internacional,Costa Rica,46300,32410,14100,56.5,22.0
+GRA-CHI,Chip Cookie,GranOLAS,E-commerce propio,D2C,Colombia,37950,37950,14350,62.2,0.0
+GRA-CHI,Chip Cookie,GranOLAS,Éxito,Retail,Colombia,42100,28628,14350,49.9,10.9
+GRA-CHI,Chip Cookie,GranOLAS,Carulla,Retail,Colombia,42900,29172,14350,50.8,13.0
+GRA-CHI,Chip Cookie,GranOLAS,Rappi,Marketplace,Colombia,43650,32738,14350,56.2,15.0
+GRA-CHI,Chip Cookie,GranOLAS,Fithub,Especializado,Colombia,46700,32690,14350,56.1,23.1
+GRA-CHI,Chip Cookie,GranOLAS,Tiendas naturistas,Especializado,Colombia,44800,32256,14350,55.5,18.1
+GRA-CHI,Chip Cookie,GranOLAS,Paranice US,Internacional,Estados Unidos,49350,49350,14350,70.9,30.0
+GRA-CHI,Chip Cookie,GranOLAS,Distribuidor CR,Internacional,Costa Rica,46300,32410,14350,55.7,22.0
+GRA-FUD,Fudge Cake,GranOLAS,E-commerce propio,D2C,Colombia,37950,37950,14500,61.8,0.0
+GRA-FUD,Fudge Cake,GranOLAS,Éxito,Retail,Colombia,42100,28628,14500,49.4,10.9
+GRA-FUD,Fudge Cake,GranOLAS,Carulla,Retail,Colombia,42900,29172,14500,50.3,13.0
+GRA-FUD,Fudge Cake,GranOLAS,Rappi,Marketplace,Colombia,43650,32738,14500,55.7,15.0
+GRA-FUD,Fudge Cake,GranOLAS,Fithub,Especializado,Colombia,46700,32690,14500,55.6,23.1
+GRA-FUD,Fudge Cake,GranOLAS,Tiendas naturistas,Especializado,Colombia,44800,32256,14500,55.0,18.1
+GRA-FUD,Fudge Cake,GranOLAS,Paranice US,Internacional,Estados Unidos,49350,49350,14500,70.6,30.0
+GRA-FUD,Fudge Cake,GranOLAS,Distribuidor CR,Internacional,Costa Rica,46300,32410,14500,55.3,22.0
+GRA-PIS,Pistachio Cookie,GranOLAS,E-commerce propio,D2C,Colombia,44950,44950,18600,58.6,0.0
+GRA-PIS,Pistachio Cookie,GranOLAS,Éxito,Retail,Colombia,49900,33932,18600,45.2,11.0
+GRA-PIS,Pistachio Cookie,GranOLAS,Carulla,Retail,Colombia,50800,34544,18600,46.2,13.0
+GRA-PIS,Pistachio Cookie,GranOLAS,Rappi,Marketplace,Colombia,51700,38775,18600,52.0,15.0
+GRA-PIS,Pistachio Cookie,GranOLAS,Fithub,Especializado,Colombia,55300,38710,18600,52.0,23.0
+GRA-PIS,Pistachio Cookie,GranOLAS,Tiendas naturistas,Especializado,Colombia,53050,38196,18600,51.3,18.0
+GRA-PIS,Pistachio Cookie,GranOLAS,Paranice US,Internacional,Estados Unidos,58450,58450,18600,68.2,30.0
+GRA-PIS,Pistachio Cookie,GranOLAS,Distribuidor CR,Internacional,Costa Rica,54850,38395,18600,51.6,22.0
+ESP-PIS,Buttery Pistachio Cookie,Esparcibles,E-commerce propio,D2C,Colombia,63500,63500,27400,56.9,0.0
+ESP-PIS,Buttery Pistachio Cookie,Esparcibles,Éxito,Retail,Colombia,70500,47940,27400,42.8,11.0
+ESP-PIS,Buttery Pistachio Cookie,Esparcibles,Carulla,Retail,Colombia,71750,48790,27400,43.8,13.0
+ESP-PIS,Buttery Pistachio Cookie,Esparcibles,Rappi,Marketplace,Colombia,73000,54750,27400,50.0,15.0
+ESP-PIS,Buttery Pistachio Cookie,Esparcibles,Fithub,Especializado,Colombia,78100,54670,27400,49.9,23.0
+ESP-PIS,Buttery Pistachio Cookie,Esparcibles,Tiendas naturistas,Especializado,Colombia,74950,53964,27400,49.2,18.0
+ESP-PIS,Buttery Pistachio Cookie,Esparcibles,Paranice US,Internacional,Estados Unidos,82550,82550,27400,66.8,30.0
+ESP-PIS,Buttery Pistachio Cookie,Esparcibles,Distribuidor CR,Internacional,Costa Rica,77450,54215,27400,49.5,22.0
+ESP-BUT,Golden Butter Cookie,Esparcibles,E-commerce propio,D2C,Colombia,59900,59900,25100,58.1,0.0
+ESP-BUT,Golden Butter Cookie,Esparcibles,Éxito,Retail,Colombia,66500,45220,25100,44.5,11.0
+ESP-BUT,Golden Butter Cookie,Esparcibles,Carulla,Retail,Colombia,67700,46036,25100,45.5,13.0
+ESP-BUT,Golden Butter Cookie,Esparcibles,Rappi,Marketplace,Colombia,68900,51675,25100,51.4,15.0
+ESP-BUT,Golden Butter Cookie,Esparcibles,Fithub,Especializado,Colombia,73700,51590,25100,51.3,23.0
+ESP-BUT,Golden Butter Cookie,Esparcibles,Tiendas naturistas,Especializado,Colombia,70700,50904,25100,50.7,18.0
+ESP-BUT,Golden Butter Cookie,Esparcibles,Paranice US,Internacional,Estados Unidos,77850,77850,25100,67.8,30.0
+ESP-BUT,Golden Butter Cookie,Esparcibles,Distribuidor CR,Internacional,Costa Rica,73100,51170,25100,50.9,22.0
+ESP-PB,Peanutty Banana Shake,Esparcibles,E-commerce propio,D2C,Colombia,48600,48600,19400,60.1,0.0
+ESP-PB,Peanutty Banana Shake,Esparcibles,Éxito,Retail,Colombia,53950,36686,19400,47.1,11.0
+ESP-PB,Peanutty Banana Shake,Esparcibles,Carulla,Retail,Colombia,54900,37332,19400,48.0,13.0
+ESP-PB,Peanutty Banana Shake,Esparcibles,Rappi,Marketplace,Colombia,55900,41925,19400,53.7,15.0
+ESP-PB,Peanutty Banana Shake,Esparcibles,Fithub,Especializado,Colombia,59750,41825,19400,53.6,23.0
+ESP-PB,Peanutty Banana Shake,Esparcibles,Tiendas naturistas,Especializado,Colombia,57350,41292,19400,53.0,18.0
+ESP-PB,Peanutty Banana Shake,Esparcibles,Paranice US,Internacional,Estados Unidos,63150,63150,19400,69.3,30.0
+ESP-PB,Peanutty Banana Shake,Esparcibles,Distribuidor CR,Internacional,Costa Rica,59300,41510,19400,53.3,22.0
+ESP-CRE,Creamy Cocoa Hazelnut,Esparcibles,E-commerce propio,D2C,Colombia,48600,48600,19900,59.1,0.0
+ESP-CRE,Creamy Cocoa Hazelnut,Esparcibles,Éxito,Retail,Colombia,53950,36686,19900,45.8,11.0
+ESP-CRE,Creamy Cocoa Hazelnut,Esparcibles,Carulla,Retail,Colombia,54900,37332,19900,46.7,13.0
+ESP-CRE,Creamy Cocoa Hazelnut,Esparcibles,Rappi,Marketplace,Colombia,55900,41925,19900,52.5,15.0
+ESP-CRE,Creamy Cocoa Hazelnut,Esparcibles,Fithub,Especializado,Colombia,59750,41825,19900,52.4,23.0
+ESP-CRE,Creamy Cocoa Hazelnut,Esparcibles,Tiendas naturistas,Especializado,Colombia,57350,41292,19900,51.8,18.0
+ESP-CRE,Creamy Cocoa Hazelnut,Esparcibles,Paranice US,Internacional,Estados Unidos,63150,63150,19900,68.5,30.0
+ESP-CRE,Creamy Cocoa Hazelnut,Esparcibles,Distribuidor CR,Internacional,Costa Rica,59300,41510,19900,52.1,22.0
+ESP-CRU,Crunchy Cocoa Hazelnut,Esparcibles,E-commerce propio,D2C,Colombia,48600,48600,20100,58.6,0.0
+ESP-CRU,Crunchy Cocoa Hazelnut,Esparcibles,Éxito,Retail,Colombia,53950,36686,20100,45.2,11.0
+ESP-CRU,Crunchy Cocoa Hazelnut,Esparcibles,Carulla,Retail,Colombia,54900,37332,20100,46.2,13.0
+ESP-CRU,Crunchy Cocoa Hazelnut,Esparcibles,Rappi,Marketplace,Colombia,55900,41925,20100,52.1,15.0
+ESP-CRU,Crunchy Cocoa Hazelnut,Esparcibles,Fithub,Especializado,Colombia,59750,41825,20100,51.9,23.0
+ESP-CRU,Crunchy Cocoa Hazelnut,Esparcibles,Tiendas naturistas,Especializado,Colombia,57350,41292,20100,51.3,18.0
+ESP-CRU,Crunchy Cocoa Hazelnut,Esparcibles,Paranice US,Internacional,Estados Unidos,63150,63150,20100,68.2,30.0
+ESP-CRU,Crunchy Cocoa Hazelnut,Esparcibles,Distribuidor CR,Internacional,Costa Rica,59300,41510,20100,51.6,22.0
+ESP-CIN,Golden Cinnamon Roll,Esparcibles,E-commerce propio,D2C,Colombia,48600,48600,19700,59.5,0.0
+ESP-CIN,Golden Cinnamon Roll,Esparcibles,Éxito,Retail,Colombia,53950,36686,19700,46.3,11.0
+ESP-CIN,Golden Cinnamon Roll,Esparcibles,Carulla,Retail,Colombia,54900,37332,19700,47.2,13.0
+ESP-CIN,Golden Cinnamon Roll,Esparcibles,Rappi,Marketplace,Colombia,55900,41925,19700,53.0,15.0
+ESP-CIN,Golden Cinnamon Roll,Esparcibles,Fithub,Especializado,Colombia,59750,41825,19700,52.9,23.0
+ESP-CIN,Golden Cinnamon Roll,Esparcibles,Tiendas naturistas,Especializado,Colombia,57350,41292,19700,52.3,18.0
+ESP-CIN,Golden Cinnamon Roll,Esparcibles,Paranice US,Internacional,Estados Unidos,63150,63150,19700,68.8,30.0
+ESP-CIN,Golden Cinnamon Roll,Esparcibles,Distribuidor CR,Internacional,Costa Rica,59300,41510,19700,52.5,22.0
+ESP-BABY,Baby Spreads,Esparcibles,E-commerce propio,D2C,Colombia,19500,19500,7600,61.0,0.0
+ESP-BABY,Baby Spreads,Esparcibles,Éxito,Retail,Colombia,21650,14722,7600,48.4,11.0
+ESP-BABY,Baby Spreads,Esparcibles,Carulla,Retail,Colombia,22050,14994,7600,49.3,13.1
+ESP-BABY,Baby Spreads,Esparcibles,Rappi,Marketplace,Colombia,22400,16800,7600,54.8,14.9
+ESP-BABY,Baby Spreads,Esparcibles,Fithub,Especializado,Colombia,24000,16800,7600,54.8,23.1
+ESP-BABY,Baby Spreads,Esparcibles,Tiendas naturistas,Especializado,Colombia,23000,16560,7600,54.1,17.9
+ESP-BABY,Baby Spreads,Esparcibles,Paranice US,Internacional,Estados Unidos,25350,25350,7600,70.0,30.0
+ESP-BABY,Baby Spreads,Esparcibles,Distribuidor CR,Internacional,Costa Rica,23800,16660,7600,54.4,22.1
+PAN-ALM-VAN,Almendra Vainilla,Pancakes & Waffles,E-commerce propio,D2C,Colombia,41700,41700,16200,61.2,0.0
+PAN-ALM-VAN,Almendra Vainilla,Pancakes & Waffles,Éxito,Retail,Colombia,46300,31484,16200,48.5,11.1
+PAN-ALM-VAN,Almendra Vainilla,Pancakes & Waffles,Carulla,Retail,Colombia,47100,32028,16200,49.4,13.0
+PAN-ALM-VAN,Almendra Vainilla,Pancakes & Waffles,Rappi,Marketplace,Colombia,47950,35962,16200,55.0,15.0
+PAN-ALM-VAN,Almendra Vainilla,Pancakes & Waffles,Fithub,Especializado,Colombia,51300,35910,16200,54.9,23.1
+PAN-ALM-VAN,Almendra Vainilla,Pancakes & Waffles,Tiendas naturistas,Especializado,Colombia,49200,35424,16200,54.3,18.0
+PAN-ALM-VAN,Almendra Vainilla,Pancakes & Waffles,Paranice US,Internacional,Estados Unidos,54200,54200,16200,70.1,30.0
+PAN-ALM-VAN,Almendra Vainilla,Pancakes & Waffles,Distribuidor CR,Internacional,Costa Rica,50850,35595,16200,54.5,22.0
+PAN-ALM-CHO,Almendra Choco Chips,Pancakes & Waffles,E-commerce propio,D2C,Colombia,41700,41700,16600,60.2,0.0
+PAN-ALM-CHO,Almendra Choco Chips,Pancakes & Waffles,Éxito,Retail,Colombia,46300,31484,16600,47.3,11.1
+PAN-ALM-CHO,Almendra Choco Chips,Pancakes & Waffles,Carulla,Retail,Colombia,47100,32028,16600,48.2,13.0
+PAN-ALM-CHO,Almendra Choco Chips,Pancakes & Waffles,Rappi,Marketplace,Colombia,47950,35962,16600,53.8,15.0
+PAN-ALM-CHO,Almendra Choco Chips,Pancakes & Waffles,Fithub,Especializado,Colombia,51300,35910,16600,53.8,23.1
+PAN-ALM-CHO,Almendra Choco Chips,Pancakes & Waffles,Tiendas naturistas,Especializado,Colombia,49200,35424,16600,53.1,18.0
+PAN-ALM-CHO,Almendra Choco Chips,Pancakes & Waffles,Paranice US,Internacional,Estados Unidos,54200,54200,16600,69.4,30.0
+PAN-ALM-CHO,Almendra Choco Chips,Pancakes & Waffles,Distribuidor CR,Internacional,Costa Rica,50850,35595,16600,53.4,22.0
+PAN-ALM-CHU,Almendra Churro,Pancakes & Waffles,E-commerce propio,D2C,Colombia,41700,41700,16400,60.7,0.0
+PAN-ALM-CHU,Almendra Churro,Pancakes & Waffles,Éxito,Retail,Colombia,46300,31484,16400,47.9,11.1
+PAN-ALM-CHU,Almendra Churro,Pancakes & Waffles,Carulla,Retail,Colombia,47100,32028,16400,48.8,13.0
+PAN-ALM-CHU,Almendra Churro,Pancakes & Waffles,Rappi,Marketplace,Colombia,47950,35962,16400,54.4,15.0
+PAN-ALM-CHU,Almendra Churro,Pancakes & Waffles,Fithub,Especializado,Colombia,51300,35910,16400,54.3,23.1
+PAN-ALM-CHU,Almendra Churro,Pancakes & Waffles,Tiendas naturistas,Especializado,Colombia,49200,35424,16400,53.7,18.0
+PAN-ALM-CHU,Almendra Churro,Pancakes & Waffles,Paranice US,Internacional,Estados Unidos,54200,54200,16400,69.7,30.0
+PAN-ALM-CHU,Almendra Churro,Pancakes & Waffles,Distribuidor CR,Internacional,Costa Rica,50850,35595,16400,53.9,22.0
+PAN-AVE-BAN,Avena Banano,Pancakes & Waffles,E-commerce propio,D2C,Colombia,32900,32900,12500,62.0,0.0
+PAN-AVE-BAN,Avena Banano,Pancakes & Waffles,Éxito,Retail,Colombia,36500,24820,12500,49.6,11.0
+PAN-AVE-BAN,Avena Banano,Pancakes & Waffles,Carulla,Retail,Colombia,37150,25262,12500,50.5,13.0
+PAN-AVE-BAN,Avena Banano,Pancakes & Waffles,Rappi,Marketplace,Colombia,37800,28350,12500,55.9,14.9
+PAN-AVE-BAN,Avena Banano,Pancakes & Waffles,Fithub,Especializado,Colombia,40450,28315,12500,55.9,23.0
+PAN-AVE-BAN,Avena Banano,Pancakes & Waffles,Tiendas naturistas,Especializado,Colombia,38800,27936,12500,55.3,18.0
+PAN-AVE-BAN,Avena Banano,Pancakes & Waffles,Paranice US,Internacional,Estados Unidos,42750,42750,12500,70.8,30.0
+PAN-AVE-BAN,Avena Banano,Pancakes & Waffles,Distribuidor CR,Internacional,Costa Rica,40150,28105,12500,55.5,22.1
+PAN-AVE-BRO,Avena Brownie,Pancakes & Waffles,E-commerce propio,D2C,Colombia,32900,32900,12800,61.1,0.0
+PAN-AVE-BRO,Avena Brownie,Pancakes & Waffles,Éxito,Retail,Colombia,36500,24820,12800,48.4,11.0
+PAN-AVE-BRO,Avena Brownie,Pancakes & Waffles,Carulla,Retail,Colombia,37150,25262,12800,49.3,13.0
+PAN-AVE-BRO,Avena Brownie,Pancakes & Waffles,Rappi,Marketplace,Colombia,37800,28350,12800,54.9,14.9
+PAN-AVE-BRO,Avena Brownie,Pancakes & Waffles,Fithub,Especializado,Colombia,40450,28315,12800,54.8,23.0
+PAN-AVE-BRO,Avena Brownie,Pancakes & Waffles,Tiendas naturistas,Especializado,Colombia,38800,27936,12800,54.2,18.0
+PAN-AVE-BRO,Avena Brownie,Pancakes & Waffles,Paranice US,Internacional,Estados Unidos,42750,42750,12800,70.1,30.0
+PAN-AVE-BRO,Avena Brownie,Pancakes & Waffles,Distribuidor CR,Internacional,Costa Rica,40150,28105,12800,54.5,22.1
+PAN-AVE-VAN,Avena Vainilla,Pancakes & Waffles,E-commerce propio,D2C,Colombia,32900,32900,12400,62.3,0.0
+PAN-AVE-VAN,Avena Vainilla,Pancakes & Waffles,Éxito,Retail,Colombia,36500,24820,12400,50.0,11.0
+PAN-AVE-VAN,Avena Vainilla,Pancakes & Waffles,Carulla,Retail,Colombia,37150,25262,12400,50.9,13.0
+PAN-AVE-VAN,Avena Vainilla,Pancakes & Waffles,Rappi,Marketplace,Colombia,37800,28350,12400,56.3,14.9
+PAN-AVE-VAN,Avena Vainilla,Pancakes & Waffles,Fithub,Especializado,Colombia,40450,28315,12400,56.2,23.0
+PAN-AVE-VAN,Avena Vainilla,Pancakes & Waffles,Tiendas naturistas,Especializado,Colombia,38800,27936,12400,55.6,18.0
+PAN-AVE-VAN,Avena Vainilla,Pancakes & Waffles,Paranice US,Internacional,Estados Unidos,42750,42750,12400,71.0,30.0
+PAN-AVE-VAN,Avena Vainilla,Pancakes & Waffles,Distribuidor CR,Internacional,Costa Rica,40150,28105,12400,55.9,22.1
+AVE-HOJ,Avena en Hojuelas,Avena & Harinas,E-commerce propio,D2C,Colombia,31350,31350,11800,62.4,0.0
+AVE-HOJ,Avena en Hojuelas,Avena & Harinas,Éxito,Retail,Colombia,34800,23664,11800,50.1,11.0
+AVE-HOJ,Avena en Hojuelas,Avena & Harinas,Carulla,Retail,Colombia,35450,24106,11800,51.0,13.1
+AVE-HOJ,Avena en Hojuelas,Avena & Harinas,Rappi,Marketplace,Colombia,36050,27038,11800,56.4,15.0
+AVE-HOJ,Avena en Hojuelas,Avena & Harinas,Fithub,Especializado,Colombia,38550,26985,11800,56.3,23.0
+AVE-HOJ,Avena en Hojuelas,Avena & Harinas,Tiendas naturistas,Especializado,Colombia,37000,26640,11800,55.7,18.0
+AVE-HOJ,Avena en Hojuelas,Avena & Harinas,Paranice US,Internacional,Estados Unidos,40750,40750,11800,71.0,30.0
+AVE-HOJ,Avena en Hojuelas,Avena & Harinas,Distribuidor CR,Internacional,Costa Rica,38250,26775,11800,55.9,22.0
+HAR-AVE,Harina de Avena,Avena & Harinas,E-commerce propio,D2C,Colombia,31350,31350,11600,63.0,0.0
+HAR-AVE,Harina de Avena,Avena & Harinas,Éxito,Retail,Colombia,34800,23664,11600,51.0,11.0
+HAR-AVE,Harina de Avena,Avena & Harinas,Carulla,Retail,Colombia,35450,24106,11600,51.9,13.1
+HAR-AVE,Harina de Avena,Avena & Harinas,Rappi,Marketplace,Colombia,36050,27038,11600,57.1,15.0
+HAR-AVE,Harina de Avena,Avena & Harinas,Fithub,Especializado,Colombia,38550,26985,11600,57.0,23.0
+HAR-AVE,Harina de Avena,Avena & Harinas,Tiendas naturistas,Especializado,Colombia,37000,26640,11600,56.5,18.0
+HAR-AVE,Harina de Avena,Avena & Harinas,Paranice US,Internacional,Estados Unidos,40750,40750,11600,71.5,30.0
+HAR-AVE,Harina de Avena,Avena & Harinas,Distribuidor CR,Internacional,Costa Rica,38250,26775,11600,56.7,22.0
+HAR-ALM,Harina de Almendra,Avena & Harinas,E-commerce propio,D2C,Colombia,34650,34650,15400,55.6,0.0
+HAR-ALM,Harina de Almendra,Avena & Harinas,Éxito,Retail,Colombia,38450,26146,15400,41.1,11.0
+HAR-ALM,Harina de Almendra,Avena & Harinas,Carulla,Retail,Colombia,39150,26622,15400,42.2,13.0
+HAR-ALM,Harina de Almendra,Avena & Harinas,Rappi,Marketplace,Colombia,39850,29888,15400,48.5,15.0
+HAR-ALM,Harina de Almendra,Avena & Harinas,Fithub,Especializado,Colombia,42600,29820,15400,48.4,22.9
+HAR-ALM,Harina de Almendra,Avena & Harinas,Tiendas naturistas,Especializado,Colombia,40900,29448,15400,47.7,18.0
+HAR-ALM,Harina de Almendra,Avena & Harinas,Paranice US,Internacional,Estados Unidos,45050,45050,15400,65.8,30.0
+HAR-ALM,Harina de Almendra,Avena & Harinas,Distribuidor CR,Internacional,Costa Rica,42250,29575,15400,47.9,21.9
+COM-3GRA,Three Pack GranOLA,Combos,E-commerce propio,D2C,Colombia,96750,96750,43000,55.6,-0.0
+COM-3GRA,Three Pack GranOLA,Combos,Éxito,Retail,Colombia,107400,73032,43000,41.1,11.0
+COM-3GRA,Three Pack GranOLA,Combos,Carulla,Retail,Colombia,109350,74358,43000,42.2,13.0
+COM-3GRA,Three Pack GranOLA,Combos,Rappi,Marketplace,Colombia,111300,83475,43000,48.5,15.0
+COM-3GRA,Three Pack GranOLA,Combos,Fithub,Especializado,Colombia,119050,83335,43000,48.4,23.0
+COM-3GRA,Three Pack GranOLA,Combos,Tiendas naturistas,Especializado,Colombia,114200,82224,43000,47.7,18.0
+COM-3GRA,Three Pack GranOLA,Combos,Paranice US,Internacional,Estados Unidos,125800,125800,43000,65.8,30.0
+COM-3GRA,Three Pack GranOLA,Combos,Distribuidor CR,Internacional,Costa Rica,118050,82635,43000,48.0,22.0
+COM-3SPR,Three Pack Spread,Combos,E-commerce propio,D2C,Colombia,128750,128750,59500,53.8,-0.0
+COM-3SPR,Three Pack Spread,Combos,Éxito,Retail,Colombia,142950,97206,59500,38.8,11.0
+COM-3SPR,Three Pack Spread,Combos,Carulla,Retail,Colombia,145500,98940,59500,39.9,13.0
+COM-3SPR,Three Pack Spread,Combos,Rappi,Marketplace,Colombia,148100,111075,59500,46.4,15.0
+COM-3SPR,Three Pack Spread,Combos,Fithub,Especializado,Colombia,158400,110880,59500,46.3,23.0
+COM-3SPR,Three Pack Spread,Combos,Tiendas naturistas,Especializado,Colombia,151950,109404,59500,45.6,18.0
+COM-3SPR,Three Pack Spread,Combos,Paranice US,Internacional,Estados Unidos,167400,167400,59500,64.5,30.0
+COM-3SPR,Three Pack Spread,Combos,Distribuidor CR,Internacional,Costa Rica,157100,109970,59500,45.9,22.0
+COM-3MEZ,Three Pack Mezclas,Combos,E-commerce propio,D2C,Colombia,95000,95000,40200,57.7,0.0
+COM-3MEZ,Three Pack Mezclas,Combos,Éxito,Retail,Colombia,105450,71706,40200,43.9,11.0
+COM-3MEZ,Three Pack Mezclas,Combos,Carulla,Retail,Colombia,107350,72998,40200,44.9,13.0
+COM-3MEZ,Three Pack Mezclas,Combos,Rappi,Marketplace,Colombia,109250,81938,40200,50.9,15.0
+COM-3MEZ,Three Pack Mezclas,Combos,Fithub,Especializado,Colombia,116850,81795,40200,50.9,23.0
+COM-3MEZ,Three Pack Mezclas,Combos,Tiendas naturistas,Especializado,Colombia,112100,80712,40200,50.2,18.0
+COM-3MEZ,Three Pack Mezclas,Combos,Paranice US,Internacional,Estados Unidos,123500,123500,40200,67.4,30.0
+COM-3MEZ,Three Pack Mezclas,Combos,Distribuidor CR,Internacional,Costa Rica,115900,81130,40200,50.4,22.0
+COM-MIX,Perfect Mix & Match,Combos,E-commerce propio,D2C,Colombia,69250,69250,30100,56.5,-0.0
+COM-MIX,Perfect Mix & Match,Combos,Éxito,Retail,Colombia,76900,52292,30100,42.4,11.0
+COM-MIX,Perfect Mix & Match,Combos,Carulla,Retail,Colombia,78250,53210,30100,43.4,13.0
+COM-MIX,Perfect Mix & Match,Combos,Rappi,Marketplace,Colombia,79650,59738,30100,49.6,15.0
+COM-MIX,Perfect Mix & Match,Combos,Fithub,Especializado,Colombia,85200,59640,30100,49.5,23.0
+COM-MIX,Perfect Mix & Match,Combos,Tiendas naturistas,Especializado,Colombia,81700,58824,30100,48.8,18.0
+COM-MIX,Perfect Mix & Match,Combos,Paranice US,Internacional,Estados Unidos,90050,90050,30100,66.6,30.0
+COM-MIX,Perfect Mix & Match,Combos,Distribuidor CR,Internacional,Costa Rica,84500,59150,30100,49.1,22.0
+COM-WAF,Mini Wafflera,Combos,E-commerce propio,D2C,Colombia,100000,100000,58000,42.0,0.0
+COM-WAF,Mini Wafflera,Combos,Éxito,Retail,Colombia,111000,75480,58000,23.2,11.0
+COM-WAF,Mini Wafflera,Combos,Carulla,Retail,Colombia,113000,76840,58000,24.5,13.0
+COM-WAF,Mini Wafflera,Combos,Rappi,Marketplace,Colombia,115000,86250,58000,32.8,15.0
+COM-WAF,Mini Wafflera,Combos,Fithub,Especializado,Colombia,123000,86100,58000,32.6,23.0
+COM-WAF,Mini Wafflera,Combos,Tiendas naturistas,Especializado,Colombia,118000,84960,58000,31.7,18.0
+COM-WAF,Mini Wafflera,Combos,Paranice US,Internacional,Estados Unidos,130000,130000,58000,55.4,30.0
+COM-WAF,Mini Wafflera,Combos,Distribuidor CR,Internacional,Costa Rica,122000,85400,58000,32.1,22.0
+COM-DECK,Deck de Cartas,Combos,E-commerce propio,D2C,Colombia,100000,100000,44000,56.0,0.0
+COM-DECK,Deck de Cartas,Combos,Éxito,Retail,Colombia,111000,75480,44000,41.7,11.0
+COM-DECK,Deck de Cartas,Combos,Carulla,Retail,Colombia,113000,76840,44000,42.7,13.0
+COM-DECK,Deck de Cartas,Combos,Rappi,Marketplace,Colombia,115000,86250,44000,49.0,15.0
+COM-DECK,Deck de Cartas,Combos,Fithub,Especializado,Colombia,123000,86100,44000,48.9,23.0
+COM-DECK,Deck de Cartas,Combos,Tiendas naturistas,Especializado,Colombia,118000,84960,44000,48.2,18.0
+COM-DECK,Deck de Cartas,Combos,Paranice US,Internacional,Estados Unidos,130000,130000,44000,66.2,30.0
+COM-DECK,Deck de Cartas,Combos,Distribuidor CR,Internacional,Costa Rica,122000,85400,44000,48.5,22.0
+COM-ROMP,Rompecabezas,Combos,E-commerce propio,D2C,Colombia,100000,100000,45000,55.0,0.0
+COM-ROMP,Rompecabezas,Combos,Éxito,Retail,Colombia,111000,75480,45000,40.4,11.0
+COM-ROMP,Rompecabezas,Combos,Carulla,Retail,Colombia,113000,76840,45000,41.4,13.0
+COM-ROMP,Rompecabezas,Combos,Rappi,Marketplace,Colombia,115000,86250,45000,47.8,15.0
+COM-ROMP,Rompecabezas,Combos,Fithub,Especializado,Colombia,123000,86100,45000,47.7,23.0
+COM-ROMP,Rompecabezas,Combos,Tiendas naturistas,Especializado,Colombia,118000,84960,45000,47.0,18.0
+COM-ROMP,Rompecabezas,Combos,Paranice US,Internacional,Estados Unidos,130000,130000,45000,65.4,30.0
+COM-ROMP,Rompecabezas,Combos,Distribuidor CR,Internacional,Costa Rica,122000,85400,45000,47.3,22.0
+MER-NYR,New Year Resolution,Merch,E-commerce propio,D2C,Colombia,100000,100000,47000,53.0,0.0
+MER-NYR,New Year Resolution,Merch,Éxito,Retail,Colombia,111000,75480,47000,37.7,11.0
+MER-NYR,New Year Resolution,Merch,Carulla,Retail,Colombia,113000,76840,47000,38.8,13.0
+MER-NYR,New Year Resolution,Merch,Rappi,Marketplace,Colombia,115000,86250,47000,45.5,15.0
+MER-NYR,New Year Resolution,Merch,Fithub,Especializado,Colombia,123000,86100,47000,45.4,23.0
+MER-NYR,New Year Resolution,Merch,Tiendas naturistas,Especializado,Colombia,118000,84960,47000,44.7,18.0
+MER-NYR,New Year Resolution,Merch,Paranice US,Internacional,Estados Unidos,130000,130000,47000,63.8,30.0
+MER-NYR,New Year Resolution,Merch,Distribuidor CR,Internacional,Costa Rica,122000,85400,47000,45.0,22.0

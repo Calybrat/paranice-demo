@@ -1,0 +1,113 @@
+empleado_id,nombre,area,genero,sede,tipo_contrato,fecha_ingreso,antiguedad_anios,salario_cop,rotacion_riesgo,activo
+EMP-001,Mónica López Peña,Producción,F,Planta Bogotá,Indefinido,2025-07-17,1.1,1632269,Bajo,True
+EMP-002,Camilo Torres Jiménez,Producción,M,Planta Bogotá,Indefinido,2025-04-08,1.4,2656187,Bajo,True
+EMP-003,Natalia Rojas Rodríguez,Producción,F,Planta Bogotá,Indefinido,2026-04-27,0.3,2829910,Alto,True
+EMP-004,Daniela Cárdenas Jiménez,Producción,F,Planta Bogotá,Fijo,2024-02-11,2.6,2672589,Bajo,True
+EMP-005,Valentina Herrera Vargas,Producción,F,Oficina Bogotá,Fijo,2024-08-08,2.1,3046515,Bajo,True
+EMP-006,Sebastián Martínez Rodríguez,Producción,M,Planta Bogotá,Obra labor,2025-06-07,1.2,3001407,Bajo,True
+EMP-007,Felipe Rojas Gómez,Producción,M,Planta Bogotá,Indefinido,2025-07-01,1.2,1752464,Medio,True
+EMP-008,Camilo Peña Rodríguez,Producción,M,Oficina Bogotá,Obra labor,2020-05-04,6.3,1501217,Bajo,True
+EMP-009,Paula Torres Vargas,Producción,F,Cross-dock Medellín,Indefinido,2020-08-18,6.0,2369581,Medio,True
+EMP-010,Mónica Rodríguez Vargas,Producción,F,Planta Bogotá,Indefinido,2023-06-23,3.2,3138812,Bajo,True
+EMP-011,Santiago Jiménez Guzmán,Producción,M,Planta Bogotá,Indefinido,2023-02-03,3.6,2758754,Bajo,True
+EMP-012,Natalia Ramírez Coral,Producción,F,Oficina Bogotá,Indefinido,2020-05-09,6.3,2738002,Bajo,True
+EMP-013,Mateo Gómez Sánchez,Producción,M,Planta Bogotá,Indefinido,2024-04-05,2.4,2688773,Bajo,True
+EMP-014,Santiago Herrera Peña,Producción,M,Oficina Bogotá,Aprendiz,2020-07-19,6.1,1687730,Bajo,True
+EMP-015,Juliana Jiménez Cárdenas,Producción,F,Planta Bogotá,Indefinido,2020-04-05,6.4,1731771,Medio,True
+EMP-016,Valentina Cárdenas Sánchez,Producción,F,Planta Bogotá,Aprendiz,2021-03-03,5.5,1664025,Bajo,True
+EMP-017,Juan Rojas Moreno,Producción,M,Oficina Bogotá,Indefinido,2021-09-25,4.9,2832708,Bajo,True
+EMP-018,Valentina Coral Ramírez,Producción,F,Oficina Bogotá,Indefinido,2026-07-22,0.1,1579260,Bajo,True
+EMP-019,Andrea Rodríguez Rodríguez,Producción,F,Oficina Bogotá,Fijo,2023-05-20,3.3,2915704,Bajo,True
+EMP-020,Camilo Vargas Sánchez,Producción,M,Cross-dock Medellín,Fijo,2021-06-08,5.2,2869420,Medio,True
+EMP-021,Natalia Rojas Peña,Producción,F,Planta Bogotá,Fijo,2022-12-07,3.7,1616846,Bajo,True
+EMP-022,Daniela Vargas Guzmán,Producción,F,Oficina Bogotá,Fijo,2020-06-21,6.2,1577635,Medio,True
+EMP-023,Sara Coral Sánchez,Producción,F,Cross-dock Medellín,Obra labor,2026-05-27,0.3,2325855,Bajo,False
+EMP-024,Sara Jiménez Torres,Producción,F,Planta Bogotá,Obra labor,2023-06-20,3.2,1628988,Bajo,True
+EMP-025,Daniela López Rojas,Producción,F,Planta Bogotá,Fijo,2023-07-17,3.1,2381063,Bajo,True
+EMP-026,María Torres Herrera,Producción,F,Planta Bogotá,Aprendiz,2024-05-30,2.3,3067454,Bajo,True
+EMP-027,Santiago Moreno Guzmán,Producción,M,Oficina Bogotá,Obra labor,2021-12-29,4.7,1943960,Alto,True
+EMP-028,Julián Sánchez Vargas,Producción,M,Planta Bogotá,Indefinido,2020-06-18,6.2,1775534,Medio,True
+EMP-029,Juan Gómez Castro,Producción,M,Planta Bogotá,Indefinido,2026-07-08,0.1,1619381,Bajo,True
+EMP-030,María Herrera Coral,Producción,F,Planta Bogotá,Indefinido,2025-11-23,0.8,1825122,Bajo,True
+EMP-031,Sebastián Gómez Rodríguez,Producción,M,Oficina Bogotá,Fijo,2021-11-19,4.8,2479002,Medio,True
+EMP-032,María Cárdenas Cárdenas,Producción,F,Planta Bogotá,Fijo,2023-06-14,3.2,2610320,Bajo,True
+EMP-033,Nicolás Rodríguez Castro,Producción,M,Oficina Bogotá,Indefinido,2025-01-27,1.6,1869206,Bajo,True
+EMP-034,Laura Ramírez Cárdenas,Producción,F,Planta Bogotá,Fijo,2024-05-20,2.3,2096586,Bajo,True
+EMP-035,Andrés Rodríguez Peña,Producción,M,Planta Bogotá,Aprendiz,2025-02-06,1.6,1508032,Bajo,True
+EMP-036,Andrea Ramírez Herrera,Producción,F,Oficina Bogotá,Indefinido,2025-10-20,0.9,1914725,Medio,True
+EMP-037,Paula Peña Peña,Producción,F,Oficina Bogotá,Fijo,2026-01-18,0.6,2585155,Bajo,False
+EMP-038,Camilo Ramírez Moreno,Producción,M,Oficina Bogotá,Obra labor,2021-04-21,5.4,2410321,Medio,True
+EMP-039,Andrés Herrera Coral,Producción,M,Oficina Bogotá,Indefinido,2023-07-21,3.1,2214472,Bajo,True
+EMP-040,Andrea Cárdenas Díaz,Producción,F,Planta Bogotá,Aprendiz,2026-02-04,0.6,2203833,Bajo,True
+EMP-041,María Cárdenas López,Producción,F,Oficina Bogotá,Indefinido,2025-11-05,0.8,2508469,Medio,True
+EMP-042,Laura Guzmán Coral,Logística,F,Planta Bogotá,Fijo,2025-01-07,1.6,2419392,Medio,True
+EMP-043,Felipe Guzmán Díaz,Logística,M,Planta Bogotá,Indefinido,2020-09-05,6.0,2288735,Bajo,False
+EMP-044,Juliana Coral Coral,Logística,F,Oficina Bogotá,Indefinido,2020-11-20,5.8,1608891,Bajo,True
+EMP-045,Felipe Torres Jiménez,Logística,M,Planta Bogotá,Fijo,2020-05-25,6.3,3378069,Bajo,True
+EMP-046,Daniela Torres Moreno,Logística,F,Planta Bogotá,Obra labor,2025-03-18,1.5,1913649,Bajo,True
+EMP-047,Natalia Sánchez Castro,Logística,F,Oficina Bogotá,Fijo,2020-03-08,6.5,1626722,Medio,True
+EMP-048,Andrea Rojas Vargas,Logística,F,Oficina Bogotá,Indefinido,2025-09-03,1.0,3361496,Bajo,True
+EMP-049,Daniela Moreno López,Logística,F,Planta Bogotá,Indefinido,2020-03-26,6.4,3790975,Bajo,False
+EMP-050,Natalia Vargas Peña,Logística,F,Oficina Bogotá,Indefinido,2023-08-24,3.0,3581629,Medio,True
+EMP-051,Juliana Jiménez Díaz,Logística,F,Planta Bogotá,Aprendiz,2025-07-02,1.2,3677404,Medio,True
+EMP-052,Julián Peña Guzmán,Logística,M,Oficina Bogotá,Indefinido,2025-03-05,1.5,3314237,Bajo,True
+EMP-053,Juan Gómez Jiménez,Logística,M,Oficina Bogotá,Fijo,2025-03-25,1.4,2516981,Medio,True
+EMP-054,Diego Díaz Rojas,Logística,M,Oficina Bogotá,Indefinido,2021-04-26,5.4,3503352,Bajo,True
+EMP-055,Sara Moreno Torres,Logística,F,Oficina Bogotá,Fijo,2025-11-27,0.8,3375016,Bajo,True
+EMP-056,Sebastián Martínez Moreno,Logística,M,Planta Bogotá,Fijo,2021-12-10,4.7,1750193,Bajo,True
+EMP-057,Laura Peña Vargas,Logística,F,Cross-dock Medellín,Indefinido,2026-06-27,0.2,3530887,Bajo,True
+EMP-058,María Peña Coral,Comercial & Trade,F,Planta Bogotá,Fijo,2025-09-17,1.0,3538060,Bajo,True
+EMP-059,Sara Rodríguez Moreno,Comercial & Trade,F,Oficina Bogotá,Indefinido,2025-01-16,1.6,5649988,Bajo,True
+EMP-060,Andrea Ramírez Rodríguez,Comercial & Trade,F,Cross-dock Medellín,Indefinido,2025-12-11,0.7,6734779,Bajo,True
+EMP-061,Sara Martínez Vargas,Comercial & Trade,F,Planta Bogotá,Indefinido,2021-05-17,5.3,7565815,Bajo,True
+EMP-062,Valentina Sánchez Coral,Comercial & Trade,F,Planta Bogotá,Indefinido,2025-12-08,0.7,4639324,Bajo,True
+EMP-063,Nicolás Guzmán Ramírez,Comercial & Trade,M,Oficina Bogotá,Indefinido,2021-01-17,5.6,7911685,Bajo,True
+EMP-064,Juliana Martínez Castro,Comercial & Trade,F,Planta Bogotá,Indefinido,2020-04-17,6.4,6747349,Bajo,True
+EMP-065,Mónica Sánchez Rodríguez,Comercial & Trade,F,Planta Bogotá,Fijo,2023-04-28,3.3,4244144,Bajo,True
+EMP-066,Paula Castro Guzmán,Comercial & Trade,F,Oficina Bogotá,Indefinido,2025-10-23,0.9,8482108,Bajo,True
+EMP-067,Santiago Guzmán Sánchez,Comercial & Trade,M,Planta Bogotá,Fijo,2024-11-11,1.8,2716308,Bajo,True
+EMP-068,Natalia Torres Vargas,Comercial & Trade,F,Planta Bogotá,Obra labor,2024-07-10,2.1,3554869,Medio,True
+EMP-069,Laura Vargas Sánchez,Comercial & Trade,F,Planta Bogotá,Fijo,2023-11-02,2.8,4446720,Bajo,True
+EMP-070,Diego Rojas Guzmán,Comercial & Trade,M,Planta Bogotá,Indefinido,2023-04-09,3.4,7342281,Medio,True
+EMP-071,Diego Jiménez Guzmán,Comercial & Trade,M,Planta Bogotá,Obra labor,2023-06-04,3.2,4068230,Bajo,True
+EMP-072,Mateo Torres Martínez,Comercial & Trade,M,Planta Bogotá,Indefinido,2020-05-08,6.3,5661974,Bajo,False
+EMP-073,Mónica Guzmán Guzmán,Comercial & Trade,F,Oficina Bogotá,Indefinido,2026-02-01,0.6,4583464,Bajo,True
+EMP-074,Laura Guzmán Jiménez,Comercial & Trade,F,Oficina Bogotá,Fijo,2021-03-04,5.5,7209990,Bajo,True
+EMP-075,María Gómez Díaz,Comercial & Trade,F,Planta Bogotá,Indefinido,2022-12-07,3.7,7613682,Bajo,True
+EMP-076,Diego Rojas Vargas,Marketing,M,Oficina Bogotá,Indefinido,2026-02-19,0.5,3602180,Medio,True
+EMP-077,Paula Peña Coral,Marketing,F,Planta Bogotá,Indefinido,2023-11-26,2.8,7547511,Bajo,True
+EMP-078,Camilo Rodríguez Martínez,Marketing,M,Planta Bogotá,Indefinido,2025-03-30,1.4,4105294,Bajo,True
+EMP-079,Daniela Torres Peña,Marketing,F,Planta Bogotá,Indefinido,2023-09-26,2.9,8245616,Bajo,True
+EMP-080,Juan Moreno Torres,Marketing,M,Planta Bogotá,Indefinido,2023-09-20,2.9,6113673,Bajo,False
+EMP-081,Nicolás Vargas Cárdenas,Marketing,M,Planta Bogotá,Fijo,2022-05-24,4.3,6638993,Bajo,True
+EMP-082,Andrés Moreno Castro,Marketing,M,Planta Bogotá,Fijo,2022-06-07,4.2,5255703,Medio,True
+EMP-083,Juan Cárdenas Cárdenas,Marketing,M,Planta Bogotá,Indefinido,2021-09-01,5.0,5444121,Bajo,True
+EMP-084,Julián Castro Vargas,Marketing,M,Planta Bogotá,Indefinido,2026-05-08,0.3,4864178,Bajo,True
+EMP-085,Nicolás Jiménez Martínez,Marketing,M,Planta Bogotá,Obra labor,2024-12-15,1.7,2926046,Bajo,True
+EMP-086,Diego Peña Cárdenas,Calidad,M,Planta Bogotá,Indefinido,2021-10-29,4.8,2602321,Bajo,True
+EMP-087,Felipe Guzmán Torres,Calidad,M,Planta Bogotá,Indefinido,2023-05-31,3.3,5356383,Medio,True
+EMP-088,Juliana Sánchez Castro,Calidad,F,Planta Bogotá,Indefinido,2021-04-28,5.3,5837996,Medio,True
+EMP-089,Valentina Torres Coral,Calidad,F,Oficina Bogotá,Aprendiz,2020-06-25,6.2,3160039,Medio,False
+EMP-090,Santiago López Cárdenas,Calidad,M,Oficina Bogotá,Indefinido,2022-11-03,3.8,2698176,Bajo,True
+EMP-091,Andrés Díaz López,Calidad,M,Oficina Bogotá,Indefinido,2026-04-12,0.4,4430092,Bajo,True
+EMP-092,Juan Sánchez Castro,Calidad,M,Oficina Bogotá,Indefinido,2023-03-22,3.4,3036587,Bajo,True
+EMP-093,Valentina Moreno Gómez,Servicio al cliente,F,Oficina Bogotá,Indefinido,2021-09-23,4.9,2081626,Medio,True
+EMP-094,Juliana Rodríguez Moreno,Servicio al cliente,F,Planta Bogotá,Indefinido,2025-11-12,0.8,1534401,Alto,False
+EMP-095,Julián Coral Martínez,Servicio al cliente,M,Planta Bogotá,Indefinido,2021-08-20,5.0,1730261,Medio,True
+EMP-096,Andrés Rojas Vargas,Servicio al cliente,M,Planta Bogotá,Indefinido,2020-08-13,6.1,2796354,Bajo,True
+EMP-097,Sebastián Rodríguez Vargas,Servicio al cliente,M,Planta Bogotá,Fijo,2023-06-05,3.2,3092071,Bajo,True
+EMP-098,Diego Torres Peña,Servicio al cliente,M,Planta Bogotá,Aprendiz,2020-02-06,6.6,2988079,Medio,True
+EMP-099,Nicolás Moreno Guzmán,Servicio al cliente,M,Oficina Bogotá,Obra labor,2024-01-03,2.7,3060025,Medio,True
+EMP-100,Daniela Peña Sánchez,Servicio al cliente,F,Oficina Bogotá,Fijo,2022-10-18,3.9,3059167,Bajo,True
+EMP-101,Paula López Díaz,Administración,F,Planta Bogotá,Obra labor,2022-12-02,3.7,5089300,Medio,True
+EMP-102,Sara Rojas Moreno,Administración,F,Planta Bogotá,Indefinido,2025-09-14,1.0,5672645,Medio,True
+EMP-103,Natalia Torres Guzmán,Administración,F,Planta Bogotá,Fijo,2020-06-07,6.2,5450303,Bajo,True
+EMP-104,Diego Moreno Moreno,Administración,M,Planta Bogotá,Obra labor,2023-03-11,3.5,5278318,Bajo,True
+EMP-105,Julián Herrera Gómez,Administración,M,Planta Bogotá,Indefinido,2022-11-29,3.8,5148336,Medio,True
+EMP-106,Mónica Jiménez Torres,Administración,F,Oficina Bogotá,Fijo,2021-11-01,4.8,6762005,Bajo,True
+EMP-107,Juliana Sánchez López,Administración,F,Oficina Bogotá,Fijo,2022-03-29,4.4,4486923,Medio,True
+EMP-108,Andrea Guzmán Jiménez,Administración,F,Planta Bogotá,Fijo,2024-10-17,1.9,2937585,Alto,True
+EMP-109,Felipe Moreno Cárdenas,Dirección,M,Planta Bogotá,Indefinido,2026-04-20,0.4,20016632,Alto,True
+EMP-110,Valentina Sánchez Herrera,Dirección,F,Cross-dock Medellín,Indefinido,2022-10-08,3.9,20643905,Bajo,True
+EMP-111,Camilo Díaz López,Dirección,M,Oficina Bogotá,Obra labor,2024-07-19,2.1,17391367,Bajo,True
+EMP-112,María Moreno Gómez,Dirección,F,Planta Bogotá,Indefinido,2023-07-03,3.2,17404241,Medio,True

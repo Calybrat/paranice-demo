@@ -1,0 +1,5 @@
+cedi_id,nombre,ciudad,pais,peso
+CEDI-BOG,CEDI Bogotá (planta),Bogotá,Colombia,0.7
+CD-MED,Cross-dock Medellín,Medellín,Colombia,0.12
+3PL-MIA,3PL Miami,Miami,Estados Unidos,0.12
+DIST-SJO,Distribuidor San José,San José,Costa Rica,0.06

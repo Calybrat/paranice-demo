@@ -5,172 +5,187 @@ from pathlib import Path
 from utils.formatters import *
 
 DATA = Path(__file__).parent.parent / "data"
+HOY = pd.Timestamp("2026-08-31")
+
 
 @st.cache_data
 def load():
-    p = pd.read_csv(DATA/"pedidos.csv")
-    p["fecha"] = pd.to_datetime(p["fecha"])
-    c = pd.read_csv(DATA/"clientes.csv")
-    e = pd.read_csv(DATA/"envios.csv")
-    e["fecha_pedido"] = pd.to_datetime(e["fecha_pedido"])
-    inv = pd.read_csv(DATA/"inventario.csv")
-    prod = pd.read_csv(DATA/"produccion.csv")
-    m = pd.read_csv(DATA/"marketing.csv")
-    return p, c, e, inv, prod, m
+    v = leer_csv("ventas.csv"); v["fecha"] = pd.to_datetime(v["fecha"])
+    f = leer_csv("finanzas_mensual.csv")
+    c = leer_csv("clientes_d2c.csv")
+    d = leer_csv("despachos.csv"); d["fecha_pedido"] = pd.to_datetime(d["fecha_pedido"])
+    car = leer_csv("cartera.csv")
+    inv = leer_csv("inventario.csv")
+    so = leer_csv("sellout.csv")
+    prod = leer_csv("produccion.csv")
+    return v, f, c, d, car, inv, so, prod
+
 
 def render():
-    p, c, e, inv, prod, m = load()
+    v, fin, cli, desp, car, inv, so, prod = load()
 
     st.markdown(HEADER_CSS, unsafe_allow_html=True)
-    st.markdown(f"""
-    <div class="cb-header">
-      <div class="cb-logo">P</div>
-      <div>
-        <div class="cb-title">Paranice · Dashboard General</div>
-        <div class="cb-sub">Alimentos saludables sin gluten · Colombia · Costa Rica · Estados Unidos · Resumen ejecutivo · 31 de agosto 2026</div>
-      </div>
-    </div><div class="cb-rule"></div>""", unsafe_allow_html=True)
+    st.markdown(encabezado(
+        "Dashboard General",
+        "Vista única del negocio · e-commerce propio, Éxito, Carulla, Rappi, Fithub, naturistas, "
+        "Costa Rica y EE.UU. · corte al 31 de agosto de 2026",
+        "personaje_2.png"), unsafe_allow_html=True)
 
-    # ── Filters ────────────────────────────────────────────────────────────────
-    col_f1, col_f2, col_f3 = st.columns([2, 2, 2])
-    with col_f1:
-        periodo = st.selectbox("Período", ["Últimos 30 días","Últimos 60 días","Últimos 90 días","2026 (YTD)","2025 completo"], key="db_per")
-    with col_f2:
-        paises_all = ["Todos"] + sorted(p["pais"].unique().tolist())
-        pais_sel  = st.selectbox("País", paises_all, key="db_pais")
-    with col_f3:
-        cats_all = ["Todas"] + sorted(p["categoria"].unique().tolist())
-        cat_sel  = st.selectbox("Categoría", cats_all, key="db_cat")
+    meses = sorted(v["mes"].unique())
+    c_f1, c_f2, c_f3 = st.columns([2, 2, 2])
+    with c_f1:
+        periodo = st.selectbox("Período", ["Último mes", "Últimos 3 meses", "2026 (YTD)", "Todo el histórico"],
+                               key="db_per")
+    with c_f2:
+        pais_sel = st.selectbox("País", ["Todos"] + sorted(v["pais"].unique()), key="db_pais")
+    with c_f3:
+        tipo_sel = st.selectbox("Tipo de canal", ["Todos"] + sorted(v["tipo_canal"].unique()), key="db_tipo")
 
-    cutoff = {"Últimos 30 días": 30, "Últimos 60 días": 60, "Últimos 90 días": 90}.get(periodo)
-    ref_date = pd.Timestamp("2026-08-31")
-    if cutoff:
-        pf = p[p["fecha"] >= ref_date - pd.Timedelta(days=cutoff)]
-        pp = p[(p["fecha"] >= ref_date - pd.Timedelta(days=cutoff*2)) &
-               (p["fecha"] < ref_date - pd.Timedelta(days=cutoff))]
+    if periodo == "Último mes":
+        act, ant = [meses[-1]], [meses[-2]]
+    elif periodo == "Últimos 3 meses":
+        act, ant = meses[-3:], meses[-6:-3]
     elif periodo == "2026 (YTD)":
-        pf = p[p["fecha"].dt.year == 2026]
-        pp = p[p["fecha"].dt.year == 2025]
+        act = [m for m in meses if m.startswith("2026")]
+        ant = [m for m in meses if m.startswith("2025")][:len(act)]
     else:
-        pf = p[p["fecha"].dt.year == 2025]
-        pp = pd.DataFrame(columns=p.columns)
+        act, ant = meses, []
 
+    vf = v[v["mes"].isin(act)]
+    vp = v[v["mes"].isin(ant)]
     if pais_sel != "Todos":
-        pf = pf[pf["pais"] == pais_sel]; pp = pp[pp["pais"] == pais_sel]
-    if cat_sel != "Todas":
-        pf = pf[pf["categoria"] == cat_sel]; pp = pp[pp["categoria"] == cat_sel]
+        vf, vp = vf[vf["pais"] == pais_sel], vp[vp["pais"] == pais_sel]
+    if tipo_sel != "Todos":
+        vf, vp = vf[vf["tipo_canal"] == tipo_sel], vp[vp["tipo_canal"] == tipo_sel]
 
-    ventas_act = pf["total_cop"].sum()
-    ventas_ant = pp["total_cop"].sum()
-    delta_v    = (ventas_act - ventas_ant) / ventas_ant * 100 if ventas_ant else 0
+    ventas_act, ventas_ant = vf["venta_cop"].sum(), vp["venta_cop"].sum()
+    delta = (ventas_act - ventas_ant) / ventas_ant * 100 if ventas_ant else 0
+    margen = vf["margen_cop"].sum() / ventas_act * 100 if ventas_act else 0
 
-    n_pedidos  = pf["pedido_id"].nunique()
-    aov        = ventas_act / n_pedidos if n_pedidos else 0
-    clientes_act = pf["cliente_id"].nunique()
-    margen_avg   = pf["margen_pct"].mean() * 100 if len(pf) else 0
+    fin_act = fin[fin["mes"].isin(act)]
+    ebitda_pct = (fin_act["ebitda_cop"].sum() / fin_act["ingresos_cop"].sum() * 100
+                  if fin_act["ingresos_cop"].sum() else 0)
 
-    pct_recompra = c["cliente_recurrente"].mean() * 100 if len(c) else 0
+    d2c = vf[vf["tipo_canal"] == "D2C"]
+    aov = d2c["venta_cop"].sum() / d2c["documento_id"].nunique() if d2c["documento_id"].nunique() else 0
+    recompra = cli["recurrente"].mean() * 100 if len(cli) else 0
 
-    m_paid = m[m["canal"] != "Orgánico/SEO"]
-    roas_blended = m_paid["ingresos_atribuidos_cop"].sum() / m_paid["inversion_cop"].sum() if m_paid["inversion_cop"].sum() else 0
+    ent = desp[(desp["estado"] == "Entregado") & (desp["tipo_canal"] != "D2C")]
+    otif = ent["otif"].mean() * 100 if len(ent) else 0
 
-    ent = e[e["estado"] == "Entregado"]
-    otd = (ent["entregado_a_tiempo"] == True).sum() / len(ent) * 100 if len(ent) else 0
+    abierta = car[~car["pagada"]]
+    vencida = abierta[abierta["dias_mora"] > 0]["valor_cop"].sum()
+    pct_venc = vencida / abierta["valor_cop"].sum() * 100 if abierta["valor_cop"].sum() else 0
 
-    inv_critico = inv[inv["estado"] == "Crítico"].shape[0]
-    inv_bajo    = inv[inv["estado"] == "Bajo"].shape[0]
+    pdv_activos = int(so[so["mes"].isin(act)]["pdv_activos"].groupby(
+        [so[so["mes"].isin(act)]["cadena"], so[so["mes"].isin(act)]["ciudad"]]).max().sum()) if len(so) else 0
 
     # ── KPIs ──────────────────────────────────────────────────────────────────
-    k1, k2, k3, k4, k5, k6 = st.columns(6, gap="small")
-    k1.markdown(kpi("Ventas período", cop(ventas_act, 1),
-        f"{'▲' if delta_v>=0 else '▼'} {abs(delta_v):.1f}% vs anterior", delta_v >= 0, "💰"), unsafe_allow_html=True)
-    k2.markdown(kpi("Ticket promedio", cop(aov), f"{n_pedidos:,} pedidos", True, "🛒"), unsafe_allow_html=True)
-    k3.markdown(kpi("Clientes activos", str(clientes_act), "", True, "🧑‍🤝‍🧑"), unsafe_allow_html=True)
-    k4.markdown(kpi("Tasa de recompra", pct(pct_recompra), "Histórico", pct_recompra > 40, "🔁"), unsafe_allow_html=True)
-    k5.markdown(kpi("ROAS marketing", f"{roas_blended:.1f}x", "Canales pagos", roas_blended >= 3, "📣"), unsafe_allow_html=True)
-    k6.markdown(kpi("OTD envíos", pct(otd), f"Meta: 90%", otd >= 90, "🚚"), unsafe_allow_html=True)
+    k = st.columns(4, gap="small")
+    k[0].markdown(kpi("Ventas del período", cop(ventas_act, 1),
+                      f"{'▲' if delta >= 0 else '▼'} {abs(delta):.1f}% vs período anterior", delta >= 0,
+                      "💰", "Facturación de Paranice en todos los canales."), unsafe_allow_html=True)
+    k[1].markdown(kpi("Margen bruto", pct(margen), "Meta interna: 58%", margen >= 58,
+                      "📊", "Venta menos costo de producto, antes de gastos."), unsafe_allow_html=True)
+    k[2].markdown(kpi("EBITDA", pct(ebitda_pct), "Después de mercadeo, logística y nómina", ebitda_pct >= 10,
+                      "🏦", "Lo que deja la operación cada mes."), unsafe_allow_html=True)
+    k[3].markdown(kpi("Ticket promedio web", cop(aov), "Pedido mínimo del sitio: $50.000", aov >= 90000,
+                      "🛒", "Cuánto gasta en promedio quien compra en paranice.co."), unsafe_allow_html=True)
+
+    st.markdown("<div style='height:10px'></div>", unsafe_allow_html=True)
+    k2 = st.columns(4, gap="small")
+    k2[0].markdown(kpi("Cobertura retail", f"{pdv_activos:,} PDV", "Éxito · Carulla · Fithub · naturistas",
+                       pdv_activos > 100, "🏬", "Puntos de venta que movieron producto."), unsafe_allow_html=True)
+    k2[1].markdown(kpi("OTIF a cadenas", pct(otif), "Meta: 95%", otif >= 95,
+                       "📦", "Órdenes entregadas completas y a tiempo."), unsafe_allow_html=True)
+    k2[2].markdown(kpi("Cartera vencida", cop(vencida, 1), f"{pct_venc:.1f}% de la cartera abierta",
+                       pct_venc < 20, "⏳", "Plata facturada a cadenas que ya debería estar cobrada."), unsafe_allow_html=True)
+    k2[3].markdown(kpi("Recompra web", pct(recompra), "Clientes con 2+ pedidos", recompra > 30,
+                       "🔁", "Qué tanto vuelven los clientes del canal propio."), unsafe_allow_html=True)
 
     st.markdown("<div style='height:18px'></div>", unsafe_allow_html=True)
 
-    # ── Row 1: Ventas mensual + por país ─────────────────────────────────────
-    c1, c2 = st.columns([1.6, 1], gap="medium")
-
+    # ── Gráficos ──────────────────────────────────────────────────────────────
+    c1, c2 = st.columns([1.65, 1], gap="medium")
     with c1:
-        pm = p[p["fecha"].dt.year.isin([2025, 2026])].drop_duplicates("pedido_id").copy()
-        pm["mes_p"] = pm["fecha"].dt.to_period("M").astype(str)
-        vm_agg = pm.groupby("mes_p")["total_cop"].sum().reset_index().sort_values("mes_p")
+        piv = v.groupby(["mes", "tipo_canal"])["venta_cop"].sum().reset_index()
         fig = go.Figure()
-        colors = [GREEN if mo.startswith("2025") else CREAM for mo in vm_agg["mes_p"]]
-        fig.add_trace(go.Bar(
-            x=vm_agg["mes_p"], y=vm_agg["total_cop"],
-            marker_color=colors, name="Ventas",
-            hovertemplate="<b>%{x}</b><br>%{customdata}<extra></extra>",
-            customdata=[cop(v, 1) for v in vm_agg["total_cop"]],
-        ))
-        fig.add_trace(go.Scatter(
-            x=vm_agg["mes_p"], y=vm_agg["total_cop"].rolling(3, min_periods=1).mean(),
-            mode="lines", line=dict(color=CORAL, width=2, dash="dot"),
-            name="Media 3 meses",
-        ))
-        st.plotly_chart(dark(fig, 320, "Ventas mensuales · 2025–2026 (COP)"), use_container_width=True)
-
+        for i, t in enumerate(["D2C", "Retail", "Marketplace", "Especializado", "Internacional"]):
+            sub = piv[piv["tipo_canal"] == t]
+            if len(sub):
+                fig.add_trace(go.Bar(x=sub["mes"], y=sub["venta_cop"], name=t,
+                                     marker_color=PALETTE[i % len(PALETTE)]))
+        fig.update_layout(barmode="stack")
+        st.plotly_chart(light(fig, 330, "Ventas mensuales por tipo de canal (COP)"), use_container_width=True)
     with c2:
-        vs = pf.groupby("pais")["total_cop"].sum().reset_index().sort_values("total_cop", ascending=True)
-        fig = go.Figure(go.Bar(
-            x=vs["total_cop"], y=vs["pais"], orientation="h",
-            marker=dict(color=PALETTE[:len(vs)]),
-            hovertemplate="<b>%{y}</b><br>%{customdata}<extra></extra>",
-            customdata=[cop(v, 1) for v in vs["total_cop"]],
-        ))
-        st.plotly_chart(dark(fig, 320, "Ventas por país"), use_container_width=True)
+        mix = vf.groupby("canal")["venta_cop"].sum().sort_values(ascending=False)
+        fig = go.Figure(go.Pie(labels=mix.index, values=mix.values, hole=0.58,
+                               marker_colors=PALETTE, textinfo="percent",
+                               hovertemplate="<b>%{label}</b><br>%{customdata}<extra></extra>",
+                               customdata=[cop(x, 1) for x in mix.values]))
+        st.plotly_chart(light(fig, 330, "Mix de canales del período"), use_container_width=True)
 
-    # ── Row 2: Categorías + Canales + Recompra ───────────────────────────────
     c3, c4, c5 = st.columns(3, gap="medium")
-
     with c3:
-        vc = pf.groupby("categoria")["total_cop"].sum().reset_index().sort_values("total_cop", ascending=False)
-        fig = go.Figure(go.Pie(
-            labels=vc["categoria"], values=vc["total_cop"],
-            hole=0.52, marker_colors=PALETTE,
-            textinfo="label+percent", textfont_size=11,
-            hovertemplate="<b>%{label}</b><br>%{customdata}<extra></extra>",
-            customdata=[cop(v, 1) for v in vc["total_cop"]],
-        ))
-        st.plotly_chart(dark(fig, 300, "Ventas por categoría"), use_container_width=True)
-
+        top = vf.groupby("producto")["venta_cop"].sum().nlargest(8).sort_values()
+        fig = go.Figure(go.Bar(x=top.values, y=top.index, orientation="h", marker_color=PURPLE,
+                               hovertemplate="<b>%{y}</b><br>%{customdata}<extra></extra>",
+                               customdata=[cop(x, 1) for x in top.values]))
+        st.plotly_chart(light(fig, 300, "Top 8 productos"), use_container_width=True)
     with c4:
-        vcan = pf.groupby("canal")["total_cop"].sum().nlargest(6).reset_index().sort_values("total_cop")
-        fig = go.Figure(go.Bar(
-            x=vcan["total_cop"], y=vcan["canal"], orientation="h",
-            marker_color=CREAM,
-            hovertemplate="<b>%{y}</b><br>%{customdata}<extra></extra>",
-            customdata=[cop(v, 1) for v in vcan["total_cop"]],
-        ))
-        st.plotly_chart(dark(fig, 300, "Ventas por canal de adquisición"), use_container_width=True)
-
+        cat = vf.groupby("categoria")["venta_cop"].sum().sort_values()
+        fig = go.Figure(go.Bar(x=cat.values, y=cat.index, orientation="h", marker_color=PINK,
+                               hovertemplate="<b>%{y}</b><br>%{customdata}<extra></extra>",
+                               customdata=[cop(x, 1) for x in cat.values]))
+        st.plotly_chart(light(fig, 300, "Ventas por categoría"), use_container_width=True)
     with c5:
-        seg = c["segmento"].value_counts().reindex(["VIP","Recurrente","Compra única"]).fillna(0)
-        fig = go.Figure(go.Bar(
-            x=seg.index, y=seg.values,
-            marker_color=[CORAL, GREEN, MUTED],
-        ))
-        st.plotly_chart(dark(fig, 300, "Clientes por segmento"), use_container_width=True)
+        mg = vf.groupby("tipo_canal").apply(
+            lambda g: g["margen_cop"].sum() / g["venta_cop"].sum() * 100, include_groups=False).sort_values()
+        fig = go.Figure(go.Bar(x=mg.values, y=mg.index, orientation="h",
+                               marker_color=[GOOD if x >= 55 else WARN for x in mg.values],
+                               text=[f"{x:.0f}%" for x in mg.values], textposition="outside"))
+        fig.update_xaxes(range=[0, max(mg.values) * 1.25 if len(mg) else 100])
+        st.plotly_chart(light(fig, 300, "Margen bruto por tipo de canal"), use_container_width=True)
 
-    # ── Alertas ───────────────────────────────────────────────────────────────
-    st.markdown(f"<div style='height:8px'></div>", unsafe_allow_html=True)
-    with st.expander("⚠️  Alertas del sistema", expanded=True):
+    # ── Lectura automática + alertas ──────────────────────────────────────────
+    mejor_canal = vf.groupby("canal")["venta_cop"].sum().idxmax() if len(vf) else "—"
+    peor_margen = mg.idxmin() if len(mg) else "—"
+    criticos = inv[inv["estado"] == "Crítico"]
+    lotes_alerta = prod[prod["estado_calidad"] != "Aprobado"]
+    quiebres = so[so["mes"].isin(act)].nlargest(5, "dias_sin_stock")
+
+    c6, c7 = st.columns([1, 1], gap="medium")
+    with c6:
+        st.markdown(panel("Lectura del período", f"""
+        · <b>{mejor_canal}</b> es el canal que más factura en el período.<br>
+        · El margen más bajo está en <b>{peor_margen}</b> ({mg.min():.0f}%): es el costo de ganar
+          cobertura y volumen a través de terceros.<br>
+        · La recompra del canal propio va en <b>{pct(recompra)}</b>; cada punto que suba baja
+          la dependencia de pauta.<br>
+        · Hay <b>{cop(vencida, 1)}</b> de cartera vencida ({pct_venc:.0f}% de lo abierto),
+          principalmente de cadenas que pagan a 45–60 días.
+        """, "🔍"), unsafe_allow_html=True)
+    with c7:
+        st.markdown(panel("Qué necesita atención hoy", f"""
+        · <b>{len(criticos)} referencias</b> con inventario crítico (menos de 12 días de cobertura).<br>
+        · <b>{len(lotes_alerta)} lotes</b> en cuarentena o rechazados por ensayo de gluten.<br>
+        · <b>{int(quiebres['dias_sin_stock'].sum()) if len(quiebres) else 0} días</b> de góndola vacía
+          acumulados en los 5 casos más críticos de quiebre en cadenas.<br>
+        · <b>{int((desp['estado'] == 'En tránsito').sum())} despachos</b> siguen en tránsito.
+        """, "⚠️"), unsafe_allow_html=True)
+
+    with st.expander("Ver detalle de alertas", expanded=False):
         a1, a2, a3 = st.columns(3)
-        criticos = inv[inv["estado"] == "Crítico"][["bodega","producto","stock_actual","stock_minimo"]].head(5)
-        rechazos = prod[prod["estado_calidad"].isin(["Rechazado","Cuarentena"])].sort_values("fecha_produccion", ascending=False)[
-            ["lote_id","producto","resultado_gluten_ppm","estado_calidad"]].head(5)
-        env_retrasados = e[(e["estado"]=="En tránsito") &
-                            (e["fecha_pedido"] < ref_date - pd.Timedelta(days=7))][["pedido_id","ciudad_destino","transportadora"]].head(5)
         with a1:
-            st.markdown(f"<span style='color:{RED};font-weight:700'>📦 Stock crítico ({len(criticos)} SKUs)</span>", unsafe_allow_html=True)
-            st.dataframe(criticos, hide_index=True, use_container_width=True)
+            st.markdown(f"<b style='color:{BAD}'>📦 Inventario crítico</b>", unsafe_allow_html=True)
+            st.dataframe(criticos[["producto", "cedi", "stock_unidades", "dias_cobertura"]].head(8),
+                         hide_index=True, use_container_width=True)
         with a2:
-            st.markdown(f"<span style='color:{AMBER};font-weight:700'>🧪 Lotes en cuarentena/rechazo ({len(rechazos)})</span>", unsafe_allow_html=True)
-            st.dataframe(rechazos, hide_index=True, use_container_width=True)
+            st.markdown(f"<b style='color:{WARN}'>🧪 Lotes con hallazgo de calidad</b>", unsafe_allow_html=True)
+            st.dataframe(lotes_alerta.sort_values("fecha", ascending=False)[
+                ["lote_id", "producto", "gluten_ppm", "estado_calidad"]].head(8),
+                hide_index=True, use_container_width=True)
         with a3:
-            st.markdown(f"<span style='color:{AMBER};font-weight:700'>🚚 Envíos demorados ({len(env_retrasados)})</span>", unsafe_allow_html=True)
-            st.dataframe(env_retrasados, hide_index=True, use_container_width=True)
+            st.markdown(f"<b style='color:{WARN}'>🏬 Quiebres en góndola</b>", unsafe_allow_html=True)
+            st.dataframe(quiebres[["cadena", "ciudad", "producto", "dias_sin_stock"]],
+                         hide_index=True, use_container_width=True)

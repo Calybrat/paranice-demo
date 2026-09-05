@@ -1,14 +1,16 @@
-import streamlit as st
 import sys
 from pathlib import Path
 
+import streamlit as st
+
 sys.path.insert(0, str(Path(__file__).parent))
-from utils.formatters import CSS, HEADER_CSS, BG, SURF, BORDER, TEXT, MUTED, GREEN, CREAM
+from utils.formatters import (CSS, HEADER_CSS, asset_b64, BORDER, TEXT, MUTED,
+                              PURPLE, CREAM, CREAM_LT, PINK, LAVENDER_LT)
 from utils.auth import require_login, render_visit_log
 
 st.set_page_config(
-    page_title="Paranice · Panel de Inteligencia de Negocios | Calybrat",
-    page_icon="🥣",
+    page_title="Paranice · Panel de Negocio | Calybrat",
+    page_icon="💜",
     layout="wide",
 )
 
@@ -17,76 +19,82 @@ name, username, authenticator = require_login()
 
 st.markdown(CSS + HEADER_CSS, unsafe_allow_html=True)
 
-PAGES = {
-    "🏠  Dashboard General":         "p01_dashboard",
-    "💰  Ventas & E-commerce":       "p02_ventas",
-    "🥣  Productos & Categorías":    "p03_productos",
-    "🧑‍🤝‍🧑  Clientes & Retención":      "p04_clientes",
-    "📣  Marketing & Canales":       "p05_marketing",
-    "📦  Inventario & Producción":   "p06_inventario",
-    "🚚  Logística & Envíos":        "p07_logistica",
-    "🌎  Expansión Internacional":   "p08_expansion",
-    "📄  Reportes Automáticos":      "p10_reportes",
-    "🤖  Agente IA Paranice":        "p09_agente",
-}
+# Secciones agrupadas para que el panel sea fácil de recorrer
+GRUPOS = [
+    ("Vista general", [
+        ("🏠  Dashboard General",        "p01_dashboard"),
+    ]),
+    ("Comercial", [
+        ("🛒  Ventas Omnicanal",         "p02_ventas"),
+        ("🏬  Retail & Sell-Out",        "p03_retail"),
+        ("🥣  Portafolio & Precios",     "p04_portafolio"),
+        ("💜  Clientes & Recompra",      "p05_clientes"),
+        ("📣  Marketing & Contenido",    "p06_marketing"),
+    ]),
+    ("Operación", [
+        ("🏭  Producción & Calidad",     "p07_produccion"),
+        ("🚚  Logística & Cumplimiento", "p08_logistica"),
+    ]),
+    ("Dirección", [
+        ("💰  Finanzas & Cartera",       "p09_finanzas"),
+        ("🌎  Expansión Internacional",  "p10_expansion"),
+        ("📄  Reportes Automáticos",     "p11_reportes"),
+        ("🤖  Agente IA Paranice",       "p12_agente"),
+    ]),
+]
+PAGES = {label: mod for _, items in GRUPOS for label, mod in items}
 
 with st.sidebar:
+    logo = asset_b64("logo_horizontal_crema.png")
+    logo_html = (f'<img src="{logo}" style="width:150px;height:auto">' if logo
+                 else '<div style="font-size:22px;font-weight:900;color:#f4e1c1">paranice</div>')
     st.markdown(f"""
-    <div style="padding:18px 4px 20px">
-      <div style="display:flex;align-items:center;gap:10px;margin-bottom:6px">
-        <div style="width:38px;height:38px;border-radius:10px;
-          background:linear-gradient(135deg,{GREEN},{CREAM});
-          display:flex;align-items:center;justify-content:center;
-          font-size:18px;font-weight:900;color:#12210f;
-          box-shadow:0 0 14px {GREEN}55">P</div>
-        <div>
-          <div style="font-size:16px;font-weight:800;color:{TEXT}">Paranice</div>
-          <div style="font-size:11px;color:{MUTED}">Panel de Negocios</div>
-        </div>
-      </div>
-      <div style="height:1px;background:linear-gradient(90deg,{GREEN},{CREAM},transparent);margin:14px 0 6px"></div>
+    <div style="padding:10px 4px 6px">
+      {logo_html}
+      <div style="font-size:11px;color:{CREAM}99;margin-top:6px;font-weight:700;
+        letter-spacing:.08em;text-transform:uppercase">Panel de negocio</div>
+      <div style="height:2px;border-radius:99px;margin:14px 0 10px;
+        background:linear-gradient(90deg,{PINK},{CREAM},transparent)"></div>
     </div>
     """, unsafe_allow_html=True)
 
     if "page" not in st.session_state:
         st.session_state.page = list(PAGES.keys())[0]
 
-    for label in PAGES:
-        active = st.session_state.page == label
-        btn_style = (f"background:linear-gradient(135deg,{GREEN}33,{CREAM}22);"
-                     f"border:1px solid {GREEN}44;" if active else
-                     f"background:transparent;border:1px solid transparent;")
-        if st.button(label, key=f"nav_{label}", use_container_width=True):
-            st.session_state.page = label
+    for grupo, items in GRUPOS:
+        st.markdown(
+            f'<div style="font-size:10px;font-weight:800;letter-spacing:.12em;'
+            f'text-transform:uppercase;color:{CREAM}88;margin:12px 0 4px 4px">{grupo}</div>',
+            unsafe_allow_html=True)
+        for label, _mod in items:
+            if st.button(label, key=f"nav_{label}", use_container_width=True):
+                st.session_state.page = label
 
-    st.markdown("<div style='height:24px'></div>", unsafe_allow_html=True)
+    st.markdown("<div style='height:16px'></div>", unsafe_allow_html=True)
 
-    # Visitas (solo admin)
     if username == "nicolas":
         if st.button("📋  Ver accesos", use_container_width=True):
             st.session_state.page = "__visit_log__"
 
     st.markdown(f"""
-    <div style="padding:12px 16px 8px;border-top:1px solid {BORDER};margin-top:8px">
-      <div style="font-size:11px;color:{MUTED};margin-bottom:6px">
-        👤 {name}
-      </div>
+    <div style="padding:12px 8px 6px;border-top:1px solid {CREAM}33;margin-top:8px">
+      <div style="font-size:11.5px;color:{CREAM}cc;font-weight:700">👤 {name}</div>
     </div>
     """, unsafe_allow_html=True)
     authenticator.logout("Cerrar sesión", location="sidebar")
 
+    pj = asset_b64("personaje_3.png")
+    pj_html = f'<img src="{pj}" style="height:54px;width:auto;margin-bottom:6px">' if pj else ""
     st.markdown(f"""
-    <div style="padding:8px 16px;text-align:center">
-      <div style="font-size:10.5px;color:{MUTED};margin-bottom:2px">Construido por</div>
-      <div style="font-size:13px;font-weight:700;
-        background:linear-gradient(135deg,{GREEN},{CREAM});
-        -webkit-background-clip:text;-webkit-text-fill-color:transparent;
-        background-clip:text">Calybrat</div>
-      <div style="font-size:10px;color:{MUTED}55;margin-top:2px">© 2026 · Demo</div>
+    <div style="padding:6px 16px 10px;text-align:center">
+      {pj_html}
+      <div style="font-size:10.5px;color:{CREAM}88;margin-bottom:2px">Construido por</div>
+      <div style="font-size:14px;font-weight:900;color:{CREAM}">Calybrat</div>
+      <div style="font-size:9.5px;color:{CREAM}66;margin-top:3px">© 2026 · Demo con datos simulados</div>
     </div>
     """, unsafe_allow_html=True)
 
-# ── Load active module ────────────────────────────────────────────────────────
+# ── Módulo activo ─────────────────────────────────────────────────────────────
 if st.session_state.get("page") == "__visit_log__":
     render_visit_log()
     st.stop()
@@ -97,4 +105,5 @@ try:
     mod.render()
 except Exception as e:
     st.error(f"Error cargando módulo: {e}")
-    import traceback; st.code(traceback.format_exc())
+    import traceback
+    st.code(traceback.format_exc())

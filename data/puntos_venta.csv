@@ -1,0 +1,151 @@
+pdv_id,cadena,formato,ciudad,zona,fecha_apertura
+PDV-0001,Éxito,Éxito Vecino,Bogotá,Suba,2025-10-11
+PDV-0002,Éxito,Éxito Superior,Bogotá,Suba,2025-03-13
+PDV-0003,Éxito,Éxito Superior,Cartagena,Bocagrande,2025-09-18
+PDV-0004,Éxito,Éxito WOW,Pereira,Circunvalar,2026-04-16
+PDV-0005,Éxito,Éxito Superior,Bogotá,Chapinero,2025-09-03
+PDV-0006,Éxito,Éxito Vecino,Cali,Granada,2026-02-15
+PDV-0007,Éxito,Éxito WOW,Barranquilla,Alto Prado,2025-11-18
+PDV-0008,Éxito,Éxito Vecino,Medellín,Belén,2026-02-07
+PDV-0009,Éxito,Éxito Superior,Manizales,Palermo,2025-03-06
+PDV-0010,Éxito,Éxito WOW,Medellín,Belén,2025-08-21
+PDV-0011,Éxito,Éxito Vecino,Bogotá,Chicó,2025-12-12
+PDV-0012,Éxito,Éxito WOW,Barranquilla,Villa Country,2026-02-21
+PDV-0013,Éxito,Éxito Vecino,Bogotá,Suba,2025-11-26
+PDV-0014,Éxito,Éxito WOW,Bogotá,Cedritos,2026-03-07
+PDV-0015,Éxito,Éxito WOW,Medellín,El Poblado,2026-02-16
+PDV-0016,Éxito,Éxito Vecino,Bogotá,Chicó,2026-03-09
+PDV-0017,Éxito,Éxito Superior,Bogotá,Chapinero,2025-03-25
+PDV-0018,Éxito,Éxito WOW,Bogotá,Salitre,2025-08-14
+PDV-0019,Éxito,Éxito Superior,Cartagena,Manga,2025-12-25
+PDV-0020,Éxito,Éxito Superior,Bogotá,Usaquén,2025-03-18
+PDV-0021,Éxito,Éxito WOW,Manizales,Palermo,2025-08-09
+PDV-0022,Éxito,Éxito Vecino,Cali,Granada,2025-08-27
+PDV-0023,Éxito,Éxito WOW,Bucaramanga,Cabecera,2025-10-10
+PDV-0024,Éxito,Éxito Vecino,Bogotá,Usaquén,2025-05-29
+PDV-0025,Éxito,Éxito WOW,Bogotá,Suba,2025-01-12
+PDV-0026,Éxito,Éxito WOW,Bucaramanga,Cabecera,2025-07-25
+PDV-0027,Éxito,Éxito WOW,Barranquilla,Villa Country,2025-04-04
+PDV-0028,Éxito,Éxito WOW,Bogotá,Chicó,2026-02-21
+PDV-0029,Éxito,Éxito Vecino,Bogotá,Suba,2026-01-22
+PDV-0030,Éxito,Éxito Vecino,Bogotá,Chapinero,2025-12-01
+PDV-0031,Éxito,Éxito WOW,Bogotá,Cedritos,2025-12-16
+PDV-0032,Éxito,Éxito WOW,Medellín,Belén,2026-03-31
+PDV-0033,Éxito,Éxito WOW,Bogotá,Suba,2025-05-04
+PDV-0034,Éxito,Éxito Superior,Pereira,Circunvalar,2026-03-28
+PDV-0035,Éxito,Éxito Vecino,Bogotá,Suba,2026-01-07
+PDV-0036,Éxito,Éxito WOW,Barranquilla,Villa Country,2025-01-20
+PDV-0037,Éxito,Éxito Superior,Bogotá,Suba,2026-04-15
+PDV-0038,Éxito,Éxito WOW,Bucaramanga,Cabecera,2025-12-23
+PDV-0039,Éxito,Éxito WOW,Medellín,Envigado,2026-03-16
+PDV-0040,Éxito,Éxito Vecino,Barranquilla,Villa Country,2026-03-22
+PDV-0041,Éxito,Éxito Superior,Bogotá,Chicó,2025-03-26
+PDV-0042,Éxito,Éxito WOW,Medellín,Laureles,2026-01-13
+PDV-0043,Éxito,Éxito WOW,Cartagena,Manga,2025-09-17
+PDV-0044,Éxito,Éxito WOW,Bogotá,Chicó,2025-03-20
+PDV-0045,Éxito,Éxito WOW,Manizales,Palermo,2025-03-11
+PDV-0046,Éxito,Éxito Vecino,Bogotá,Suba,2025-12-29
+PDV-0047,Carulla,Carulla FreshMarket,Bucaramanga,Cabecera,2025-11-02
+PDV-0048,Carulla,Carulla FreshMarket,Bogotá,Suba,2025-09-08
+PDV-0049,Carulla,Carulla FreshMarket,Cali,Ciudad Jardín,2025-04-22
+PDV-0050,Carulla,Carulla Express,Bogotá,Chapinero,2026-02-10
+PDV-0051,Carulla,Carulla Express,Cali,Granada,2025-06-05
+PDV-0052,Carulla,Carulla FreshMarket,Cali,Ciudad Jardín,2025-02-14
+PDV-0053,Carulla,Carulla FreshMarket,Bogotá,Cedritos,2025-07-09
+PDV-0054,Carulla,Carulla Express,Cartagena,Bocagrande,2025-02-09
+PDV-0055,Carulla,Carulla FreshMarket,Medellín,Envigado,2026-04-08
+PDV-0056,Carulla,Carulla FreshMarket,Cartagena,Manga,2026-02-01
+PDV-0057,Carulla,Carulla FreshMarket,Barranquilla,Villa Country,2025-11-25
+PDV-0058,Carulla,Carulla Express,Bogotá,Suba,2026-01-23
+PDV-0059,Carulla,Carulla FreshMarket,Barranquilla,Villa Country,2025-12-11
+PDV-0060,Carulla,Carulla Express,Barranquilla,Villa Country,2025-11-15
+PDV-0061,Carulla,Carulla FreshMarket,Barranquilla,Alto Prado,2025-04-30
+PDV-0062,Carulla,Carulla FreshMarket,Bogotá,Suba,2025-05-23
+PDV-0063,Carulla,Carulla FreshMarket,Bogotá,Chicó,2025-10-18
+PDV-0064,Carulla,Carulla FreshMarket,Medellín,El Poblado,2026-01-17
+PDV-0065,Carulla,Carulla Express,Bogotá,Cedritos,2025-12-19
+PDV-0066,Carulla,Carulla FreshMarket,Bogotá,Salitre,2025-10-30
+PDV-0067,Carulla,Carulla FreshMarket,Medellín,Envigado,2025-11-20
+PDV-0068,Carulla,Carulla FreshMarket,Medellín,Laureles,2025-05-26
+PDV-0069,Carulla,Carulla Express,Bogotá,Chicó,2025-06-05
+PDV-0070,Carulla,Carulla Express,Medellín,El Poblado,2025-08-23
+PDV-0071,Carulla,Carulla FreshMarket,Barranquilla,Villa Country,2026-01-12
+PDV-0072,Carulla,Carulla Express,Cali,Sur,2025-11-30
+PDV-0073,Carulla,Carulla Express,Bogotá,Suba,2025-11-06
+PDV-0074,Carulla,Carulla FreshMarket,Bogotá,Salitre,2025-04-03
+PDV-0075,Fithub,Fithub,Bogotá,Suba,2025-11-29
+PDV-0076,Fithub,Fithub,Cali,Sur,2025-11-30
+PDV-0077,Fithub,Fithub,Medellín,Envigado,2025-02-25
+PDV-0078,Fithub,Fithub,Medellín,Belén,2026-04-03
+PDV-0079,Fithub,Fithub,Bogotá,Chicó,2025-05-04
+PDV-0080,Fithub,Fithub,Barranquilla,Villa Country,2025-04-12
+PDV-0081,Fithub,Fithub,Barranquilla,Villa Country,2025-08-27
+PDV-0082,Fithub,Fithub,Bucaramanga,Cabecera,2025-09-09
+PDV-0083,Fithub,Fithub,Bucaramanga,Cabecera,2026-02-06
+PDV-0084,Fithub,Fithub,Bogotá,Suba,2025-12-26
+PDV-0085,Fithub,Fithub,Medellín,Envigado,2025-07-02
+PDV-0086,Fithub,Fithub,Bucaramanga,Cabecera,2026-02-01
+PDV-0087,Fithub,Fithub,Cali,Granada,2025-03-30
+PDV-0088,Fithub,Fithub,Medellín,Laureles,2025-03-04
+PDV-0089,Tiendas naturistas,Naturista independiente,Bogotá,Cedritos,2025-09-03
+PDV-0090,Tiendas naturistas,Naturista independiente,Bucaramanga,Cabecera,2026-03-08
+PDV-0091,Tiendas naturistas,Naturista independiente,Bogotá,Salitre,2025-08-09
+PDV-0092,Tiendas naturistas,Naturista independiente,Pereira,Circunvalar,2025-01-22
+PDV-0093,Tiendas naturistas,Naturista independiente,Manizales,Palermo,2025-09-15
+PDV-0094,Tiendas naturistas,Cadena naturista,Bogotá,Suba,2025-01-27
+PDV-0095,Tiendas naturistas,Naturista independiente,Cali,Sur,2025-09-17
+PDV-0096,Tiendas naturistas,Naturista independiente,Bogotá,Usaquén,2025-02-08
+PDV-0097,Tiendas naturistas,Cadena naturista,Barranquilla,Villa Country,2025-07-29
+PDV-0098,Tiendas naturistas,Cadena naturista,Bogotá,Salitre,2025-08-09
+PDV-0099,Tiendas naturistas,Cadena naturista,Bogotá,Cedritos,2025-03-18
+PDV-0100,Tiendas naturistas,Cadena naturista,Bogotá,Chicó,2025-12-30
+PDV-0101,Tiendas naturistas,Naturista independiente,Bogotá,Usaquén,2025-04-16
+PDV-0102,Tiendas naturistas,Cadena naturista,Bogotá,Salitre,2025-11-29
+PDV-0103,Tiendas naturistas,Cadena naturista,Bogotá,Chicó,2025-01-22
+PDV-0104,Tiendas naturistas,Cadena naturista,Medellín,Belén,2025-01-29
+PDV-0105,Tiendas naturistas,Cadena naturista,Bogotá,Chicó,2026-03-02
+PDV-0106,Tiendas naturistas,Naturista independiente,Cartagena,Bocagrande,2026-03-23
+PDV-0107,Tiendas naturistas,Cadena naturista,Bogotá,Chapinero,2025-03-15
+PDV-0108,Tiendas naturistas,Cadena naturista,Medellín,El Poblado,2025-01-28
+PDV-0109,Tiendas naturistas,Cadena naturista,Barranquilla,Villa Country,2026-03-16
+PDV-0110,Tiendas naturistas,Cadena naturista,Medellín,El Poblado,2025-04-13
+PDV-0111,Tiendas naturistas,Cadena naturista,Bucaramanga,Cañaveral,2026-04-10
+PDV-0112,Tiendas naturistas,Naturista independiente,Medellín,Envigado,2025-01-26
+PDV-0113,Tiendas naturistas,Naturista independiente,Bogotá,Chicó,2025-05-21
+PDV-0114,Tiendas naturistas,Naturista independiente,Cali,Granada,2025-06-03
+PDV-0115,Tiendas naturistas,Cadena naturista,Medellín,El Poblado,2025-08-04
+PDV-0116,Tiendas naturistas,Cadena naturista,Pereira,Circunvalar,2025-03-21
+PDV-0117,Tiendas naturistas,Naturista independiente,Medellín,El Poblado,2025-04-17
+PDV-0118,Tiendas naturistas,Cadena naturista,Medellín,Envigado,2025-06-09
+PDV-0119,Tiendas naturistas,Naturista independiente,Bogotá,Chicó,2025-09-26
+PDV-0120,Tiendas naturistas,Naturista independiente,Bogotá,Cedritos,2025-01-16
+PDV-0121,Tiendas naturistas,Cadena naturista,Bogotá,Chicó,2025-04-01
+PDV-0122,Tiendas naturistas,Cadena naturista,Cartagena,Manga,2026-03-14
+PDV-0123,Tiendas naturistas,Cadena naturista,Cartagena,Manga,2026-02-14
+PDV-0124,Tiendas naturistas,Naturista independiente,Medellín,Envigado,2025-07-10
+PDV-0125,Tiendas naturistas,Cadena naturista,Bogotá,Chapinero,2025-02-01
+PDV-0126,Tiendas naturistas,Cadena naturista,Bogotá,Chapinero,2025-01-15
+PDV-0127,Tiendas naturistas,Naturista independiente,Medellín,Envigado,2025-09-07
+PDV-0128,Tiendas naturistas,Naturista independiente,Bogotá,Salitre,2025-11-13
+PDV-0129,Tiendas naturistas,Cadena naturista,Bogotá,Chapinero,2026-04-18
+PDV-0130,Tiendas naturistas,Cadena naturista,Medellín,Laureles,2026-02-20
+PDV-0131,Tiendas naturistas,Cadena naturista,Bogotá,Salitre,2025-04-30
+PDV-0132,Tiendas naturistas,Naturista independiente,Bogotá,Salitre,2025-10-15
+PDV-0133,Tiendas naturistas,Naturista independiente,Bogotá,Chapinero,2025-10-12
+PDV-0134,Tiendas naturistas,Naturista independiente,Bogotá,Chapinero,2025-06-11
+PDV-0135,Tiendas naturistas,Cadena naturista,Medellín,Belén,2025-04-07
+PDV-0136,Tiendas naturistas,Naturista independiente,Bogotá,Usaquén,2025-10-05
+PDV-0137,Tiendas naturistas,Naturista independiente,Bogotá,Suba,2025-06-03
+PDV-0138,Tiendas naturistas,Naturista independiente,Bogotá,Chicó,2025-01-25
+PDV-0139,Tiendas naturistas,Naturista independiente,Medellín,Envigado,2025-12-31
+PDV-0140,Tiendas naturistas,Cadena naturista,Pereira,Circunvalar,2026-01-01
+PDV-0141,Tiendas naturistas,Naturista independiente,Cali,Granada,2025-08-01
+PDV-0142,Tiendas naturistas,Naturista independiente,Bogotá,Cedritos,2026-03-20
+PDV-0143,Tiendas naturistas,Cadena naturista,Pereira,Circunvalar,2025-04-25
+PDV-0144,Tiendas naturistas,Cadena naturista,Cartagena,Manga,2025-03-03
+PDV-0145,Tiendas naturistas,Cadena naturista,Bogotá,Usaquén,2026-02-09
+PDV-0146,Tiendas naturistas,Naturista independiente,Cali,Granada,2025-07-30
+PDV-0147,Tiendas naturistas,Naturista independiente,Medellín,Belén,2025-11-30
+PDV-0148,Tiendas naturistas,Naturista independiente,Cali,Granada,2025-01-24
+PDV-0149,Tiendas naturistas,Naturista independiente,Bogotá,Salitre,2025-04-20
+PDV-0150,Tiendas naturistas,Cadena naturista,Bogotá,Chapinero,2025-05-22
