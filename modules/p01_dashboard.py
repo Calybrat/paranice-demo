@@ -113,7 +113,7 @@ def render():
     with c2:
         mix = vf.groupby("canal")["venta_cop"].sum().sort_values(ascending=False)
         fig = go.Figure(go.Pie(labels=mix.index, values=mix.values, hole=0.58,
-                               marker_colors=PALETTE, textinfo="percent",
+                               marker_colors=PALETTE, texttemplate="%{percent:.1%}",
                                hovertemplate="<b>%{label}</b><br>%{customdata}<extra></extra>",
                                customdata=[cop(x, 1) for x in mix.values]))
         st.plotly_chart(light(fig, 330, "Mix de canales del período"), use_container_width=True)

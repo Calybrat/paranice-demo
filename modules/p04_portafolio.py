@@ -96,7 +96,7 @@ def render():
         mapa = precios.pivot_table(index="nombre", columns="canal", values="pvp_consumidor_cop", aggfunc="max")
         st.markdown(f"<p style='font-size:13px;font-weight:800;color:{PURPLE};margin:8px 0'>Mapa de PVP por canal (COP)</p>",
                     unsafe_allow_html=True)
-        st.dataframe(mapa.style.format("{:,.0f}"), use_container_width=True, height=340)
+        st.dataframe(mapa.style.format("${:,.0f}"), use_container_width=True, height=340)
 
     with t2:
         rent = v26.groupby(["producto", "categoria"]).agg(
@@ -159,7 +159,7 @@ def render():
             cat[etiqueta] = cat[col].map({1: "Sí", 0: "—"})
         cat["PVP propio"] = cat["pvp_propio_cop"].apply(cop)
         cat["Costo"] = cat["costo_unitario_cop"].apply(cop)
-        cat["Margen %"] = cat["margen_bruto_pct"]
+        cat["Margen %"] = cat["margen_bruto_pct"].apply(lambda x: pct(x))
         vista = cat[["sku", "nombre", "categoria", "presentacion", "PVP propio", "Costo", "Margen %",
                      "Sin gluten", "Vegano", "Sin azúcar añadida", "Keto friendly", "fecha_lanzamiento"]]
         vista.columns = ["SKU", "Producto", "Categoría", "Presentación", "PVP propio", "Costo",

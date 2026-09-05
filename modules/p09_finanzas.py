@@ -102,6 +102,8 @@ def render():
         for col in ["ingresos_cop", "costo_ventas_cop", "margen_bruto_cop", "gasto_marketing_cop",
                     "gasto_logistica_cop", "nomina_cop", "otros_gastos_cop", "ebitda_cop"]:
             vista[col] = vista[col].apply(lambda x: cop(x, 1))
+        for col in ["margen_bruto_pct", "ebitda_pct"]:
+            vista[col] = vista[col].apply(lambda x: pct(x))
         vista.columns = ["Mes", "Ingresos", "Costo de ventas", "Margen bruto", "Margen %",
                          "Marketing", "Logística", "Nómina", "Otros", "EBITDA", "EBITDA %"]
         st.dataframe(vista, hide_index=True, use_container_width=True)

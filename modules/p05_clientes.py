@@ -109,7 +109,7 @@ def render():
         with c5:
             fig = go.Figure(go.Pie(labels=seg.index, values=seg["clientes"], hole=0.58,
                                    marker_colors=[LAVENDER_LT, LAVENDER, PINK, PURPLE],
-                                   textinfo="label+percent"))
+                                   texttemplate="%{label}<br>%{percent:.1%}"))
             st.plotly_chart(light(fig, 340, "Cuántos clientes hay en cada segmento"),
                             use_container_width=True)
         with c6:

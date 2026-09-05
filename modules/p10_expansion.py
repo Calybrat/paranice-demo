@@ -60,7 +60,8 @@ def render():
     with c2:
         fig = go.Figure(go.Pie(labels=[f"{BANDERAS.get(p,'')} {p}" for p in por_pais["pais"]],
                                values=por_pais["ventas"], hole=0.58,
-                               marker_colors=[PURPLE, PINK, CREAM], textinfo="label+percent"))
+                               marker_colors=[PURPLE, PINK, CREAM],
+                               texttemplate="%{percent:.1%}"))
         st.plotly_chart(light(fig, 360, "Participación acumulada"), use_container_width=True)
 
     st.markdown(f"<p style='font-size:14px;font-weight:800;color:{PURPLE};margin:16px 0 8px'>"
@@ -108,8 +109,9 @@ def render():
     vista = comp.copy()
     vista["Ventas acumuladas"] = vista["Ventas acumuladas"].apply(lambda x: cop(x, 1))
     vista["Ticket promedio"] = vista["Ticket promedio"].apply(cop)
-    vista["Costo logístico %"] = vista["Costo logístico %"].round(1)
-    vista["Entregas a tiempo %"] = vista["Entregas a tiempo %"].round(1)
+    for col in ["Participación %", "Margen %", "Crecimiento últ. trimestre %",
+                "Costo logístico %", "Entregas a tiempo %"]:
+        vista[col] = vista[col].apply(lambda x: pct(x))
     st.dataframe(vista, hide_index=True, use_container_width=True)
 
     mejor_margen = comp.loc[comp["Margen %"].idxmax()]

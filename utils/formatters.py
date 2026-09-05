@@ -102,7 +102,38 @@ def pct(v, decimals=1) -> str:
 
 
 def light(fig: go.Figure, height: int = 340, title: str = "") -> go.Figure:
-    """Aplica el tema claro de Paranice a una figura de Plotly."""
+    """Aplica el tema claro de Paranice a una figura de Plotly.
+
+    La leyenda nunca se dibuja arriba: a esa altura compite por el mismo
+    espacio que el título y termina solapándolo en cuanto hay más de un
+    par de series (o un donut con varias porciones). En vez de eso se
+    ubica debajo del gráfico (barras/líneas) o a la derecha (donuts),
+    con margen reservado a propósito para que nunca se monte encima de
+    nada.
+    """
+    is_pie = any(getattr(tr, "type", None) == "pie" for tr in fig.data)
+    n_entries = 0
+    for tr in fig.data:
+        if getattr(tr, "type", None) == "pie":
+            labels = tr.labels
+            n_entries += len(labels) if labels is not None else 0
+        elif getattr(tr, "name", None):
+            n_entries += 1
+    show_legend = is_pie or n_entries >= 1
+
+    if is_pie:
+        legend = dict(orientation="v", x=1.02, y=0.5, xanchor="left", yanchor="middle",
+                      font=dict(color=MUTED, size=11))
+        margin = dict(l=6, r=132, t=40 if title else 16, b=16)
+    elif show_legend:
+        rows = 1 if n_entries <= 4 else (2 if n_entries <= 8 else 3)
+        legend = dict(orientation="h", y=-0.30 - 0.14 * (rows - 1), x=0.5,
+                      xanchor="center", yanchor="top", font=dict(color=MUTED, size=11))
+        margin = dict(l=6, r=34, t=40 if title else 16, b=64 + 30 * rows)
+    else:
+        legend = dict()
+        margin = dict(l=6, r=34, t=40 if title else 16, b=16)
+
     fig.update_layout(
         title=dict(text=title, font=dict(size=14, color=PURPLE, family="Nunito, sans-serif"),
                    x=0, xanchor="left"),
@@ -110,13 +141,15 @@ def light(fig: go.Figure, height: int = 340, title: str = "") -> go.Figure:
         plot_bgcolor="rgba(0,0,0,0)",
         font=dict(family="Nunito, -apple-system, system-ui, sans-serif", color=MUTED, size=12),
         height=height,
-        margin=dict(l=6, r=6, t=46 if title else 16, b=6),
-        legend=dict(orientation="h", y=1.13, x=0, font=dict(color=MUTED, size=11)),
+        margin=margin,
+        legend=legend,
+        showlegend=show_legend,
         hovermode="x unified",
         colorway=PALETTE,
     )
     fig.update_xaxes(showgrid=False, linecolor=BORDER, tickfont=dict(color=MUTED))
     fig.update_yaxes(gridcolor="#efebf7", zeroline=False, tickfont=dict(color=MUTED))
+    fig.update_traces(cliponaxis=False, selector=dict(type="bar"))
     return fig
 
 
@@ -184,6 +217,7 @@ CSS = f"""
   div[data-baseweb="select"] > div {{ background:{SURF} !important; border-color:{BORDER} !important; border-radius:10px !important; }}
   div[data-baseweb="select"] span {{ color:{PURPLE} !important; }}
   .stMultiSelect span[data-baseweb="tag"] {{ background:{PURPLE} !important; color:#fff !important; }}
+  .stMultiSelect span[data-baseweb="tag"] span {{ color:#fff !important; -webkit-text-fill-color:#fff !important; }}
   button[kind="primary"] {{ background:{PURPLE} !important; border:none !important; border-radius:12px !important; }}
   .stTabs [data-baseweb="tab"] {{ background:{SURF2}; border-radius:12px 12px 0 0; font-weight:700; color:{MUTED}; }}
   .stTabs [aria-selected="true"] {{ background:{SURF} !important; color:{PURPLE} !important; border-bottom:2px solid {PINK}; }}
