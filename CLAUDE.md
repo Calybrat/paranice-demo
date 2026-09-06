@@ -1,8 +1,9 @@
 # CLAUDE.md — Paranice · Panel de Negocio (demo de Calybrat)
 
 Este archivo lo lee Claude automáticamente al abrir el repo. Es el resumen operativo.
-**El contexto completo está en [`docs/CONTEXTO-PARANICE.md`](docs/CONTEXTO-PARANICE.md)** — léelo
-antes de hacer cualquier cambio que no sea trivial.
+**El contexto completo está en [`docs/CONTEXTO_TECNICO.md`](docs/CONTEXTO_TECNICO.md)** — léelo
+antes de hacer cualquier cambio que no sea trivial. Cubre también los repos hermanos
+(`nutramerican-demo`, `cimpa-demo`, `calybrat-website`) y el inventario de APIs y conexiones.
 
 ---
 
@@ -38,10 +39,15 @@ Panel oculto de visitas: agregar `?accesos=calybrat` a la URL.
 app.py               navegación (4 grupos de menú) + sidebar de marca + import dinámico de módulos
 utils/formatters.py  paleta, cop()/num()/pct(), light() para gráficas, kpi()/panel()/encabezado(), CSS
 utils/datos.py       ÚNICA fuente de carga de datos, cacheada con @st.cache_data
+utils/config.py      ÚNICA fuente de credenciales y ajustes: st.secrets → entorno → defecto
 utils/visitas.py     registro de visitas + panel oculto
 modules/p01…p12_*.py un módulo por pantalla, cada uno expone render()
 data/                generate_data.py + 18 CSV versionados (para que el deploy no tenga que generarlos)
 ```
+
+**Repos hermanos** (misma estructura, distinto cliente): `Calybrat/nutramerican-demo` (15 módulos,
+el más grande) · `nicolasgort01/cimpa-demo` (el primero, todavía con login) ·
+`nicolasgort01/calybrat-website` (sitio estático en Netlify).
 
 Los 12 módulos: `p01` Dashboard · `p02` Ventas Omnicanal · `p03` Retail & Sell-Out ·
 `p04` Portafolio & Precios · `p05` Clientes & Recompra · `p06` Marketing & Contenido ·
@@ -65,9 +71,12 @@ Los 12 módulos: `p01` Dashboard · `p02` Ventas Omnicanal · `p03` Retail & Sel
 5. **Toda plata se formatea con `cop()`**, todo porcentaje con `pct()`. Nada de f-strings crudos.
 6. **Colores solo desde las constantes** de `utils/formatters.py` (`PURPLE #2a1d65`, `CREAM #f4e1c1`,
    `PINK #e6a4c4`, `GOOD/WARN/BAD`, `PALETTE`). Nunca hardcodear un hex nuevo.
-7. **Todo en español**: código, comentarios, docstrings y UI.
-8. **La fecha de corte es el 31 de agosto de 2026** y está fijada en 7 archivos
-   (ver la tabla en `docs/CONTEXTO-PARANICE.md` §11). Si cambias una, cámbialas todas.
+7. **Ninguna credencial se escribe en el código ni se pide en la UI.** Todo sale de
+   `utils/config.py` (`st.secrets` → variable de entorno → defecto). Las plantillas son
+   `.streamlit/secrets.example.toml` y `.env.example`; los archivos reales están en `.gitignore`.
+8. **Todo en español**: código, comentarios, docstrings y UI.
+9. **La fecha de corte es el 31 de agosto de 2026** y está fijada en 7 archivos
+   (ver la tabla en `docs/CONTEXTO_TECNICO.md` §3.4). Si cambias una, cámbialas todas.
 
 ---
 
@@ -92,7 +101,17 @@ Volumen: 173.200 líneas de venta · 70.241 documentos · $35,7 B COP · 40.865 
 
 Las reglas de negocio codificadas (estacionalidad, rampa de canal, pedido mínimo $50.000, OTIF,
 probabilidades de pago de cartera, gluten en ppm) están documentadas en
-`docs/CONTEXTO-PARANICE.md` §7. **Léelas antes de tocar `data/generate_data.py`.**
+`docs/CONTEXTO_TECNICO.md` §1.3. **Léelas antes de tocar `data/generate_data.py`.**
+
+---
+
+## Conexiones
+
+El único servicio externo opcional es la **API de Anthropic** para el Agente IA (módulo 12). Se
+configura con `ANTHROPIC_API_KEY` en `.streamlit/secrets.toml` o `.env` — copia la plantilla
+correspondiente. Sin llave, el agente corre en modo demo, que es el comportamiento correcto para un
+demo enviado en frío. El inventario completo de APIs, plataformas y conectores está en
+`docs/CONTEXTO_TECNICO.md` §5.
 
 ---
 
@@ -113,3 +132,13 @@ streamlit run app.py
 ```
 y navegar **los 12 módulos**, con sus pestañas y filtros, mirando que ninguno lance error y que las
 gráficas no se solapen.
+
+Como mínimo, esta prueba de humo (importa los 12 módulos y verifica que exponen `render()`):
+```bash
+python3 -c "
+import importlib, sys; sys.path.insert(0, '.')
+mods = ['p01_dashboard','p02_ventas','p03_retail','p04_portafolio','p05_clientes','p06_marketing',
+        'p07_produccion','p08_logistica','p09_finanzas','p10_expansion','p11_reportes','p12_agente']
+[print(m, 'OK') for m in mods if callable(getattr(importlib.import_module('modules.'+m), 'render'))]
+"
+```

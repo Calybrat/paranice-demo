@@ -4,21 +4,43 @@ Guía práctica para que **Juan David y Nico trabajen con el mismo contexto** de
 equipo, sin tener que repetirle a Claude lo que ya sabemos.
 
 La idea de fondo: **no hay que "migrar" conversaciones**. Las conversaciones viejas no se mueven de
-cuenta y tampoco hace falta: todo lo que importaba de ellas ya está destilado en tres archivos de
-este repo. Con eso, cualquier chat nuevo en la cuenta compartida arranca sabiendo lo mismo que
-sabemos nosotros.
+cuenta y tampoco hace falta: todo lo que importaba de ellas ya está destilado en archivos de texto.
+Con eso, cualquier chat nuevo en la cuenta compartida arranca sabiendo lo mismo que sabemos nosotros.
 
 ---
 
-## Los tres archivos que son el contexto
+## Los dos documentos maestros
+
+El contexto se reparte en **dos archivos con la misma estructura**, uno por cada lado del negocio:
+
+| Documento | Cubre | Lo mantiene |
+|---|---|---|
+| **`CONTEXTO_TECNICO.md`** (este repo, `docs/`) | El software: los 4 repos, qué existe, decisiones técnicas y su porqué, pendientes y bugs, rutas, APIs y conexiones | Juan David |
+| **`CONTEXTO_CALYBRAT.md`** (repo de Nico) | Lo comercial, la web y la estrategia | Nico |
+
+Ambos siguen la **misma estructura acordada**, justamente para que se puedan leer juntos hoy y
+fusionar sin pelearse después:
+
+1. Qué se construyó / qué existe hoy
+2. Decisiones tomadas y por qué
+3. Pendientes / bugs conocidos sin resolver
+4. Archivos y rutas relevantes
+
+*(El técnico agrega dos bloques propios: 5) APIs y conexiones · 6) glosario.)*
+
+**La frontera entre los dos, para que no se contradigan:** lo que pasa **dentro de un repo** va en el
+técnico; lo que pasa **fuera** (clientes, propuesta, precios, posicionamiento) va en el de Nico. Si
+algo cae en la mitad —por ejemplo, por qué el demo no tiene login— vive en el técnico y el otro lo
+referencia.
+
+### Y además, en cada repo
 
 | Archivo | Qué es | Quién lo lee |
 |---|---|---|
-| **`docs/CONTEXTO-PARANICE.md`** | La memoria completa: negocio, datos, módulos, decisiones, cifras, glosario. ~620 líneas. | El humano nuevo · Claude en la web (conocimiento del proyecto) |
-| **`CLAUDE.md`** | El resumen operativo con las reglas que no se rompen. | **Claude Code lo lee solo**, automáticamente, al abrir el repo |
-| **`README.md`** | La cara pública del demo: qué resuelve y cómo se corre. | Cualquiera que llegue al repo |
+| **`CLAUDE.md`** | El resumen operativo con las reglas que no se rompen | **Claude Code lo lee solo**, al abrir el repo |
+| **`README.md`** | La cara pública del demo: qué resuelve y cómo se corre | Cualquiera que llegue al repo |
 
-Están escritos para que se puedan leer sueltos, sin el resto del repo.
+Todos están escritos para poder leerse sueltos, sin el resto del repo.
 
 ---
 
@@ -33,47 +55,65 @@ que abran dentro de él.
 
 Sube al conocimiento del proyecto, en este orden:
 
-1. `docs/CONTEXTO-PARANICE.md` ← **el importante**
-2. `README.md`
-3. `data/generate_data.py` (opcional, pero muy útil: es la fuente de verdad de todas las reglas de negocio)
-4. `utils/formatters.py` (opcional: paleta y helpers, para que Claude no invente colores ni formatos)
+1. `docs/CONTEXTO_TECNICO.md` ← **el importante del lado técnico**
+2. `CONTEXTO_CALYBRAT.md` ← **el de Nico**, el lado comercial
+3. `README.md` de `paranice-demo` y de `nutramerican-demo`
+4. `data/generate_data.py` (opcional, pero muy útil: es la fuente de verdad de las reglas de negocio)
+5. `utils/formatters.py` (opcional: paleta y helpers, para que Claude no invente colores ni formatos)
 
-Con esos cuatro, Claude puede responder casi cualquier pregunta del proyecto sin abrir el repo.
+**No hace falta fusionar los dos documentos maestros para arrancar.** Claude lee varios documentos de
+contexto a la vez; súbanlos tal cual. La fusión en un solo documento maestro es una tarea de mediano
+plazo, cuando empiecen a aparecer contradicciones — y para eso están la estructura común y la
+frontera declarada arriba.
 
 ## Paso 3 · Pegar las instrucciones del proyecto
 
 Copia este bloque tal cual en las **instrucciones personalizadas** del proyecto:
 
 ```
-Eres el asistente del proyecto "Paranice · Panel de Negocio", un demo comercial que Calybrat
-(Juan David y Nico) construyó para Paranice, marca colombiana de alimentos saludables sin
-gluten, sin azúcar añadida, veganos y keto.
+Eres el asistente de Calybrat, el estudio de Juan David y Nico. Calybrat construye paneles de
+negocio (BI) a la medida como pieza de venta: demos que usan la identidad, el catálogo y los
+canales reales del cliente, con datos transaccionales simulados.
 
-Contexto: el archivo CONTEXTO-PARANICE.md del conocimiento del proyecto es la fuente de verdad.
-Consúltalo antes de responder sobre el negocio, los datos, los módulos o las decisiones técnicas.
-Si algo no está ahí, dilo en vez de suponerlo.
+Fuentes de verdad, en el conocimiento del proyecto:
+- CONTEXTO_TECNICO.md   → el software: los 4 repos, qué existe, decisiones técnicas y su porqué,
+                          pendientes y bugs, rutas, APIs y conexiones.
+- CONTEXTO_CALYBRAT.md  → lo comercial, la web y la estrategia.
+Consúltalos antes de responder. Si algo no está ahí, dilo en vez de suponerlo. Si los dos se
+contradicen, dilo también en vez de escoger uno en silencio.
 
-Sobre el proyecto:
-- Es un panel BI en Streamlit, en español, con 12 módulos, desplegado sin login a propósito.
-- Los datos transaccionales son simulados (data/generate_data.py, semilla fija). El catálogo,
-  los precios, los canales y la identidad de marca son reales, de fuentes públicas.
-- La fecha de corte de todo el demo es el 31 de agosto de 2026.
-- Es una herramienta de venta: se juzga tanto por cómo habla como por cómo funciona.
+Lo que existe hoy:
+- paranice-demo (12 módulos) y nutramerican-demo (15 módulos): paneles Streamlit en español.
+- cimpa-demo: el primero, todavía con login. calybrat-website: el sitio, estático en Netlify.
+- Todos con corte de datos al 31 de agosto de 2026 y generador con semilla fija.
 
 Cómo quiero que trabajes:
 - Responde en español, claro y de negocio, sin jerga innecesaria.
 - Cuando des una cifra, di qué significa para el negocio y qué decisión habilita.
 - Si propones código, respeta las reglas de CLAUDE.md: ningún módulo lee CSV directo (todo por
-  utils/datos), nunca dtype category, nunca runOnSave, toda gráfica pasa por light(), toda plata
-  por cop() y todo porcentaje por pct(), colores solo desde las constantes de utils/formatters.
+  utils/datos), ninguna credencial en el código ni en la UI (todo por utils/config), nunca dtype
+  category, nunca runOnSave, toda gráfica pasa por light(), toda plata por cop() y todo
+  porcentaje por pct(), colores solo desde las constantes de utils/formatters.
 - Los textos de UI van en español y cada KPI explica qué significa para el negocio.
-- No inventes cifras del demo: o las calculas de los datos, o las citas del documento de contexto.
+- No inventes cifras de los demos: o las calculas de los datos, o las citas del documento.
 ```
 
 ## Paso 4 · Conectar el repositorio
 
-Conecta `github.com/Calybrat/paranice-demo` al proyecto (conector de GitHub). Así Claude ve el código
-actual y no solo la foto del momento en que subiste los archivos.
+Conecta los repos al proyecto con el conector de GitHub, para que Claude vea el código actual y no
+solo la foto del momento en que subiste los archivos:
+
+- `github.com/Calybrat/paranice-demo`
+- `github.com/Calybrat/nutramerican-demo`
+- `github.com/nicolasgort01/cimpa-demo`
+- `github.com/nicolasgort01/calybrat-website`
+
+**Sobre los demás conectores** (HubSpot, Gmail, Google Calendar, Google Drive, Apollo.io): hoy están
+conectados y funcionando, pero **su autenticación es por persona, no por espacio de trabajo**. Al
+pasar a Teams, cada uno va a tener que autenticar los suyos la primera vez desde
+*Settings → Connectors*. Lo que sí se comparte es el Proyecto y su conocimiento. Smartlead AI está
+instalado pero sin conectar; si lo van a usar, hay que autenticarlo. El inventario completo está en
+`CONTEXTO_TECNICO.md` §5.3.
 
 ## Paso 5 · Claude Code, para los dos
 
@@ -91,13 +131,15 @@ El contexto solo sirve si está al día. En concreto:
 
 | Si cambias… | Actualiza… |
 |---|---|
-| Un módulo, sus KPIs o sus pestañas | `docs/CONTEXTO-PARANICE.md` §5 |
-| `data/generate_data.py` (reglas, semilla, fechas) | §6, §7 y **vuelve a correr las cifras de §8** |
-| Una decisión técnica o un arreglo con historia | §9 (agrega el commit y el porqué) |
+| Un módulo, sus KPIs o sus pestañas | `docs/CONTEXTO_TECNICO.md` §1 (el repo que toque) |
+| `data/generate_data.py` (reglas, semilla, fechas) | §1 — y **vuelve a correr las cifras** de la tabla del repo |
+| Una decisión técnica o un arreglo con historia | §2 (agrega la decisión y el porqué) |
+| Deuda técnica resuelta o nueva | §3 |
+| Una ruta, un archivo nuevo o un comando | §4 |
+| Una API, una llave o un conector | §5 |
 | Una regla que no se puede romper | `CLAUDE.md` §"Reglas que no se rompen" |
-| Deuda técnica resuelta o nueva | §12 |
 
-Cuando cambies `docs/CONTEXTO-PARANICE.md`, vuelve a subirlo al conocimiento del proyecto en la web
+Cuando cambies `docs/CONTEXTO_TECNICO.md`, vuelve a subirlo al conocimiento del proyecto en la web
 (el conector de GitHub sí se actualiza solo; los archivos subidos a mano, no).
 
 ---
@@ -127,12 +169,17 @@ el contexto quedó cargado:
    → $44.950 en paranice.co, $49.900 en Éxito, $55.400 en Fithub.
 4. *¿Qué pasa si un lote da 25 ppm de gluten?*
    → Se rechaza; por encima de 20 ppm no sale al mercado (entre 15 y 20 va a cuarentena).
-5. *¿Cuál es el canal que más factura y cuál el que más margen deja?*
+5. *¿Cuál es el canal que más factura en Paranice y cuál el que más margen deja?*
    → Éxito factura más ($9,76 B históricos); el canal propio y Paranice US dejan más margen porque no hay comisión de cadena.
+6. *¿Qué bug conocido tiene nutramerican-demo?*
+   → `runOnSave = true` con el mismo `visitas.py` que escribe en el directorio vigilado: el bucle de recargas que Paranice ya diagnosticó y revirtió.
+7. *¿Dónde se configura la API key del agente?*
+   → En `utils/config.py`, que la lee de `st.secrets` o del entorno; nunca en el código ni en la UI.
 
 ---
 
 ## Atajo si tienen prisa
 
-Si solo van a hacer una cosa hoy: **suban `docs/CONTEXTO-PARANICE.md` al conocimiento del proyecto y
-peguen el bloque de instrucciones del Paso 3.** Eso ya cubre el 90 % del contexto.
+Si solo van a hacer una cosa hoy: **suban los dos documentos maestros al conocimiento del proyecto y
+peguen el bloque de instrucciones del Paso 3.** Eso ya cubre el 90 % del contexto; los conectores y
+la fusión pueden esperar.

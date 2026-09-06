@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 from utils.formatters import *
-from utils import datos
+from utils import config, datos
 
 CONTEXTO = """
 Eres el Agente de Inteligencia de Negocio de Paranice, marca colombiana de alimentos saludables
@@ -188,7 +188,7 @@ def llamar_claude(api_key: str, pregunta: str) -> str:
                      for msg in st.session_state.ag_msgs[:-1]]
         historial.append({"role": "user", "content": pregunta})
         r = cliente.messages.create(
-            model="claude-sonnet-4-5",
+            model=config.modelo_agente(),
             max_tokens=1200,
             system=CONTEXTO + "\n\n" + resumen_datos(),
             messages=historial,
@@ -219,15 +219,27 @@ def render():
     if "ag_pend" not in st.session_state:
         st.session_state.ag_pend = None
 
+    # La llave sale de la configuración (st.secrets o variable de entorno). Solo
+    # si no hay ninguna configurada se le pide al usuario que la pegue.
+    key_configurada = config.anthropic_api_key()
     c1, c2 = st.columns([3, 1])
     with c1:
-        api_key = st.text_input("API Key de Anthropic (opcional)", type="password",
-                                placeholder="sk-ant-…", key="ag_key",
-                                help="Con una API key el agente responde cualquier pregunta libre "
-                                     "sobre los datos. Sin ella funciona el modo demo.")
+        if key_configurada:
+            api_key = key_configurada
+            st.markdown(
+                f'<div style="padding:6px 0 2px"><span class="pn-badge">🔗 Claude conectado '
+                f'· {config.modelo_agente()}</span></div>',
+                unsafe_allow_html=True)
+        else:
+            api_key = st.text_input("API Key de Anthropic (opcional)", type="password",
+                                    placeholder="sk-ant-…", key="ag_key",
+                                    help="Con una API key el agente responde cualquier pregunta "
+                                         "libre sobre los datos. Sin ella funciona el modo demo. "
+                                         "Para dejarla fija: .streamlit/secrets.toml "
+                                         "(ver secrets.example.toml).")
     with c2:
         st.markdown("<div style='height:28px'></div>", unsafe_allow_html=True)
-        modo_demo = st.toggle("Modo demo", value=True, key="ag_demo")
+        modo_demo = st.toggle("Modo demo", value=not key_configurada, key="ag_demo")
 
     st.markdown(f"<p style='font-size:13px;font-weight:800;color:{PURPLE};margin:14px 0 8px'>"
                 f"💡 Preguntas frecuentes</p>", unsafe_allow_html=True)

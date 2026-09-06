@@ -103,11 +103,16 @@ assets/                 logo y personajes de la marca
 
 ## Documentación interna
 
-- [`docs/CONTEXTO-PARANICE.md`](docs/CONTEXTO-PARANICE.md) — el contexto completo del proyecto:
-  negocio, modelo de datos, los 12 módulos, historia de cada decisión técnica, cifras actuales y glosario.
+- [`docs/CONTEXTO_TECNICO.md`](docs/CONTEXTO_TECNICO.md) — el contexto completo del lado técnico de
+  Calybrat: los cuatro repos, qué existe, las decisiones y su porqué, pendientes y bugs conocidos,
+  rutas, el inventario de APIs y conexiones, y el glosario.
 - [`docs/ONBOARDING-CLAUDE-TEAMS.md`](docs/ONBOARDING-CLAUDE-TEAMS.md) — cómo dejar la cuenta
   compartida de Claude con el mismo contexto que tiene el equipo.
 - [`CLAUDE.md`](CLAUDE.md) — resumen operativo y reglas del repo (Claude Code lo lee solo).
+
+Para conectar el Agente IA a Claude: copia `.streamlit/secrets.example.toml` a
+`.streamlit/secrets.toml` (o `.env.example` a `.env`) y pega tu `ANTHROPIC_API_KEY`. Sin llave, el
+agente funciona en modo demo.
 
 ---
 
