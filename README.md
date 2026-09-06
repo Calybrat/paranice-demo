@@ -101,4 +101,14 @@ assets/                 logo y personajes de la marca
 
 ---
 
+## Documentación interna
+
+- [`docs/CONTEXTO-PARANICE.md`](docs/CONTEXTO-PARANICE.md) — el contexto completo del proyecto:
+  negocio, modelo de datos, los 12 módulos, historia de cada decisión técnica, cifras actuales y glosario.
+- [`docs/ONBOARDING-CLAUDE-TEAMS.md`](docs/ONBOARDING-CLAUDE-TEAMS.md) — cómo dejar la cuenta
+  compartida de Claude con el mismo contexto que tiene el equipo.
+- [`CLAUDE.md`](CLAUDE.md) — resumen operativo y reglas del repo (Claude Code lo lee solo).
+
+---
+
 Construido por [Calybrat](https://calybrat.com) · 2026
